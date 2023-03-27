@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { ArrowDown2, HambergerMenu, CloseSquare } from "iconsax-react";
+import Link from "next/link";
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(true);
@@ -32,17 +33,17 @@ const Navbar = () => {
             className="flex items-center text-left gap-2 text-lg"
             onClick={toggleNavbar}
           >
-            <a href="/route-2">About BALS </a>
+            <Link href="/route-2">About BALS </Link>
             <ArrowDown2 size="20" />
           </li>
           <li className="text-lg text-left" onClick={toggleNavbar}>
-            <a href="/route-2">Courses </a>
+            <Link href="/route-2">Courses </Link>
           </li>
           <li
             className=" flex items-center gap-2 text-lg"
             onClick={toggleNavbar}
           >
-            <a href="/route-2">Features </a>
+            <Link href="/route-2">Features </Link>
 
             <ArrowDown2 size="20" />
           </li>
@@ -50,7 +51,7 @@ const Navbar = () => {
             className="flex items-center gap-2 text-lg"
             onClick={toggleNavbar}
           >
-            <a href="/route-2">Resources </a>
+            <Link href="/route-2">Resources </Link>
             <ArrowDown2 size="20" />
           </li>
           <li
