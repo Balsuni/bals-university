@@ -1,10 +1,9 @@
 import Layout from "@/components/layout";
-import PageHeader from "@/components/pageHeader";
 
 const Home = () => {
   return (
     <Layout>
-      <PageHeader />
+      <h1>Landing page here!!</h1>
     </Layout>
   );
 };
