@@ -1,5 +1,11 @@
-export default function Home() {
+import Layout from "@/components/layout";
+
+const Home = () => {
   return (
-    <h1 className="px-20 py-20 text-3xl font-bold">Index Page: Hello world!</h1>
+    <Layout>
+      <h1>Landing page here!!</h1>
+    </Layout>
   );
-}
+};
+
+export default Home;
