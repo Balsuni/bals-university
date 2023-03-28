@@ -8,7 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {},
-
+    fontFamily: {
+      ubuntu: ["Ubuntu"],
+    },
     colors: {
       darkblue: {
         50: "#EDF2FF",

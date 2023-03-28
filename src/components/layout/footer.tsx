@@ -5,6 +5,7 @@ import FooterFlexWrapper from "../UI/FooterFlexWrapper";
 import FooterLinks from "../UI/FooterLinks";
 import FooterLinksParagraph from "../UI/FooterLinksParagraph";
 import Link from "next/link";
+import { Copyright } from "iconsax-react";
 
 const Footer = () => {
   const FooterSocialIcons = [
@@ -148,8 +149,9 @@ const Footer = () => {
       </FooterFlexWrapper>
 
       <div className="border-cyan2-500 border-t-2 w-screen mt-24 pb-1 text-gray-50">
-        <p className="mt-5 ml-5 text-sm mr-5 font-bold">
-          &copy; 2023 BALS UNIVERSITY 2023. All Right reserved
+        <p className="mt-5 ml-5 flex flex-row items-center gap-1 text-sm mr-5 font-bold">
+          <Copyright size="24" color="#FBFBFB" variant="Bold" /> 2023 BALS
+          UNIVERSITY 2023. All Right reserved
         </p>
       </div>
     </FooterWrapper>
