@@ -1,7 +1,7 @@
+import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from "react";
 import { ArrowDown2, HambergerMenu, CloseSquare } from "iconsax-react";
-import Link from "next/link";
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(true);
@@ -60,12 +60,12 @@ const Navbar = () => {
           >
             <button className="flex lg:hidden items-center justify-center  px-3 py-3 w-36 rounded-md text-darkblue-500 bg-gray-50 ">
               Get Started
-            </button>{" "}
+            </button>
           </li>
         </ul>
       </div>
 
-      <div className="flex flex-row w-2/5 md:w-3/8 lg:w-32 xl:w-2/12 justify-between ">
+      <div className="flex flex-row w-2/5 md:w-3/12 lg:w-40 xl:w-2/12 justify-between">
         <Image src="/assets/search.svg" alt="search" width={16} height={16} />
         <Image
           className="bg-darkblue-50 p-1 rounded-full"
