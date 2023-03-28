@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import FooterWrapper from "../UI/footerWrapper";
-import FooterFlexWrapper from "../UI/FooterFlexWrapper";
-import FooterLinks from "../UI/FooterLinks";
-import FooterLinksParagraph from "../UI/FooterLinksParagraph";
+import FooterWrapper from "../ui/footerWrapper";
+import FooterFlexWrapper from "../ui/footerFlexWrapper";
+import FooterLinks from "../ui/footerLinks";
+import FooterLinksParagraph from "../ui/footerLinksParagraph";
 import Link from "next/link";
 import { Copyright } from "iconsax-react";
 
