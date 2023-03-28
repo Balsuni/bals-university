@@ -13,7 +13,7 @@ const PrivacyPolicy = () => {
         rightImageAlt="privacy"
       />
 
-      <main className="w-full px-5 sm:px-12 md:px-14 lg:px-16 xl:px-16  py-14 sm:py-14 md:py-14 lg:py-16 xl:py-20 bg-gray-50  ">
+      <main className="w-full px-5 sm:px-12 md:px-14 lg:px-16 xl:px-16  py-14 sm:py-14 md:py-14 lg:py-16 xl:py-20 bg-bodyBackground ">
         <section className="mb-20">
           <h1 className=" text-4xl md:text-5xl lg:text-6xl text-darkblue-500 mb-5 md:mb-8 font-normal">
             Privacy Policy

@@ -100,6 +100,8 @@ module.exports = {
       },
       black: "#000000",
       white: "#FFFFFF",
+      imageColor: "#D9D9D9",
+      bodyBackground: "#F9FAFC",
     },
     screens: {
       sm: "640px",
