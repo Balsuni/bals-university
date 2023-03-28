@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      ubuntu: ["Ubuntu"],
+      Ubuntu: ["Ubuntu"],
     },
     colors: {
       darkblue: {
