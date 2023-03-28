@@ -149,7 +149,7 @@ const Footer = () => {
       </FooterFlexWrapper>
 
       <div className="border-cyan2-500 border-t-2 w-screen mt-24 pb-1 text-gray-50">
-        <p className="mt-5 ml-5 flex flex-row items-center gap-1 text-sm mr-5 font-bold">
+        <p className="mt-5 ml-1 md:ml-5 lg:ml-5 xl:ml-5 flex flex-row items-center gap-1 text-sm mr-5 font-medium">
           <Copyright size="24" color="#FBFBFB" variant="Bold" /> 2023 BALS
           UNIVERSITY 2023. All Right reserved
         </p>
