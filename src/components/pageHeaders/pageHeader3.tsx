@@ -8,6 +8,7 @@ type Props = {
 };
 
 // x sm: md: lg: xl:
+// x sm: md: lg: xl:
 
 const PageHeaderThree = (props: Props) => {
   return (
