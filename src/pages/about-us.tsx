@@ -1,6 +1,8 @@
 import Header from "@/components/about-us/header";
 import TeamCards from "@/components/about-us/teamCards";
-import ValueCards from "@/components/about-us/valueCards";
+import ValueCards, {
+  ValueCardsBlackText,
+} from "@/components/about-us/valueCards";
 import Layout from "@/components/layout";
 import React from "react";
 
@@ -50,7 +52,7 @@ const AboutUs = () => {
 
         <section className="mb-24 flex flex-col lg:flex-row items-center justify-center xl:items-center xl:justify-center gap-8 lg:gap-20 xl:gap-36 ">
           <main className="grid gap-8 lg:gap-8 grid-cols-1 grid-rows-4 sm:grid-cols-2 sm:grid-rows-2 ">
-            <ValueCards
+            <ValueCardsBlackText
               src="/assets/trustworthy.svg"
               valueTitle="Trustworthy"
               text=" Lorem ipsum dolor sit amet consectetur. Auctor ullamcorper sagittis
@@ -62,7 +64,7 @@ const AboutUs = () => {
               text=" Lorem ipsum dolor sit amet consectetur. Auctor ullamcorper sagittis
                interdum gjsjhdjd jddjdb sjhsjsjdn hdsdhj dx jhddj ..."
             />
-            <ValueCards
+            <ValueCardsBlackText
               src="/assets/modern.svg"
               valueTitle="Modern"
               text=" Lorem ipsum dolor sit amet consectetur. Auctor ullamcorper sagittis
@@ -85,11 +87,11 @@ const AboutUs = () => {
             <h1>We drive growth.</h1>
             <h1>Together.</h1>
           </div>
-          <div className="text-darkblue-500 bg-gray-200 w-[280px] xl:w-80 h-32 px-6 pt-5 pb-5">
+          <div className="text-darkblue-500 bg-gray-200 w-[280px] xl:w-80 h-32 px-6 pt-5 pb-5 rounded-lg">
             <h1 className=" text-4xl font-medium">7000+</h1>
             <h4 className=" text-xl font-normal">Registered Students</h4>
           </div>
-          <div className="text-darkblue-500 bg-gray-200 w-[280px] xl:w-80 h-32 px-6 pt-5 pb-5">
+          <div className="text-darkblue-500 bg-gray-200 w-[280px] xl:w-80 h-32 px-6 pt-5 pb-5 rounded-lg">
             <h1 className=" text-4xl font-medium">7000+</h1>
             <h4 className=" text-xl font-normal">Registered Students</h4>
           </div>
