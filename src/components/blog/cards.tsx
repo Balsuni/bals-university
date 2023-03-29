@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export const BlogCardSmall = () => {
@@ -73,10 +74,13 @@ const BlogCards = () => {
             interdum ...
           </div>
         </div>
-        <h1 className="flex flex-row gap-2 text-lg sm:text-xl font-medium text-darkblue-500  pb-5 ">
+        <Link
+          href="/blog-page"
+          className="flex flex-row gap-2 text-lg sm:text-xl font-medium text-darkblue-500  pb-5 "
+        >
           Read Post
           <img src="/assets/post-arrow.svg" alt="post" />
-        </h1>
+        </Link>
       </main>
     </section>
   );

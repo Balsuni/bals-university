@@ -5,16 +5,16 @@ import React from "react";
 const BlogPage = () => {
   return (
     <Layout>
-      <main className="w-full px-5 sm:px-12 md:px-14 lg:px-16 xl:px-16  py-10 sm:py-10 md:py-10 lg:py-12 xl:py-12 bg-bodyBackground ">
+      <main className="w-full px-5 sm:px-12 md:px-14 lg:px-16 xl:px-16  py-10 sm:py-10 md:py-10 lg:py-12 xl:py-12 bg-bodyBackground">
         <section className="flex flex-col items-center justify-center">
-          <h1 className="py-1 px-5 text-xl font-normal text-cyan1-800 border-[2px]  border-cyan1-700 w-[95px] ">
+          <h1 className="py-1 px-5 text-xl font-normal text-cyan1-800 border-[2px] border-cyan1-700 w-[95px]">
             Design
           </h1>
-          <div className="flex flex-col items-center justify-between gap-5 mt-12 ">
+          <div className="flex flex-col items-center justify-between gap-5 mt-12">
             <div className=" text-4xl sm:text-6xl font-medium text-darkblue-500">
               UI/UX design tips
             </div>
-            <div className="text-lg text-center font-normal text-gray-900  w-[300px] sm:w-[400px] ">
+            <div className="text-lg text-center font-normal text-gray-900 w-[300px] sm:w-[400px] ">
               Lorem ipsum dolor sit amet consectetur. Auctor ullamcorper
               sagittis interdum ...
             </div>
@@ -36,8 +36,12 @@ const BlogPage = () => {
           </div>
         </section>
 
-        <section className=" mt-12  ">
-          <img className="mb-16" src="/assets/blog-logo-large.svg" alt="logo" />
+        <section className="mt-12">
+          <img
+            className="mb-16 m-auto"
+            src="/assets/blog-logo-large.svg"
+            alt="logo"
+          />
           <h3 className="font-regular text-lg text-gray-900">
             Lorem ipsum dolor sit amet consectetur. Mauris cras neque in
             ultricies at. Elit venenatis ultricies dignissim bibendum. Aliquet
@@ -48,7 +52,7 @@ const BlogPage = () => {
         </section>
 
         <section className="mt-12">
-          <h1 className="mb-10 text-darkblue-500 font-medium text-4xl ">
+          <h1 className="mb-10 text-darkblue-500 font-medium text-4xl">
             Introduction
           </h1>
           <div className="flex flex-col gap-7">
@@ -91,7 +95,7 @@ const BlogPage = () => {
         </section>
 
         <section className="mt-12">
-          <h1 className="mb-10 text-darkblue-500 font-medium text-4xl ">
+          <h1 className="mb-10 text-darkblue-500 font-medium text-4xl">
             Software and tools
           </h1>
           <div className="flex flex-col gap-7">
@@ -106,8 +110,8 @@ const BlogPage = () => {
         </section>
 
         <section className="mt-12">
-          <h1 className="mb-10 text-darkblue-500 font-medium text-4xl ">
-            UI/UX tips{" "}
+          <h1 className="mb-10 text-darkblue-500 font-medium text-4xl">
+            UI/UX tips
           </h1>
           <div className="flex flex-col gap-7">
             <h3 className="font-regular text-lg text-gray-900">
@@ -135,7 +139,7 @@ const BlogPage = () => {
         </section>
 
         <section className="mt-12">
-          <h1 className="mb-10 text-darkblue-500 font-medium text-4xl ">
+          <h1 className="mb-10 text-darkblue-500 font-medium text-4xl">
             Other Resources
           </h1>
           <div className="flex flex-col gap-7">
@@ -155,53 +159,61 @@ const BlogPage = () => {
           alt="divider"
         />
 
-        <section className="flex flex-col sm:flex-row gap-10 sm:gap-0  items-center justify-between mb-28 ">
+        <section className="flex flex-col sm:flex-row gap-10 sm:gap-0  items-center justify-between mb-28">
           <div className="flex flex-row gap-4">
-            <h1 className="py-1 px-5 text-xl font-normal text-cyan2-800 border-[2px]  border-cyan1-700 w-auto ">
+            <h1 className="py-1 px-5 text-xl font-normal text-cyan2-800 border-[2px]  border-cyan1-700 w-auto">
               Design
             </h1>
-            <h1 className="py-1 px-5 text-xl font-normal text-cyan2-800 border-[2px]  border-cyan1-700 w-auto">
+            <h1 className="py-1 px-5 text-xl font-normal text-cyan2-800 border-[2px] border-cyan1-700 w-auto">
               Tool
             </h1>
-            <h1 className="py-1 px-5 text-xl font-normal text-cyan2-800 border-[2px]  border-cyan1-700 w-auto ">
+            <h1 className="py-1 px-5 text-xl font-normal text-cyan2-800 border-[2px] border-cyan1-700 w-auto ">
               Tips
             </h1>
           </div>
           <div className="flex flex-row gap-5">
             <img src="/assets/share-logo.svg" alt="share" />
-            <div className="py-1 px-5 text-xl flex flex-row font-normal text-cyan1-800 border-[2px]  border-cyan1-700 w-auto gap-2 ">
+            <div className="py-1 px-5 text-xl flex flex-row font-normal text-cyan1-800 border-[2px] border-cyan1-700 w-auto gap-2">
               <img src="/assets/copy-logo.svg" alt="copy" /> Copy Link
             </div>
           </div>
         </section>
 
-        <section className="">
-          <h1 className="">Leave a reply</h1>
-          <h1>
+        <section className="text-blackText">
+          <h1 className="text-4xl font-bold">Leave a reply</h1>
+          <h1 className="text-lg font-normal mt-8 ">
             Your email address will not be published. Required fields are marked{" "}
-            <span>*</span>
+            <span className="text-red-500">*</span>
           </h1>
           <form className="flex flex-col items-start justify-center ">
-            <label>Messgage *</label>
-            <textarea className="bg-gray-100" cols={7} rows={5} />
-            <label>Name *</label>
+            <label className="mt-8 font-regular text-2xl font-xl   ">
+              Messgage <span className="text-red-500">*</span>
+            </label>
+            <textarea className="bg-inputBackground mt-4 h-[200px] w-full rounded-lg border-[2px] border-darkblue-100 px-5 py-2" />
+            <label className="mt-8 font-regular text-2xl font-xl   ">
+              Name <span className="text-red-500">*</span>
+            </label>
             <input
               type="text"
-              className="w-full border-gray-500 outline-none bg-gray-100"
+              className="w-full outline-none bg-inputBackground mt-4 h-[90px] rounded-lg border-[2px] border-darkblue-100 px-5 py-2"
             />
-            <label>Email *</label>
+            <label className="mt-8 font-regular text-2xl font-xl">
+              Email <span className="text-red-500">*</span>
+            </label>
             <input
               type="text"
-              className="w-full border-gray-500 outline-none bg-gray-100"
+              className="w-full outline-none bg-inputBackground mt-4 h-[90px] rounded-lg border-[2px] border-darkblue-100 px-5 py-2"
             />
-            <label>Website</label>
+            <label className="mt-8 font-regular text-2xl font-xl">
+              Website
+            </label>
             <input
               type="text"
-              className="w-full border-gray-500 outline-none bg-gray-100"
+              className="w-full outline-none bg-inputBackground mt-4 h-[90px] rounded-lg border-[2px] border-darkblue-100 px-5 py-2"
             />
-            <div className="flex flex-row gap-4">
+            <div className="flex flex-row gap-4 mt-8">
               <input type="checkbox" className="default:ring-2 ..." />
-              <h3>
+              <h3 className="text-blackText font-normal text-lg">
                 Save my name, email, and website in this browser for the next
                 time I comment.
               </h3>
