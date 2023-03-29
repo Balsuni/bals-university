@@ -1,5 +1,6 @@
-import BlogCards from "@/components/blog/cards";
+import BlogCards, { BlogCardSmall } from "@/components/blog/cards";
 import Header from "@/components/blog/header";
+import Newsletter from "@/components/blog/newsletter";
 import Layout from "@/components/layout";
 import React from "react";
 
@@ -27,16 +28,16 @@ const Blog = () => {
           <BlogCards /> */}
         </section>
 
-        <section className="mb-9">
+        <section className="mb-9 ">
           <div className="flex flex-row items-center justify-between">
-            <div className="flex flex-col sm:flex-row gap-2 sm:gap-14 md:gap-5  ">
-              <h1 className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:lg:text-4xl  font-medium text-gray-900">
+            <div className="flex flex-col sm:flex-row gap-5 sm:gap-5 md:gap-5 lg:gap-18 xl:gap-32 ">
+              <h1 className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:lg:text-4xl  font-medium text-gray-900  border-b-4 border-darkblue-500 px-5px md:px-[6px] lg:md:px-[10px] py-[10px]  ">
                 All Posts
               </h1>
-              <h1 className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:lg:text-4xl  font-medium text-gray-900">
+              <h1 className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:lg:text-4xl  font-medium text-gray-900  border-b-4 border-darkblue-500 px-5px md:px-[6px] lg:md:px-[10px] py-[10px] ">
                 Leadership
               </h1>
-              <h1 className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:lg:text-4xl  font-medium text-gray-900">
+              <h1 className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:lg:text-4xl  font-medium text-gray-900 border-b-4 border-darkblue-500 px-5px md:px-[6px] lg:md:px-[10px] py-[10px] ">
                 Linkedin optimization
               </h1>
             </div>
@@ -44,32 +45,49 @@ const Blog = () => {
           </div>
         </section>
 
-        {/* path */}
-        <section className="flex flex-col items-center justify-center">
-          <img
-            className="bg-darkblue-500 rounded-[64px] "
-            src="/assets/path.svg"
-            alt="path"
-          />
-          <div>
-            <h1>Still thinking about it?</h1>
-            <h1>Sign up for our newsletter and 5% off your next purchase</h1>
-            <form className="flex w-[280px]">
-              <input
-                type="text"
-                className="w-10/12 px-5 h-12 rounded-lg text-white bg-imageColor font-light"
-                placeholder="Enter Email..."
-              />
-              <button
-                type="submit"
-                className="bg-darkblue-500 px-7 py-1 rounded-lg text-white"
-              >
-                Subscribe
-              </button>
-            </form>
+        <section className="mb-24  flex items-center justify-center ">
+          <div className="gap-10 grid grid-rows-6 grid-cols-1 sm:grid-rows-3 sm:grid-cols-2  lg:grid-rows-2 lg:grid-cols-3 xl:grid-rows-2 xl:grid-cols-4  ">
+            <BlogCardSmall />
+            <BlogCardSmall />
+            <BlogCardSmall />
+            <BlogCardSmall />
+            <BlogCardSmall />
+            <BlogCardSmall />
+            <BlogCardSmall />
+            <BlogCardSmall />
+            <BlogCardSmall />
+            <BlogCardSmall />
+          </div>
+        </section>
+
+        <section className="flex flex-row items-center justify-center gap-12 ">
+          <div className="flex flex-row items-center gap-2">
+            <img src="/assets/arrow-narrow-left.svg" alt="previous" />
+            <h1 className="text-lg font-medium text-darkblue-500">Previous</h1>
+          </div>
+          <h1 className="text-gray-900 text-2xl font-medium  px-5 py-3 hover:bg-cyan1-100 rounded-4px ">
+            1
+          </h1>
+          <h1 className="text-gray-900 text-2xl font-medium px-5 py-3 hover:bg-cyan1-100 rounded-4px ">
+            2
+          </h1>
+          <h1 className="text-gray-900 text-2xl font-medium px-5 py-3 hover:bg-cyan1-100 rounded-4px ">
+            3
+          </h1>
+          <h1 className="text-gray-900 text-2xl font-medium px-5 py-3 hover:bg-cyan1-100 rounded-4px ">
+            4
+          </h1>
+          <h1 className="text-gray-900 text-2xl font-medium px-5 py-3 hover:bg-cyan1-100 rounded-4px ">
+            5
+          </h1>
+
+          <div className="flex flex-row items-center gap-1">
+            <h1 className="text-lg font-medium text-darkblue-500">Next</h1>
+            <img src="/assets/arrow-narrow-right.svg" alt="next" />
           </div>
         </section>
       </main>
+      <Newsletter />
     </Layout>
   );
 };
