@@ -29,8 +29,6 @@ const ContactUs = () => {
           <input type="text" className="w-full border-b-2 border-gray-500 outline-none bg-gray-100" placeholder="Message" />
           <button type="submit" className="flex bg-darkblue-500 w-fit justify-center px-16 py-3 text-gray-50 mt-10">Send message <Image src='/assets/arrow-up.svg' alt='arrow up' width={12} height={12} className='my-auto ml-3' /></button>
         </form>
-
-        <Image src='/assets/letter_send 1.svg' alt='letter send image' className="ml-auto" width={300} height={300} />
         </div>
 
         <div className="bg-darkblue-500 rounded-xl w-fit h-auto mt-10 xl:mt-0 lg:mt-0 lg:ml-10 md:ml-10 xl:ml-10 text-gray-50 pr-5 pb-20">
