@@ -21,7 +21,7 @@ const Blog = () => {
           </div>
         </section>
 
-        <section className="mb-24 gap-8 flex  overflow-y-scroll">
+        <section className="mb-24 gap-8 flex">
           <BlogCards />
           {/* <BlogCards />
           <BlogCards />
@@ -60,24 +60,24 @@ const Blog = () => {
           </div>
         </section>
 
-        <section className="flex flex-row items-center justify-center gap-12 ">
+        <section className="flex flex-row items-center justify-center gap-3 sm:gap-5 md:gap-12 ">
           <div className="flex flex-row items-center gap-2">
             <img src="/assets/arrow-narrow-left.svg" alt="previous" />
             <h1 className="text-lg font-medium text-darkblue-500">Previous</h1>
           </div>
-          <h1 className="text-gray-900 text-2xl font-medium  px-5 py-3 hover:bg-cyan1-100 rounded-4px ">
+          <h1 className="text-gray-900 text-lg  sm:text-2xl font-medium px-0 py-0  sm:px-5 sm:py-3 hover:bg-cyan1-100 rounded-4px ">
             1
           </h1>
-          <h1 className="text-gray-900 text-2xl font-medium px-5 py-3 hover:bg-cyan1-100 rounded-4px ">
+          <h1 className="text-gray-900 text-lg  sm:text-2xl font-medium px-0 py-0  sm:px-5 sm:py-3 hover:bg-cyan1-100 rounded-4px ">
             2
           </h1>
-          <h1 className="text-gray-900 text-2xl font-medium px-5 py-3 hover:bg-cyan1-100 rounded-4px ">
+          <h1 className="text-gray-900 text-lg  sm:text-2xl font-medium px-0 py-0  sm:px-5 sm:py-3 hover:bg-cyan1-100 rounded-4px ">
             3
           </h1>
-          <h1 className="text-gray-900 text-2xl font-medium px-5 py-3 hover:bg-cyan1-100 rounded-4px ">
+          <h1 className="text-gray-900 text-lg  sm:text-2xl font-medium px-0 py-0  sm:px-5 sm:py-3 hover:bg-cyan1-100 rounded-4px ">
             4
           </h1>
-          <h1 className="text-gray-900 text-2xl font-medium px-5 py-3 hover:bg-cyan1-100 rounded-4px ">
+          <h1 className="text-gray-900 text-lg  sm:text-2xl font-medium px-0 py-0  sm:px-5 sm:py-3 hover:bg-cyan1-100 rounded-4px ">
             5
           </h1>
 
