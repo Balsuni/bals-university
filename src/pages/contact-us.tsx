@@ -13,7 +13,7 @@ const ContactUs = () => {
         text="Any question or remarks? Just write us a message!"
       />
 
-      <div className="grid justify-items-center ml-auto mr-auto grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 md:grid-cols-2 gap-3 xl:gap-0 justify-center pl-10 shadow-lg rounded-2xl bg-gray-100 shadow-gray-500 w-fit p-10 my-10 mb-44">
+      <div className="grid justify-items-center ml-auto mr-auto grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 md:grid-cols-2 gap-3 xl:gap-0 justify-center pl-10 shadow-lg rounded-2xl bg-gray-100 shadow-gray-500 w-fit p-10 my-24 mb-44">
         <div className="">
           <h5 className="text-darkblue-500 font-bold text-2xl tracking-wider mt-10">
             Love to hear from you, <br /> Get in touch 👋
@@ -49,7 +49,7 @@ const ContactUs = () => {
             />
             <button
               type="submit"
-              className="flex bg-darkblue-500 w-fit justify-center px-16 py-3 text-gray-50 mt-10"
+              className="flex bg-darkblue-500 w-fit m-auto justify-center px-16 py-3 text-gray-50 mt-10"
             >
               Send message{" "}
               <Image
@@ -61,6 +61,13 @@ const ContactUs = () => {
               />
             </button>
           </form>
+
+          <div className="flex mt-10 flex-row items-center justify-center gap-4 ">
+            <img src="/assets/youtube.svg" alt="youtube logo" />
+            <img src="/assets/instagram.svg" alt="instagram logo" />
+            <img src="/assets/facebook.svg" alt="facebook logo" />
+            <img src="/assets/twitter.svg" alt="twitter logo" />
+          </div>
         </div>
 
         <div className="bg-darkblue-500 rounded-xl w-fit h-auto mt-10 xl:mt-0 lg:mt-0 lg:ml-10 md:ml-10 xl:ml-10 text-gray-50 pr-5 pb-20">
