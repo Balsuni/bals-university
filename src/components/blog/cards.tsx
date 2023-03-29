@@ -19,7 +19,7 @@ export const BlogCardSmall = () => {
               </h6>
             </div>
           </div>
-          <h1 className="py-1 px-5 text-lg font-normal text-gray-900 border-[2px] w-[95px] ">
+          <h1 className="py-1 px-5 text-lg font-normal text-gray-900 border-[2px]  border-gray-300 w-[95px] ">
             Design
           </h1>
         </div>
@@ -60,7 +60,7 @@ const BlogCards = () => {
               </h6>
             </div>
           </div>
-          <h1 className="py-1 px-5 text-lg font-normal text-gray-900 border-[2px] w-[95px] ">
+          <h1 className="py-1 px-5 text-lg font-normal text-gray-900 border-[2px] border-gray-300 w-[95px] ">
             Design
           </h1>
         </div>

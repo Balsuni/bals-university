@@ -12,7 +12,7 @@ const Newsletter = () => {
         <h1 className="text-gray-50  text-2xl sm:text-5xl font-medium">
           Still thinking about it?
         </h1>
-        <h1 className=" px-10 sm:px-0 text-center text-sm sm:text-xl font-regular text-darkblue-50">
+        <h1 className=" px-10 sm:px-0 text-center text-sm sm:text-xl font-regular text-darkblue-50  w-[300px] sm:w-auto ">
           Sign up for our newsletter and 5% off your next purchase
         </h1>
         <form className="flex w-[280px]   ">
