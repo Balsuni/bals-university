@@ -92,20 +92,20 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="mt-24 grid grid-cols-1 gap-8 lg:grid-cols-2 xl:grid-cols-4 lg:gap-5 xl:gap-2">
+          <div className="mt-24 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 lg:grid-cols-2 xl:grid-cols-4 lg:gap-5 xl:gap-2">
             <FooterLinks>
               <FooterLinksParagraph>Company</FooterLinksParagraph>
               <li>
-                <Link href="/">About Us</Link>
+                <Link href="/about-us">About Us</Link>
               </li>
               <li>
                 <Link href="/">Affiliate</Link>
               </li>
               <li>
-                <Link href="/">Blog</Link>
+                <Link href="/blog">Blog</Link>
               </li>
               <li>
-                <Link href="/">FAQ</Link>
+                <Link href="/faq">FAQ</Link>
               </li>
             </FooterLinks>
 
@@ -128,10 +128,10 @@ const Footer = () => {
                 <Link href="/">Help</Link>
               </li>
               <li>
-                <Link href="/">Privacy Policy</Link>
+                <Link href="/privacy">Privacy Policy</Link>
               </li>
               <li>
-                <Link href="/">Terms and Conditions</Link>
+                <Link href="/terms-and-conditions">Terms and Conditions</Link>
               </li>
             </FooterLinks>
 
@@ -148,10 +148,13 @@ const Footer = () => {
         </div>
       </FooterFlexWrapper>
 
-      <div className="border-cyan2-500 border-t-2 w-screen mt-24 pb-1 text-gray-50">
+      <div className="flex flex-col xl:flex-row xl:justify-between lg:flex-row lg:justify-between md:flex-row md:justify-between border-cyan2-500 border-t-2 w-screen mt-24 pb-1 text-gray-50">
         <p className="mt-5 ml-1 md:ml-5 lg:ml-5 xl:ml-5 flex flex-row items-center gap-1 text-sm mr-5 font-medium">
           <Copyright size="24" color="#FBFBFB" variant="Bold" /> 2023 BALS
           UNIVERSITY 2023. All Right reserved
+        </p>
+        <p className="mt-5 ml-1 md:ml-5 lg:ml-5 xl:ml-5 flex flex-row items-center gap-1 text-sm mr-5 font-medium">
+          Photos by Freepik
         </p>
       </div>
     </FooterWrapper>
