@@ -31,13 +31,13 @@ const Blog = () => {
         <section className="mb-9 ">
           <div className="flex flex-row items-center justify-between">
             <div className="flex flex-col sm:flex-row gap-5 sm:gap-5 md:gap-5 lg:gap-18 xl:gap-32 ">
-              <h1 className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:lg:text-4xl  font-medium text-gray-900  border-b-4 border-darkblue-500 px-5px md:px-[6px] lg:md:px-[10px] py-[10px]  ">
+              <h1 className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:lg:text-4xl  font-medium text-gray-900 border-bodyBackground border-b-4   hover:border-b-4 hover:border-darkblue-500 px-5px md:px-[6px] lg:md:px-[10px] py-[10px]  ">
                 All Posts
               </h1>
-              <h1 className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:lg:text-4xl  font-medium text-gray-900  border-b-4 border-darkblue-500 px-5px md:px-[6px] lg:md:px-[10px] py-[10px] ">
+              <h1 className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:lg:text-4xl  font-medium text-gray-900  hover:border-b-4 hover:border-darkblue-500 px-5px md:px-[6px] lg:md:px-[10px] py-[10px] ">
                 Leadership
               </h1>
-              <h1 className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:lg:text-4xl  font-medium text-gray-900 border-b-4 border-darkblue-500 px-5px md:px-[6px] lg:md:px-[10px] py-[10px] ">
+              <h1 className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:lg:text-4xl  font-medium text-gray-900 hover:border-b-4 hover:border-darkblue-500 px-5px md:px-[6px] lg:md:px-[10px] py-[10px] ">
                 Linkedin optimization
               </h1>
             </div>
