@@ -138,10 +138,19 @@ const Footer = () => {
             <FooterLinks>
               <FooterLinksParagraph>Contact Us</FooterLinksParagraph>
               <li>
+                <div className="flex gap-3">
+                <img src='/assets/footerphoneicon.svg' /> 
                 <Link href="/">+ 234 (0) 234 234 234</Link>
+                </div>
               </li>
               <li>
+                <div className="flex gap-3">
+                <div>
+                <img src='/assets/footermail.svg' />
+                <img src='/assets/footermail(1).svg' /> 
+                </div>
                 <Link href="/">info@bals.ng</Link>
+                </div>
               </li>
             </FooterLinks>
           </div>
