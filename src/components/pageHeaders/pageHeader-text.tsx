@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "../../styles/pageHeaderText.module.scss";
 
 type Props = {
   title: string;
@@ -18,17 +19,11 @@ const PageHeaderText = (props: Props) => {
           src={props.backgroundImageSrc}
           alt={props.backgroundImageAlt}
         />
-        <div className="w-screen flex flex-col md:flex-row items-center justify-center gap-28 sm:gap-36 md:gap-0 md:items-start md:justify-center px-0 md:px-10 lg:px-16 xl:px-20 py-20 md:py-28 lg:py-36  ">
+        <div className="w-screen flex flex-col md:flex-row items-center justify-center gap-5 sm:gap-10 md:gap-8 md:items-start md:justify-center px-0 md:px-10 lg:px-16 xl:px-20 py-20 md:py-28 lg:py-36  ">
           <div className="w-screen flex flex-col items-center md:items-start  ">
-            <h1 className="text-[48px]  sm:text-5xl md:text-4xl lg:text-5xl  xl:text-6xl font-bold text-darkblue-500 absolute z-1">
-              {props.title}
-            </h1>
-            <h1 className="text-[48px] sm:text-5xl md:text-4xl lg:text-5xl  xl:text-6xl font-bold text-gray-50 absolute pt-0 sm:pt-2 mt-2 z-20  ">
-              {props.title}
-            </h1>
-            <h1 className="text-[48px]  sm:text-5xl md:text-4xl lg:text-5xl  xl:text-6xl font-bold text-darkblue-500 absolute pt-4 sm:pt-8 z-10 ">
-              {props.title}
-            </h1>
+            <h1 className={styles.title3}>{props.title}</h1>
+            <h1 className={styles.title2}>{props.title}</h1>
+            <h1 className={styles.title1}>{props.title}</h1>
           </div>
           <div className=" border-[3px] border-white w-screen md:w-[1700px]  ml-10 md:ml-0 mr-10 xl:mr-24">
             <h1 className="text-lg text-white text-center w-full py-5 flex items-center justify-center ">

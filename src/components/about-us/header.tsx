@@ -1,28 +1,23 @@
 import React from "react";
+import styles from "../../styles/header.module.scss";
 
 const Header = () => {
   return (
     <div>
-      <div className="h-[480px] sm:h-[430px] md:h-[350px] lg:h-[438px] xl:h-[438px] bg-cover bg-center relative">
+      <div className="h-[500px] sm:h-[430px] md:h-[350px] lg:h-[438px] xl:h-[438px] bg-cover bg-center relative">
         <img
-          className="w-full h-[480px] sm:h-[430px] md:h-[350px] lg:h-[438px] xl:h-[438px] object-cover absolute mix-blend-overlay "
+          className="w-full h-[500px] sm:h-[430px] md:h-[350px] lg:h-[438px] xl:h-[438px] object-cover absolute mix-blend-overlay "
           src="/assets/toy-bricks-table-with-word-blog.svg"
           alt="about-us"
         />
-        <div className="w-screen h-[480px] sm:h-[430px] md:h-[350px] lg:h-[438px] xl:h-[438px] flex flex-col md:flex-row items-center justify-center px-0 md:px-10 lg:px-16 xl:px-20 py-10 md:py-0 pb-0 ">
-          <div className="w-screen flex flex-col items-center justify-center md:items-start">
-            <h1 className="text-[52px]  sm:text-5xl md:text-4xl lg:text-5xl  xl:text-6xl font-bold text-darkblue-500 absolute z-1">
-              About Us
-            </h1>
-            <h1 className="text-[52px] sm:text-5xl md:text-4xl lg:text-5xl  xl:text-6xl font-bold text-gray-50 absolute pt-0 sm:pt-2 mt-2 z-20  ">
-              About Us
-            </h1>
-            <h1 className="text-[52px]  sm:text-5xl md:text-4xl lg:text-5xl  xl:text-6xl font-bold text-darkblue-500 absolute pt-4 sm:pt-8 z-10 ">
-              About Us
-            </h1>
+        <div className="w-screen h-[500px] sm:h-[430px] md:h-[350px] lg:h-[438px] xl:h-[438px] flex flex-col md:flex-row items-center justify-center px-0 md:px-10 lg:px-16 xl:px-20 py-12 md:py-0 pb-0 ">
+          <div className="w-screen flex flex-col items-center justify-center md:items-start mt-10 sm:mt-0 ">
+            <h1 className={styles.Blog2}>About Us</h1>
+            <h1 className={styles.Blog1}>About Us</h1>
+            <h1 className={styles.Blog3}>About Us</h1>
           </div>
 
-          <div className="flex flex-col text-center md:text-left items-center justify-center py-10 px-5 ">
+          <div className="flex flex-col text-center md:text-left items-center justify-center py-10 px-5 mb-5 md:mb-0 ">
             <p className="flex flex-wrap gap-[6px] text-2xl font-medium sm:text-3xl md:text-4xl text-white w-full py-5 items-center md:items-start justify-center md:justify-start ">
               Unleash your <span className="text-cyan2-500">potential</span> and
               rule the

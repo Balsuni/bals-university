@@ -112,7 +112,7 @@ const AboutUs = () => {
         </section>
 
         <section className="mb-12 flex items-center justify-center gap-8 lg:gap-20 xl:gap-36 ">
-          <main className="grid gap-8 grid-cols-1 grid-rows-6 sm:grid-cols-2 sm:grid-rows-3 xl:grid-cols-3 xl:grid-rows-2  ">
+          <main className="grid gap-8 grid-cols-1 grid-rows-6 sm:grid-cols-2 sm:grid-rows-3 xl:grid-cols-3 xl:grid-rows-2">
             <TeamCards
               src="/assets/team-member-avatar.svg"
               teamMemberName="James Okapa"
