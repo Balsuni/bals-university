@@ -6,6 +6,11 @@ import Image from "next/image";
 const ContactUs = () => {
   return (
     <Layout>
+      <div className="hidden lg:inline xl:inline">
+      <div className="relative top-[0px]">
+          <img src="/assets/contact-line.svg" className="absolute top-[30px] xl:left-[70px] lg:left-[-30px]" alt="" />
+      </div>
+      </div>
       <PageHeaderText
         title="Contact Us"
         backgroundImageSrc="/assets/toy-bricks-table-with-word-blog-contact.svg"
@@ -13,8 +18,9 @@ const ContactUs = () => {
         text="Any question or remarks? Just write us a message!"
       />
 
-      <div className="grid justify-items-center ml-auto mr-auto grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 md:grid-cols-2 gap-3 xl:gap-0 justify-center pl-10 shadow-lg rounded-2xl bg-gray-100 shadow-gray-500 w-fit p-10 my-24 mb-44">
-        <div className="">
+      <div className="shadow-lg  ml-auto mr-auto rounded-2xl bg-gray-100 shadow-gray-500 grid justify-items-center grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 md:grid-cols-2 gap-3 xl:gap-0  w-fit p-10 my-24 mb-44 justify-center pl-10">
+
+        <div>
           <h5 className="text-darkblue-500 font-bold text-2xl tracking-wider mt-10">
             Love to hear from you, <br /> Get in touch 👋
           </h5>
@@ -68,9 +74,31 @@ const ContactUs = () => {
             <img src="/assets/facebook.svg" alt="facebook logo" />
             <img src="/assets/twitter.svg" alt="twitter logo" />
           </div>
+          <div className="hidden xl:inline">
+          <div className="relative top-[-20px]">
+          <img src="/assets/letter_send 1.svg" className="absolute top-[-50px] left-[200px]" alt="" />
+          </div>
+          </div>
         </div>
 
         <div className="bg-darkblue-500 rounded-xl w-fit h-auto mt-10 xl:mt-0 lg:mt-0 lg:ml-10 md:ml-10 xl:ml-10 text-gray-50 pr-5 pb-20">
+          <div className="hidden xl:inline">
+          <div className="relative top-[222px]">
+          <img src="/assets/contact-design(2).svg" className="absolute top-[300px] left-[210px]" alt="" />
+          </div>
+          <div className="relative top-[222px]">
+          <img src="/assets/contact-design(3).svg" className="absolute top-[250px] left-[390px]" alt="" />
+          </div>
+          <div className="relative top-[222px]">
+          <img src="/assets/contact-design(4).svg" className="absolute top-[60px] left-[300px]" alt="" />
+          </div>
+          <div className="relative top-[222px]">
+          <img src="/assets/contact-design(5).svg" className="absolute top-[100px] left-[260px] w-[232px] h-[200px]" alt="" />
+          </div>
+          <div className="relative top-[222px]">
+          <img src="/assets/contact-design(6).svg" className="absolute top-[140px] left-[270px] w-[232px] h-[200px]" alt="" />
+          </div>
+          </div>
           <div className="flex flex-col px-3 pl-10 mt-10">
             <h5 className="font-semibold text-2xl tracking-wider">
               Others way to connect
@@ -169,7 +197,7 @@ const ContactUs = () => {
             </div>
           </div>
         </div>
-      </div>
+        </div>
     </Layout>
   );
 };
