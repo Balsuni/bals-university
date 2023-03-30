@@ -1,0 +1,87 @@
+.title3 {
+  z-index: 0;
+  display: flex;
+  opacity: 0.15;
+  color: #182e56;
+  font-size: 48px;
+  font-weight: 700;
+  margin-top: -7px;
+  stroke-width: 2px;
+  position: relative;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fbfbfb;
+
+  //   <h1 className="text-[48px]  sm:text-5xl md:text-4xl lg:text-5xl  xl:text-6xl font-bold text-darkblue-500 absolute z-1">
+
+  @media (min-width: 640px) {
+    margin-top: -12px;
+    font-size: 48px;
+  }
+  @media (min-width: 768px) {
+    font-size: 36px;
+    margin-top: -8px;
+  }
+  @media (min-width: 1024px) {
+    font-size: 48px;
+    margin-top: -10px;
+  }
+  @media (min-width: 1400px) {
+    font-size: 60px;
+    margin-top: -15px;
+  }
+}
+.title2 {
+  z-index: 10;
+  color: white;
+  display: flex;
+  font-size: 48px;
+  font-weight: 700;
+  position: absolute;
+  margin-top: 8px;
+
+  @media (min-width: 640px) {
+    font-size: 48px;
+    margin-top: 8px;
+  }
+  @media (min-width: 768px) {
+    font-size: 36px;
+    margin-top: 8px;
+  }
+  @media (min-width: 1024px) {
+    font-size: 48px;
+    margin-top: 8px;
+  }
+  @media (min-width: 1400px) {
+    font-size: 60px;
+  }
+}
+.title1 {
+  z-index: 0;
+  display: flex;
+  opacity: 0.15;
+  color: #182e56;
+  font-size: 48px;
+  font-weight: 700;
+  margin-top: -36px;
+  stroke-width: 2px;
+  position: relative;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fbfbfb;
+
+  @media (min-width: 640px) {
+    font-size: 48px;
+    margin-top: -32px;
+  }
+  @media (min-width: 768px) {
+    font-size: 36px;
+    margin-top: -23px;
+  }
+  @media (min-width: 1024px) {
+    font-size: 48px;
+    margin-top: -32px;
+  }
+  @media (min-width: 1400px) {
+    font-size: 60px;
+    margin-top: -42px;
+  }
+}
