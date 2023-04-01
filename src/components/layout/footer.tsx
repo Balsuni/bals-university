@@ -147,7 +147,6 @@ const Footer = () => {
                 <div className="flex gap-3">
                   <div>
                     <img src="/assets/footermail.svg" />
-                    <img src="/assets/footermail(1).svg" />
                   </div>
                   <Link href="/">info@bals.ng</Link>
                 </div>
