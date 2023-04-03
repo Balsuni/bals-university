@@ -28,28 +28,29 @@ const Navbar = () => {
             : "absolute lg:relative top-0 left-0 z-20 block "
         }`}
       >
-        {/* <ul className="flex items-center flex-col lg:flex-row pt-20 lg:pt-0 pb-20 lg:pb-0 gap-16 lg:gap-4 xl:gap-16 mt-24 sm:mt-28 lg:mt-0 w-screen lg:w-full text-gray-50 lg:text-gray-900 bg-darkblue-500 lg:bg-gray-50"> */}
         <ul className="w-screen lg:w-full absolute lg:relative flex items-center flex-col lg:flex-row pt-20 lg:pt-0 pb-20 lg:pb-0 gap-16 lg:gap-4 xl:gap-16 mt-24 sm:mt-28 lg:mt-0 text-gray-50 lg:text-gray-900 bg-darkblue-500 lg:bg-gray-50 ">
-          {" "}
           <li
-            className="flex items-center text-left gap-2 text-lg"
+            className="flex items-center text-left gap-2 text-lg py-2 border-b-4  border-darkblue-500 lg:border-bodyBackground hover:border-white lg:hover:border-darkblue-500"
             onClick={toggleNavbar}
           >
             <Link href="/route-2">About BALS </Link>
             <ArrowDown2 size="20" />
           </li>
-          <li className="text-lg text-left" onClick={toggleNavbar}>
+          <li
+            className="text-lg text-left py-2 border-b-4 border-darkblue-500 lg:border-bodyBackground hover:border-white lg:hover:border-darkblue-500"
+            onClick={toggleNavbar}
+          >
             <Link href="/route-2">Courses </Link>
           </li>
           <li
-            className=" flex items-center gap-2 text-lg"
+            className=" flex items-center gap-2 text-lg py-2 border-b-4 border-darkblue-500 lg:border-bodyBackground hover:border-white lg:hover:border-darkblue-500"
             onClick={toggleNavbar}
           >
             <Link href="/route-2">Features </Link>
             <ArrowDown2 size="20" />
           </li>
           <li
-            className="flex items-center gap-2 text-lg"
+            className="flex items-center gap-2 text-lg py-2 border-b-4 border-darkblue-500 lg:border-bodyBackground hover:border-white lg:hover:border-darkblue-500"
             onClick={toggleNavbar}
           >
             <Link href="/route-2">Resources </Link>
