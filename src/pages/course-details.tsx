@@ -13,25 +13,23 @@ const CourseDetails = () => {
             src="/assets/students.svg"
             alt="course-details logo"
           />
-          <div className="w-screen flex flex-col items-center md:items-start px-0 md:px-10 lg:px-16 xl:px-20  py-0 md:py-8 lg:py-12 xl:py-10  ">
-            <div className="w-screen flex flex-col items-center flex-wrap md:items-start py-10 sm:py-10 md:py-[70px] lg:py-16 xl:py-20">
-              <h1 className={styles.text3}>Fundamentals of LinkedIn</h1>
-              <h1 className={styles.text2}>Fundamentals of LinkedIn</h1>
-              <h1 className={styles.text1}>Fundamentals of LinkedIn</h1>
+          <div className="flex flex-col items-center px-0 md:px-10 lg:px-16 xl:px-20  py-0 md:py-5 lg:py-12 xl:py-10">
+            <div className="w-screen flex flex-col items-center flex-wrap md:items-start px-0 sm:px-5 md:px-10  py-10 sm:py-10 md:py-[30px] lg:py-12 xl:py-14">
+              <h1 className={styles.course3}>Fundamentals of LinkedIn</h1>
+              <h1 className={styles.course2}>Fundamentals of LinkedIn</h1>
+              <h1 className={styles.course1}>Fundamentals of LinkedIn</h1>
             </div>
-            <div className=" flex flex-col md:flex-row items-center justify-between bg-green-400  ">
-              <div className="flex flex-col gap-2">
+            <div className="w-full flex flex-col gap-8 sm:gap-0 sm:flex-row">
+              <div className="flex flex-col gap-2 px-5 md:px-0 ">
                 <h1 className="font-bold text-5xl text-gray-50">$20</h1>
                 <h2 className="text-xl font-bold text-bodyBackground ">
                   Available in English only
                 </h2>
                 <h3>*****</h3>
               </div>
-              <div>
-                <button className="flex font-normal text-lg items-center justify-center px-6 py-4 h-12 rounded-md text-darkblue-500 bg-gray-50 ">
-                  Pay Now
-                </button>
-              </div>
+              <button className="m-auto flex font-normal text-lg items-center justify-center px-6 py-4 h-12 rounded-md text-darkblue-500 bg-gray-50 ">
+                Pay Now
+              </button>
             </div>
           </div>
         </div>
