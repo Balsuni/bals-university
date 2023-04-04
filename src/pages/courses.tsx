@@ -33,7 +33,7 @@ const courses = () => {
         </div>
         </section>
 
-        <main className="bg-bodyBackground pb-10 relative inset-x-0 top-0 w-full h-screen m-0">
+        <main className="bg-bodyBackground w-full pb-10">
         
         <div className="flex flex-col gap-3 lg:flex-row shadow-lg shadow-gray-500 w-9/12 justify-around py-5 items-center mx-auto mb-auto">
             <div className="flex flex-col justify-center">
@@ -53,10 +53,6 @@ const courses = () => {
                 <h1 className="text-darkblue-500 font-extrabold text-lg mt-3">Result driven courses</h1>
                 <p className="text-gray-900 text-md font-thin">Success in the digital space</p>
             </div>
-        </div>
-
-        <div className="w-full ml-5 mr-5">
-            <h1>Recommended for you</h1>
         </div>
         </main>
     </Layout>
