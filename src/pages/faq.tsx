@@ -70,13 +70,13 @@ const FAQ = () => {
 
       <main className="w-full pt-12 sm:py-14 md:py-14 lg:py-16 xl:py-20 bg-bodyBackground">
 
-      <div className="">
+      <div>
       <h5 className="text-darkblue-500 font-semibold text-[26px] md:text-[26px] xl:text-[26px] lg:text-[26px] mt-28 tracking-wider text-center ml-5 mr-5">Frequently Asked Questions</h5>
       <div className="flex w-full flex-col gap-10 mt-16 ml-auto mr-auto items-center">
       {faqData.map((data) => {
-              return <div className="flex flex-col gap-5 lg:gap-7 w-fit md:w-9/12 xl:w-6/12  p-5 py-3 md:px-12 ml-5 mr-5" key={data.id}> 
+              return <div className="flex flex-col gap-5 lg:gap-7 w-fit sm:w-8/12 md:w-9/12 xl:w-6/12  p-0 py-3 md:px-12 ml-2 mr-2" key={data.id}> 
 
-              <div className="flex flex-row items-center justify-between w-full bg-gray-100 shadow-md shadow-gray-500 px-5 py-3">
+              <div className="flex flex-row items-center justify-between w-full bg-gray-100 shadow-md shadow-gray-500 px-2 sm:p-5 py-3">
               <p className="text-darkblue-800 font-bold tracking-normal text-md lg:text-lg pr-3">{data.title}
                </p>
                <img src="/assets/faqdashicon.svg" className="py-4 px-5 mr-5 ml-auto sm:ml-10" alt="" />
@@ -93,12 +93,12 @@ const FAQ = () => {
       <h5 className="text-darkblue-500 font-semibold text-[26px] md:text-[26px] xl:text-[26px] lg:text-[26px] mt-28 tracking-wider text-center ml-5 mr-5">Frequently Asked Questions</h5>
       <div className="flex w-full flex-col gap-10 mt-16 ml-auto mr-auto items-center">
       {secondFaqData.map((data) => {
-              return <div className="flex flex-col gap-5 lg:gap-7 w-9/12 sm:w-8/12 md:w-9/12 xl:w-8/12 bg-gray-50 p-5 py-10 md:px-12 ml-5 mr-5 rounded-3xl shadow-md shadow-gray-500" key={data.id}> 
+              return <div className="flex flex-col gap-5 lg:gap-7 w-11/12 sm:w-8/12 md:w-9/12 xl:w-8/12 bg-gray-50 p-5 py-10 md:px-12 ml-2 mr-2 rounded-3xl shadow-md shadow-gray-500" key={data.id}> 
 
               <div className="flex flex-row items-center justify-between w-full">
               <p className="w-fit text-darkblue-800 font-bold tracking-normal text-md lg:text-lg pr-3 break-normal">{data.title}
                </p>
-               <img src="/assets/arrowside.svg" className="bg-gray-100 shadow-xl py-4 px-5 rounded-full mr-5 ml-auto sm:ml-10" alt="" />
+               <img src="/assets/arrowside.svg" className="bg-gray-100 shadow-xl py-4 px-2 sm:px-5 rounded-full mr-5 ml-auto sm:ml-10" alt="" />
               </div>
               <div className="w-full mr-20 pr-16 hidden">
               <p className="">{data.content}</p>
