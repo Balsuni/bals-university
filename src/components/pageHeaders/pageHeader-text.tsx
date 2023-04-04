@@ -15,7 +15,7 @@ const PageHeaderText = (props: Props) => {
     <div>
       <div className="h-[380px] sm:h-[430px] md:h-[350px] lg:h-[438px] xl:h-[438px] bg-cover bg-center relative">
         <img
-          className="w-full h-[380px] sm:h-[430px] md:h-[350px] lg:h-[438px] xl:h-[438px] object-cover absolute mix-blend-overlay "
+          className="w-full h-[380px] sm:h-[430px] md:h-[350px] lg:h-[438px] xl:h-[438px] object-cover absolute mix-blend-overlay bg-darkblue-500"
           src={props.backgroundImageSrc}
           alt={props.backgroundImageAlt}
         />

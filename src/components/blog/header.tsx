@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div className="h-[500px] sm:h-[430px] md:h-[350px] lg:h-[438px] xl:h-[438px] bg-cover bg-center relative">
       <img
-        className="w-full h-[500px] sm:h-[430px] md:h-[350px] lg:h-[438px] xl:h-[438px] object-cover absolute mix-blend-overlay "
+        className="w-full h-[500px] sm:h-[430px] md:h-[350px] lg:h-[438px] xl:h-[438px] object-cover absolute mix-blend-overlay bg-darkblue-500"
         src={"/assets/toy-bricks-table-with-word-blog.svg"}
         alt={"blog"}
       />
