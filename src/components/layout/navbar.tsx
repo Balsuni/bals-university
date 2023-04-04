@@ -40,7 +40,7 @@ const Navbar = () => {
             className="text-lg text-left py-2 border-b-4 border-darkblue-500 lg:border-bodyBackground hover:border-white lg:hover:border-darkblue-500"
             onClick={toggleNavbar}
           >
-            <Link href="/route-2">Courses </Link>
+            <Link href="/courses">Courses </Link>
           </li>
           <li
             className=" flex items-center gap-2 text-lg py-2 border-b-4 border-darkblue-500 lg:border-bodyBackground hover:border-white lg:hover:border-darkblue-500"
