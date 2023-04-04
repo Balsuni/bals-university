@@ -13,7 +13,7 @@ const courses = () => {
             alt="course-details logo"
           />
           <div className="flex flex-col lg:flex-row items-center px-0 md:px-10 lg:px-16 xl:px-20  py-0 md:py-5 lg:py-12 xl:py-10">
-            <div className="w-screen flex flex-col items-start flex-wrap md:items-start px-5 py-10 sm:px-5 md:px-10 sm:py-5 md:py-[10px] lg:py-5 xl:py-14">
+            <div className="w-screen flex flex-col items-start flex-wrap md:items-start px-5 py-5 sm:px-5 md:px-10 sm:py-5 md:py-[10px] lg:py-5 xl:py-14">
               <h1 className={styles.course3}>Courses</h1>
               <h1 className={styles.course2}>Courses</h1>
               <h1 className={styles.course1}>Courses</h1>
@@ -21,10 +21,10 @@ const courses = () => {
             <div className="w-full mb-28 h-fit flex flex-col gap-3 lg:flex-row sm:gap-0 sm:flex-row xl:mr-28 lg:mt-10">
               <div className="w-full flex flex-col lg:flex-col gap-5 px-5 md:px-0 ">
                 <h1 className="font-bold text-2xl lg:text-5xl text-gray-50">Best selling courses on the planet</h1>
-                <h2 className="text-md font-md text-bodyBackground ">
+                <h2 className="text-sm sm:text-md lg:text-lg font-md text-bodyBackground">
                 Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim condimentum nibh et. Vestibulum a non pharetra volutpat. 
                 </h2>
-                <button className="w-fit my-auto font-normal text-lg items-center px-6 py-3 h-fit rounded-md text-darkblue-500 bg-gray-50 ">
+                <button className="w-fit my-auto font-normal text-md md:text-lg items-center px-4 py-2 lg:px-6 lg:py-4 h-fit rounded-md text-darkblue-500 bg-gray-50 ">
                 Get Started
               </button>
               </div>
