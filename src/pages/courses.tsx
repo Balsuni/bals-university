@@ -33,7 +33,7 @@ const courses = () => {
         </div>
         </section>
 
-        <main className="bg-bodyBackground w-full pb-10">
+        <main className="w-full pt-12 sm:py-14 md:py-14 lg:py-16 xl:py-20 bg-bodyBackground">
         
         <div className="flex flex-col gap-3 lg:flex-row shadow-lg shadow-gray-500 w-9/12 justify-around py-5 items-center mx-auto mb-auto">
             <div className="flex flex-col justify-center">
