@@ -1,8 +1,23 @@
 import Layout from "@/components/layout";
 import PageHeaderText from "@/components/pageHeaders/pageHeader-text";
-import React from "react";
+import React, { useState } from "react";
 
 const FAQ = () => {
+  const faqDefaultStyle = {
+    display: 'none',
+  }
+  const faqClickedStyle = {
+    display: 'inline',
+  }
+
+  interface UserData {
+    prevState: null
+  }
+
+  const [faqOneIsClicked, setFaqOneIsClicked] = useState(false);
+  const [faqTwoIsClicked, setFaqTwoIsClicked] = useState(false)
+  const [faqOneStyle, setFaqOneStyle] = useState(faqDefaultStyle)
+  const [faqTwoStyle, setFaqTwoStyle] = useState(faqDefaultStyle)
   const faqData = [
     {
       id: 1,
@@ -79,9 +94,25 @@ const FAQ = () => {
               <div className="flex flex-row items-center justify-between w-full bg-gray-100 shadow-md shadow-gray-500 px-2 sm:p-5 py-3">
               <p className="text-darkblue-800 font-medium tracking-normal text-md lg:text-lg pr-3">{data.title}
                </p>
-               <img src="/assets/faqdashicon.svg" className="py-4 px-5 mr-5 ml-auto sm:ml-10" alt="" />
+               <button onClick={() => {
+                setFaqOneIsClicked(true)
+                if (faqOneIsClicked) {
+                  setFaqOneIsClicked(false)
+                }
+               }}>
+               <img src={`${
+                faqOneIsClicked 
+                ? "/assets/faqdashicon.svg" 
+                : "/assets/faqplusicon.svg"
+                }`} 
+                className="py-4 px-5 mr-5 ml-auto sm:ml-10" alt="" />  
+               </button>
               </div>
-              <div className="w-full mr-20 pl-2 lg:pl-5 pr-16">
+              <div className={`${
+              faqOneIsClicked
+              ? "inline"
+              : "hidden"
+        }`}>
               <p className="">{data.content}</p>
               </div>
               </div>
@@ -98,9 +129,24 @@ const FAQ = () => {
               <div className="flex flex-row items-center justify-between w-full">
               <p className="w-fit text-darkblue-800 font-medium tracking-normal text-md lg:text-lg pr-3 break-normal">{data.title}
                </p>
-               <img src="/assets/arrowside.svg" className="bg-gray-100 shadow-xl py-4 px-2 sm:px-5 rounded-full mr-5 ml-auto sm:ml-10" alt="" />
+               <button onClick={() => {
+                setFaqTwoIsClicked(true)
+                if (faqTwoIsClicked) {
+                  setFaqTwoIsClicked(false)
+                }
+               }}>
+               <img src={`${
+                faqTwoIsClicked 
+                ? "/assets/arrowdown.svg" 
+                : "/assets/arrowside.svg"
+                }`} className={`${faqTwoIsClicked ? "bg-darkblue-600 shadow-xl py-5 px-1 sm:px-4 rounded-full mr-5 ml-auto sm:ml-10" : "bg-gray-100 shadow-xl py-4 px-2 sm:px-5 rounded-full mr-5 ml-auto sm:ml-10"}`} alt="" />
+               </button>
               </div>
-              <div className="w-full mr-20 pr-16 hidden">
+              <div className={`${
+              faqTwoIsClicked
+              ? "inline"
+              : "hidden"
+              }`}>
               <p className="">{data.content}</p>
               </div>
               </div>
@@ -114,3 +160,6 @@ const FAQ = () => {
 };
 
 export default FAQ;
+
+//className="w-full mr-20 pr-16"
+//className="w-full mr-20 pl-2 lg:pl-5 pr-16"
