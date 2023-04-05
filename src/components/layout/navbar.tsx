@@ -53,7 +53,7 @@ const Navbar = () => {
             </li>
 
             {openAbout && (
-              <main className="px-0 sm:px-5 py-4 w-screen lg:w-[1024px] bg-bodyBackground text-darkblue-500 absolute top-24 lg:top-20  -left-0 lg:-left-48 ">
+              <main className="px-0 sm:px-5 py-4 w-screen lg:w-[1024px] bg-bodyBackground text-darkblue-500 absolute top-24 lg:top-20  -left-0 lg:-left-48 z-30">
                 <div className="py-3 px-5 sm:px-10 text-gray-900 font-normal text-lg border-b-[2px] border-gray-400 ">
                   Overview
                 </div>
@@ -95,7 +95,7 @@ const Navbar = () => {
             </li>
 
             {openFeatures && (
-              <main className="px-5 py-4 w-screen lg:w-[1024px] bg-bodyBackground text-darkblue-500 absolute top-[315px] lg:top-20  -left-0 lg:-left-48">
+              <main className="px-5 py-4 w-screen lg:w-[1024px] bg-bodyBackground text-darkblue-500 absolute top-[315px] lg:top-20  -left-0 lg:-left-48 z-30 ">
                 <div className="py-3 px-5 sm:px-10 text-gray-900 font-normal text-lg border-b-[2px] border-gray-400 ">
                   Overview
                 </div>
@@ -131,7 +131,7 @@ const Navbar = () => {
             </li>
 
             {openResources && (
-              <main className="px-5 py-4 w-screen lg:w-[1024px] bg-bodyBackground text-darkblue-500 absolute top-[425px] lg:top-20  -left-0 lg:-left-48 z-10 ">
+              <main className="px-5 py-4 w-screen lg:w-[1024px] bg-bodyBackground text-darkblue-500 absolute top-[425px] lg:top-20  -left-0 lg:-left-48 z-30 ">
                 <div className="py-3 px-5 sm:px-10 text-gray-900 font-normal text-lg border-b-[2px] border-gray-400 ">
                   Overview
                 </div>
