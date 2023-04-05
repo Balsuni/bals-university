@@ -3,21 +3,8 @@ import PageHeaderText from "@/components/pageHeaders/pageHeader-text";
 import React, { useState } from "react";
 
 const FAQ = () => {
-  const faqDefaultStyle = {
-    display: 'none',
-  }
-  const faqClickedStyle = {
-    display: 'inline',
-  }
-
-  interface UserData {
-    prevState: null
-  }
-
   const [faqOneIsClicked, setFaqOneIsClicked] = useState(false);
   const [faqTwoIsClicked, setFaqTwoIsClicked] = useState(false)
-  const [faqOneStyle, setFaqOneStyle] = useState(faqDefaultStyle)
-  const [faqTwoStyle, setFaqTwoStyle] = useState(faqDefaultStyle)
   const faqData = [
     {
       id: 1,
