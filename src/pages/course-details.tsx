@@ -1,7 +1,82 @@
 import Layout from "@/components/layout";
-import React from "react";
+import React, { useState } from "react";
 import styles from "../styles/pageHeaderImage.module.scss";
 import InstructorCard from "@/components/course-details/instructor";
+import { WeeklyOutlineData } from "@/components/course-details/courseDetailsData";
+
+type Props = {
+  weekNumber: number;
+  topic: string;
+  objectives1: string;
+  objectives2: string;
+  objectives3: string;
+  syllabus1: string;
+  syllabus2: string;
+  syllabus3: string;
+  courseMaterials: string;
+};
+
+const WeeklyOutline = (props: Props) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleOpen = () => {
+    console.log("clicked");
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <section className="pt-12">
+      <h2 className="px-0 sm:px-5 lg:px-10  text-gray-900 font-medium text-xl mb-3">
+        Week {props.weekNumber}
+      </h2>
+      <h1
+        onClick={toggleOpen}
+        className="px-0 sm:px-5 lg:px-10  text-gray-900 font-normal text-2xl mb-5 flex flex-row items-center justify-between "
+      >
+        {props.topic}
+        {isOpen ? (
+          <img src="/assets/coursedetails-arrow-up.svg" alt="arrow up" />
+        ) : (
+          <img src="/assets/coursedetails-arrow-down.svg" alt="arrow down" />
+        )}
+      </h1>
+
+      {isOpen && (
+        <div className="bg-darkblue-50 py-4 pl-3 sm:pl-6 lg:pl-14   pr-3 sm:pr-6 lg:pr-10 ">
+          <div className="mb-6">
+            <h2 className="mb-4 text-xl font-bold text-gray-900">Objectives</h2>
+            <ul className="text-gray-900 font-normal text-lg sm:text-xl ml-11 list-disc  ">
+              <li>{props.objectives1}</li>
+              <li>{props.objectives2}</li>
+              <li>{props.objectives3}</li>
+            </ul>
+          </div>
+
+          <div className="mb-6">
+            <h2 className="mb-4  text-xl font-bold text-gray-900">
+              Syllabus / Sub Topics
+            </h2>
+            <ul className="text-gray-900 font-normal text-lg sm:text-xl ml-11 list-disc  ">
+              <li>{props.syllabus1}</li>
+              <li>{props.syllabus2}</li>
+              <li>{props.syllabus3}</li>
+            </ul>
+          </div>
+
+          <div className="mb-6">
+            <h2 className="mb-4 text-xl font-bold text-gray-900">
+              Course Materials
+            </h2>
+
+            <h3 className="text-gray-900 font-normal text-lg sm:text-xl ml-5 list-disc  ">
+              {props.courseMaterials}
+            </h3>
+          </div>
+        </div>
+      )}
+    </section>
+  );
+};
 
 const CourseDetails = () => {
   return (
@@ -86,114 +161,30 @@ const CourseDetails = () => {
           </div>
         </section>
 
-        <section className="pt-28">
-          <h2 className="px-0 sm:px-5 lg:px-10  text-gray-900 font-medium text-xl mb-3">
-            Week 1
-          </h2>
-          <h1 className="px-0 sm:px-5 lg:px-10  text-gray-900 font-normal text-2xl mb-5 flex flex-row items-center justify-between ">
-            What is LinkedIn
-            <img src="/assets/coursedetails-arrow-down.svg" alt="arrow down" />
-          </h1>
-          <div className="bg-darkblue-50 py-4 pl-3 sm:pl-6 lg:pl-14   pr-3 sm:pr-6 lg:pr-10 ">
-            <div className="mb-6">
-              <h2 className="mb-4 text-xl font-bold text-gray-900">
-                Objectives
-              </h2>
-              <ul className="text-gray-900 font-normal text-lg sm:text-xl ml-11 list-disc  ">
-                <li>
-                  Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum
-                  nibh et. Vestibulum a non ph ar e t ravolutpatpe
-                </li>
-                <li>
-                  Ilentesque placerat arcu dignissim condimentum nibh et.
-                  Vestibulum a non
-                </li>
-                <li>
-                  Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum
-                  nibh et. Vestibulum a non ph ar e t ravol utpat pellente
-                </li>
-              </ul>
-            </div>
-
-            <div className="mb-6">
-              <h2 className="mb-4  text-xl font-bold text-gray-900">
-                Syllabus / Sub Topics
-              </h2>
-              <ul className="text-gray-900 font-normal text-lg sm:text-xl ml-11 list-disc  ">
-                <li>
-                  Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum
-                  nibh et. Vestibulum a non ph ar e t ravolutpatpe
-                </li>
-                <li>
-                  Ilentesque placerat arcu dignissim condimentum nibh et.
-                  Vestibulum a non
-                </li>
-                <li>
-                  Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum
-                  nibh et. Vestibulum a non ph ar e t ravol utpat pellente
-                </li>
-              </ul>
-            </div>
-
-            <div className="mb-6">
-              <h2 className="mb-4 text-xl font-bold text-gray-900">
-                Course Materials
-              </h2>
-
-              <h3 className="text-gray-900 font-normal text-lg sm:text-xl ml-5 list-disc  ">
-                Textbook, Articles, supplementary resources. Lorem ipsum dolor
-                sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum
-                a non ph ar e t ravolutpatpe llentesque placerat ar
-              </h3>
-            </div>
-          </div>
-        </section>
-
-        <section className="pt-12">
-          <h2 className="px-0 sm:px-5 lg:px-10  text-gray-900 font-medium text-xl mb-3">
-            Week 1
-          </h2>
-          <h1 className="px-0 sm:px-5 lg:px-10  text-gray-900 font-normal text-2xl mb-5 flex flex-row items-center justify-between ">
-            What is LinkedIn
-            <img src="/assets/coursedetails-arrow-down.svg" alt="arrow down" />
-          </h1>
-        </section>
-
-        <section className="pt-12">
-          <h2 className="px-0 sm:px-5 lg:px-10  text-gray-900 font-medium text-xl mb-3">
-            Week 1
-          </h2>
-          <h1 className="px-0 sm:px-5 lg:px-10  text-gray-900 font-normal text-2xl mb-5 flex flex-row items-center justify-between ">
-            What is LinkedIn
-            <img src="/assets/coursedetails-arrow-down.svg" alt="arrow down" />
-          </h1>
-        </section>
-
-        <section className="pt-12">
-          <h2 className="px-0 sm:px-5 lg:px-10  text-gray-900 font-medium text-xl mb-3">
-            Week 1
-          </h2>
-          <h1 className="px-0 sm:px-5 lg:px-10  text-gray-900 font-normal text-2xl mb-5 flex flex-row items-center justify-between ">
-            What is LinkedIn
-            <img src="/assets/coursedetails-arrow-down.svg" alt="arrow down" />
-          </h1>
-        </section>
-
-        <section className="pt-12">
-          <h2 className="px-0 sm:px-5 lg:px-10  text-gray-900 font-medium text-xl mb-3">
-            Week 1
-          </h2>
-          <h1 className="px-0 sm:px-5 lg:px-10  text-gray-900 font-normal text-2xl mb-5 flex flex-row items-center justify-between ">
-            What is LinkedIn
-            <img src="/assets/coursedetails-arrow-down.svg" alt="arrow down" />
-          </h1>
+        <section className="mt-12">
+          {WeeklyOutlineData.map((items) => {
+            return (
+              <div key={items.id}>
+                <WeeklyOutline
+                  weekNumber={items.week}
+                  topic={items.topic}
+                  objectives1={items.objectives1}
+                  objectives2={items.objectives2}
+                  objectives3={items.objectives3}
+                  syllabus1={items.syllabus1}
+                  syllabus2={items.syllabus2}
+                  syllabus3={items.syllabus3}
+                  courseMaterials={items.courseMaterials}
+                />
+              </div>
+            );
+          })}
         </section>
 
         <div className="py-14 flex flex-row gap-10 sm:gap-24 lg:gap-24 px-0 sm:px-5  lg:px-10 text-darkblue-500 font-bold text-2xl uppercase ">
           <h1>reviews</h1>
           <h1>faqs</h1>
         </div>
-
         <section>
           <h1 className="text-darkblue-900 font-medium text-2xl sm:text-3xl md:text-4xl">
             Message from instructor
@@ -211,7 +202,6 @@ const CourseDetails = () => {
             />
           </div>
         </section>
-
         <section className="text-darkblue-900 flex flex-col lg:flex-row gap-5 items-center justify-between">
           <div className="sm:w-full px-0 sm:px-12 md:px-24 lg:px-0 py-12">
             <h1 className="text-3xl sm:text-4xl font-medium mb-4 ">
