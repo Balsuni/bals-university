@@ -35,6 +35,65 @@ const Footer = () => {
     },
   ];
 
+  const companyFooterLinks = [
+    {
+      id: 1,
+      title: 'About Us',
+      href: '/about-us',
+    },
+    {
+      id: 2,
+      title: 'Affiliate',
+      href: '/affiliate',
+    },
+    {
+      id: 3,
+      title: 'Blog',
+      href: '/blog',
+    },
+    {
+      id: 4,
+      title: 'FAQ',
+      href: '/faq',
+    },
+  ]
+
+  const categoriesFooterLinks = [
+    {
+      id: 1,
+      title: 'Skill Acquisition',
+      href: '/',
+    },
+    {
+      id: 2,
+      title: 'Talent Acquisition',
+      href: '/',
+    },
+  ]
+
+  const quicklinksFooterLinks = [
+    {
+      id: 1,
+      title: 'Site Map',
+      href: '/',
+    },
+    {
+      id: 2,
+      title: 'Help',
+      href: '/',
+    },
+    {
+      id: 3,
+      title: 'Privacy Policy',
+      href: '/privacy-policy',
+    },
+    {
+      id: 4,
+      title: 'Terms and Conditions',
+      href: '/terms-and-conditions',
+    },
+  ]
+
   return (
     <FooterWrapper>
       <FooterFlexWrapper>
@@ -61,7 +120,7 @@ const Footer = () => {
             />
             <button
               type="submit"
-              className="bg-cyan1-500 px-7 py-1 rounded-lg text-gray-100"
+              className="bg-cyan1-500 active:bg-cyan1-700 hover:bg-cyan1-400  px-7 py-1 rounded-lg text-gray-100"
             >
               Submit
             </button>
@@ -95,55 +154,40 @@ const Footer = () => {
           <div className="mt-24 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 lg:grid-cols-2 xl:grid-cols-4 lg:gap-5 xl:gap-2">
             <FooterLinks>
               <FooterLinksParagraph>Company</FooterLinksParagraph>
-              <li>
-                <Link href="/about-us">About Us</Link>
-              </li>
-              <li>
-                <Link href="/affiliate">Affiliate</Link>
-              </li>
-              <li>
-                <Link href="/blog">Blog</Link>
-              </li>
-              <li>
-                <Link href="/faq">FAQ</Link>
-              </li>
+              {companyFooterLinks.map((company) => (
+                <li className="active:text-cyan2-300 hover:text-cyan2-500" key={company.id}>
+                  <Link href={company.href}>{company.title}</Link>
+                </li>
+              ))}
             </FooterLinks>
 
             <FooterLinks>
               <FooterLinksParagraph>Categories</FooterLinksParagraph>
-              <li>
-                <Link href="/">Skill Acquisition</Link>
-              </li>
-              <li>
-                <Link href="/">Talent Acquisition</Link>
-              </li>
+              {categoriesFooterLinks.map((category) => (
+                <li className="active:text-cyan2-300 hover:text-cyan2-500" key={category.id}>
+                  <Link href={category.href}>{category.title}</Link>
+                </li>
+              ))}
             </FooterLinks>
 
             <FooterLinks>
               <FooterLinksParagraph>Quick Links</FooterLinksParagraph>
-              <li>
-                <Link href="/">Sitemap</Link>
-              </li>
-              <li>
-                <Link href="/">Help</Link>
-              </li>
-              <li>
-                <Link href="/privacy-policy">Privacy Policy</Link>
-              </li>
-              <li>
-                <Link href="/terms-and-conditions">Terms and Conditions</Link>
-              </li>
+              {quicklinksFooterLinks.map((quicklink) => (
+                <li className="active:text-cyan2-300 hover:text-cyan2-500" key={quicklink.id}>
+                  <Link href={quicklink.href}>{quicklink.title}</Link>
+                </li>
+              ))}
             </FooterLinks>
 
             <FooterLinks>
               <FooterLinksParagraph>Contact Us</FooterLinksParagraph>
-              <li>
+              <li className="active:text-cyan2-300 hover:text-cyan2-500">
                 <div className="flex gap-3">
                   <img src="/assets/footerphoneicon.svg" />
                   <Link href="/">+ 234 (0) 234 234 234</Link>
                 </div>
               </li>
-              <li>
+              <li className="active:text-cyan2-300 hover:text-cyan2-500">
                 <div className="flex gap-3">
                   <div>
                     <img src="/assets/footermail.svg" />
