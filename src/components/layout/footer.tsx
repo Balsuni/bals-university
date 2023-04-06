@@ -99,7 +99,7 @@ const Footer = () => {
                 <Link href="/about-us">About Us</Link>
               </li>
               <li>
-                <Link href="/">Affiliate</Link>
+                <Link href="/affiliate">Affiliate</Link>
               </li>
               <li>
                 <Link href="/blog">Blog</Link>

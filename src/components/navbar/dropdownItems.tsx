@@ -39,7 +39,7 @@ export const FeaturesMenu = [
   },
   {
     id: 2,
-    href: "/",
+    href: "/affiliate",
     title: "Affiliate",
     content:
       "Lorem ipsum dolor sit amet consectetur. Mauris cras neque in ultricies at. Elit venenatis ultricies dignissim bibendum. Aliquet sollicitudin ",
