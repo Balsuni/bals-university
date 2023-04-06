@@ -1,7 +1,53 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Layout from "@/components/layout";
 import styles from "../styles/pageHeaderImage.module.scss";
 import InstructorCard from "@/components/course-details/instructor";
+
+type Props = {
+    title: string;
+    content: string;
+  };
+
+  const Faq = (props: Props) => {
+    const [isOpen, setIsOpen] = useState(false);
+  
+    const toggleOpen = () => {
+      console.log("clicked");
+      setIsOpen(!isOpen);
+    };
+  
+    return (
+      <>
+      <div
+        onClick={toggleOpen}
+        className="flex flex-row items-center justify-between w-full border-b-2 border-lineColor px-2 sm:p-5"
+      >
+        <p  className="text-darkblue-800 font-medium tracking-normal text-md lg:text-lg pr-3">
+          {props.title}
+        </p>
+        {isOpen ? (
+          <img
+            src="/assets/faqdashicon.svg"
+            className="py-4 px-5 mr-5 ml-auto sm:ml-10"
+            alt=""
+          />
+        ) : (
+          <img
+            src="/assets/faqplusicon.svg"
+            className="py-4 px-5 mr-5 ml-auto sm:ml-10"
+            alt=""
+          />
+        )}
+      </div>
+
+      {isOpen && (
+        <div className="w-full mr-20 pl-2 lg:pl-2 pr-16 bg-darkblue-50 py-2">
+          <p className="">{props.content}</p>
+        </div>
+      )}
+      </>
+    );
+  };
 
 const affiliate = () => {
 
@@ -230,30 +276,22 @@ const affiliate = () => {
 
 
         <section className="flex flex-col items-center justify-center px-5 sm:px-12 md:px-14 lg:px-16 xl:px-16 mt-10">
-          <h5 className="text-darkblue-500 font-semibold text-2xl sm:text-3xl md:sm:text-4xl mt-12 tracking-wider text-center">
+          <h5 className="text-darkblue-500 font-semibold text-2xl sm:text-3xl md:sm:text-4xl mt-12 tracking-wider text-center pb-10">
             Frequently Asked Questions
           </h5>
-          <div className="flex flex-col gap-10 mt-10 mb-5">
-            {faqData.map((data) => {
-              return (
-                <div className="flex flex-col w-fit" key={data.id}>
-                  <div className="flex gap-5 lg:gap-14 flex-row lg:justify-between w-fit border-b-2 border-lineColor  p-5 md:px-10  ml-auto mr-auto">
-                    <p className="font-normal text-xl">{data.title}</p>
-                    <img
-                      src="/assets/plusicon.svg"
-                      className="ml-5 sm:ml-10"
-                      alt=""
-                    />
-                  </div>
-                  <div className="w-full ml-3 mr-3 sm:w-fit sm:ml-5 sm:mr-5 md:w-9/12 lg:w-7/12 break-words md:ml-auto md:mr-auto mt-3 bg-darkblue-50">
-                    <p className="break-words text-lg font-normal ml-2 mr-2">
-                      {data.content}
-                    </p>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
+          <div className="flex w-full flex-col gap-10 ml-auto mr-auto items-center">
+
+      {faqData.map((data) => {
+            return (
+              <div
+                className="flex flex-col gap-5 lg:gap-7 w-fit sm:w-8/12 md:w-9/12 xl:w-6/12  p-0 py-3 md:px-12 ml-2 mr-2"
+                key={data.id}
+              >
+                <Faq title={data.title} content={data.content} />
+              </div>
+            );
+          })}
+      </div>
         </section>
         </main>
 
