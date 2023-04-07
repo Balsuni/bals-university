@@ -2,11 +2,11 @@ import React from "react";
 
 export const CoursesCardMedium = () => {
   return (
-    <div className="flex flex-col bg-darkblue-50 w-fit sm:w-[350px] sm:h-[500px] pb-5 rounded-xl">
+    <div className="flex flex-col bg-darkblue-50 w-fit sm:w-[500px] sm:h-[600px] pb-5 rounded-xl">
       <div className="h-auto">
         <img
           src="/assets/courses_1.svg"
-          className="sm:w-[350px] w-full rounded-t-xl"
+          className="sm:w-[500px] w-full rounded-t-xl"
           alt=""
         />
       </div>
@@ -42,11 +42,11 @@ export const CoursesCardMedium = () => {
 
 export const CoursesCardSmall = () => {
   return (
-    <div className="flex flex-col bg-darkblue-50 w-fit lg:w-[350px] lg:h-[350px] pb-5 rounded-xl">
+    <div className="flex flex-col bg-darkblue-50 w-fit sm:[w-500px] lg:w-[350px] lg:h-[350px] pb-5 rounded-xl">
       <div className="h-auto">
         <img
           src="/assets/courses_1.svg"
-          className="lg:w-[350px] rounded-t-xl"
+          className="lg:w-[350px] rounded-t-xl sm:w-[500px]"
           alt=""
         />
       </div>
