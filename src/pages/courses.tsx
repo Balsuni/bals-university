@@ -182,7 +182,7 @@ const courses = () => {
             Get started with these free courses
           </h5>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 lg:gap-32 xl:grid-cols-5 lg:flex-row items-center gap-10 xl:gap-96 mt-10 ml-5 lg:ml-20 mr-3 overflow-y-auto lg:overflow-x-auto">
+          <div className="grid justify-center md:grid-cols-2 lg:grid-cols-3 lg:gap-32 xl:grid-cols-5 lg:flex-row items-center gap-10 xl:gap-96 mt-10 ml-5 lg:ml-20 mr-3  lg:overflow-x-auto overflow-hidden">
             <CoursesCardSmall />
             <CoursesCardSmall />
             <CoursesCardSmall />
@@ -212,7 +212,7 @@ const courses = () => {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 lg:gap-32 xl:grid-cols-5 lg:flex-row items-center gap-10 xl:gap-96 mt-10 ml-5 lg:ml-20 mr-3 overflow-y-auto lg:overflow-x-auto">
+          <div className="grid md:grid-cols-2 justify-center lg:grid-cols-3 lg:gap-32 xl:grid-cols-5 lg:flex-row items-center gap-10 xl:gap-96 mt-10 ml-5 lg:ml-20 mr-3 overflow-hidden lg:overflow-x-auto">
             <CoursesCardMedium />
             <CoursesCardMedium />
             <CoursesCardMedium />
@@ -221,7 +221,7 @@ const courses = () => {
           </div>
         </section>
 
-        <section className="flex flex-col items-center justify-center px-5 sm:px-12 md:px-14 lg:px-16 xl:px-16 mt-10">
+        <section className="flex flex-col items-center justify-center px-5 sm:px-12 md:px-14 lg:px-16 xl:px-16 mt-20">
           <h5 className="text-darkblue-500 font-semibold text-2xl sm:text-3xl md:sm:text-4xl mt-12 tracking-wider text-center pb-10">
             Frequently Asked Questions
           </h5>
