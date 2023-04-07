@@ -38,61 +38,61 @@ const Footer = () => {
   const companyFooterLinks = [
     {
       id: 1,
-      title: 'About Us',
-      href: '/about-us',
+      title: "About Us",
+      href: "/about-us",
     },
     {
       id: 2,
-      title: 'Affiliate',
-      href: '/affiliate',
+      title: "Affiliate",
+      href: "/affiliate",
     },
     {
       id: 3,
-      title: 'Blog',
-      href: '/blog',
+      title: "Blog",
+      href: "/blog",
     },
     {
       id: 4,
-      title: 'FAQ',
-      href: '/faq',
+      title: "FAQ",
+      href: "/faq",
     },
-  ]
+  ];
 
   const categoriesFooterLinks = [
     {
       id: 1,
-      title: 'Skill Acquisition',
-      href: '/',
+      title: "Skill Acquisition",
+      href: "/",
     },
     {
       id: 2,
-      title: 'Talent Acquisition',
-      href: '/',
+      title: "Talent Acquisition",
+      href: "/",
     },
-  ]
+  ];
 
   const quicklinksFooterLinks = [
     {
       id: 1,
-      title: 'Site Map',
-      href: '/',
+      title: "Site Map",
+      href: "/",
     },
     {
       id: 2,
-      title: 'Help',
-      href: '/',
+      title: "Help",
+      href: "/",
     },
     {
       id: 3,
-      title: 'Privacy Policy',
-      href: '/privacy-policy',
+      title: "Privacy Policy",
+      href: "/privacy-policy",
     },
     {
       id: 4,
-      title: 'Terms and Conditions',
-      href: '/terms-and-conditions',
+      title: "Terms and Conditions",
+      href: "/terms-and-conditions",
     },
-  ]
+  ];
 
   return (
     <FooterWrapper>
@@ -155,7 +155,10 @@ const Footer = () => {
             <FooterLinks>
               <FooterLinksParagraph>Company</FooterLinksParagraph>
               {companyFooterLinks.map((company) => (
-                <li className="active:text-cyan2-300 hover:text-cyan2-500" key={company.id}>
+                <li
+                  className="active:text-cyan2-300 hover:text-cyan2-500"
+                  key={company.id}
+                >
                   <Link href={company.href}>{company.title}</Link>
                 </li>
               ))}
@@ -164,7 +167,10 @@ const Footer = () => {
             <FooterLinks>
               <FooterLinksParagraph>Categories</FooterLinksParagraph>
               {categoriesFooterLinks.map((category) => (
-                <li className="active:text-cyan2-300 hover:text-cyan2-500" key={category.id}>
+                <li
+                  className="active:text-cyan2-300 hover:text-cyan2-500"
+                  key={category.id}
+                >
                   <Link href={category.href}>{category.title}</Link>
                 </li>
               ))}
@@ -173,7 +179,10 @@ const Footer = () => {
             <FooterLinks>
               <FooterLinksParagraph>Quick Links</FooterLinksParagraph>
               {quicklinksFooterLinks.map((quicklink) => (
-                <li className="active:text-cyan2-300 hover:text-cyan2-500" key={quicklink.id}>
+                <li
+                  className="active:text-cyan2-300 hover:text-cyan2-500"
+                  key={quicklink.id}
+                >
                   <Link href={quicklink.href}>{quicklink.title}</Link>
                 </li>
               ))}

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 type Props = {
   children: React.ReactNode;
@@ -6,8 +6,10 @@ type Props = {
 
 const FooterLinks = (props: Props) => {
   return (
-    <ul className="flex flex-col gap-2 text-md tracking-wider">{props.children}</ul>
-  )
-}
+    <ul className="flex flex-col gap-2 text-md tracking-wider">
+      {props.children}
+    </ul>
+  );
+};
 
-export default FooterLinks
+export default FooterLinks;
