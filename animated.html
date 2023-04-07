@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tailwind CSS Animated Images</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .images-container {
+        width: 100vw;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+
+      .image {
+        display: inline-block;
+        vertical-align: middle;
+        animation: slideInRight 5s linear infinite;
+      }
+
+      @keyframes slideInRight {
+        0% {
+          transform: translateX(-1100%);
+        }
+        100% {
+          transform: translateX(1300%);
+        }
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-100">
+    <div class="flex justify-center items-center h-screen">
+      <div class="images-container gap-4">
+        <img
+          src="https://via.placeholder.com/150"
+          alt="Animated Image 1"
+          class="h-24 w-24 image"
+        />
+        <img
+          src="https://via.placeholder.com/150"
+          alt="Animated Image 2"
+          class="h-24 w-24 image"
+        />
+        <img
+          src="https://via.placeholder.com/150"
+          alt="Animated Image 3"
+          class="h-24 w-24 image"
+        />
+        <img
+          src="https://via.placeholder.com/150"
+          alt="Animated Image 4"
+          class="h-24 w-24 image"
+        />
+        <img
+          src="https://via.placeholder.com/150"
+          alt="Animated Image 5"
+          class="h-24 w-24 image"
+        />
+      </div>
+    </div>
+  </body>
+</html>

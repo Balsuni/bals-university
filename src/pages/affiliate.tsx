@@ -8,7 +8,7 @@ type Props = {
   content: string;
 };
 
-const Faq = (props: Props) => {
+export const Faq = (props: Props) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleOpen = () => {
