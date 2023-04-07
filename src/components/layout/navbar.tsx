@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
   ArrowDown2,
   HambergerMenu,
@@ -14,16 +14,157 @@ import {
   ResourcesMenu,
 } from "../navbar/dropdownItems";
 
-const Navbar = () => {
+const DropdownResourcesMenu = () => {
+  const [openMenu, setOpenMenu] = useState(false);
+
+  const mainMenuRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    let aboutHandler = (e: any) => {
+      if (!mainMenuRef.current?.contains(e.target)) {
+        setOpenMenu(false);
+        console.log(mainMenuRef.current);
+      }
+    };
+    document.addEventListener("mousedown", aboutHandler);
+
+    return () => {
+      document.removeEventListener("mousedown", aboutHandler);
+    };
+  }, []);
+
+  return (
+    <div>
+      <li
+        className="flex items-center text-left gap-2 text-lg py-2 border-b-2  border-darkblue-500 lg:border-bodyBackground hover:border-white lg:hover:border-darkblue-500"
+        onClick={() => setOpenMenu((prev) => !prev)}
+      >
+        <h2>Resources </h2>
+        {!openMenu ? <ArrowDown2 size="20" /> : <ArrowUp2 size="20" />}
+      </li>
+      <div ref={mainMenuRef}>
+        {openMenu && (
+          <main className="px-0 sm:px-5 py-4 w-screen lg:w-[1024px] bg-bodyBackground text-darkblue-500 absolute top-24 lg:top-20  -left-0 lg:-left-48 z-30">
+            <div className="py-3 px-5 sm:px-10 text-gray-900 font-normal text-lg border-b-[2px] border-gray-400 ">
+              Overview
+            </div>
+            <section className="text-[16px] py-5 px-5 sm:px-10 gap-8 grid grid-cols-2 grid-rows-2 pt-2 ">
+              {ResourcesMenu.map((items) => {
+                return (
+                  <div key={items.id}>
+                    <Link
+                      href={items.href}
+                      className="text-darkblue-500 flex flex-row gap-2 items-center "
+                    >
+                      {items.title} <ArrowRight size="20" color="#162A5A" />
+                    </Link>
+                    <h1 className="text-gray-500">{items.content}</h1>
+                  </div>
+                );
+              })}
+            </section>
+          </main>
+        )}
+      </div>
+    </div>
+  );
+};
+
+const DropdownFeaturesMenu = () => {
+  const [openMenu, setOpenMenu] = useState(false);
+
+  const mainMenuRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    let aboutHandler = (e: any) => {
+      if (!mainMenuRef.current?.contains(e.target)) {
+        setOpenMenu(false);
+        console.log(mainMenuRef.current);
+      }
+    };
+    document.addEventListener("mousedown", aboutHandler);
+
+    return () => {
+      document.removeEventListener("mousedown", aboutHandler);
+    };
+  }, []);
+
+  return (
+    <div>
+      <li
+        className="flex items-center text-left gap-2 text-lg py-2 border-b-2  border-darkblue-500 lg:border-bodyBackground hover:border-white lg:hover:border-darkblue-500"
+        onClick={() => setOpenMenu((prev) => !prev)}
+      >
+        <h2>Features </h2>
+        {!openMenu ? <ArrowDown2 size="20" /> : <ArrowUp2 size="20" />}
+      </li>
+      <div ref={mainMenuRef}>
+        {openMenu && (
+          <main className="px-0 sm:px-5 py-4 w-screen lg:w-[1024px] bg-bodyBackground text-darkblue-500 absolute top-24 lg:top-20  -left-0 lg:-left-48 z-30">
+            <div className="py-3 px-5 sm:px-10 text-gray-900 font-normal text-lg border-b-[2px] border-gray-400 ">
+              Overview
+            </div>
+            <section className="text-[16px] py-5 px-5 sm:px-10 gap-8 grid grid-cols-2 grid-rows-2 pt-2 ">
+              {FeaturesMenu.map((items) => {
+                return (
+                  <div key={items.id}>
+                    <Link
+                      href={items.href}
+                      className="text-darkblue-500 flex flex-row gap-2 items-center "
+                    >
+                      {items.title} <ArrowRight size="20" color="#162A5A" />
+                    </Link>
+                    <h1 className="text-gray-500">{items.content}</h1>
+                  </div>
+                );
+              })}
+            </section>
+          </main>
+        )}
+      </div>
+    </div>
+  );
+};
+
+const Navbar: React.FC = () => {
   const [navbar, setNavbar] = useState(true);
-  const [openAbout, setOpenAbout] = useState(false);
-  const [openFeatures, setOpenFeatures] = useState(false);
-  const [openResources, setOpenResources] = useState(false);
+  const [openMenu, setOpenMenu] = useState(false);
 
   const toggleNavbar = () => {
     console.log("clicked");
     setNavbar(!navbar);
   };
+
+  const menuRef = useRef<HTMLDivElement | null>(null);
+  const aboutRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    let navBarHandler = (e: any) => {
+      if (!menuRef.current?.contains(e.target)) {
+        setNavbar(true);
+        console.log(menuRef.current);
+      }
+    };
+    document.addEventListener("mousedown", navBarHandler);
+
+    return () => {
+      document.removeEventListener("mousedown", navBarHandler);
+    };
+  }, []);
+
+  useEffect(() => {
+    let aboutHandler = (e: any) => {
+      if (!aboutRef.current?.contains(e.target)) {
+        setOpenMenu(false);
+        console.log(aboutRef.current);
+      }
+    };
+    document.addEventListener("mousedown", aboutHandler);
+
+    return () => {
+      document.removeEventListener("mousedown", aboutHandler);
+    };
+  }, []);
 
   return (
     <div className="flex h-auto px-3 sm:px-7 md:px-10 lg:px-8 xl:px-16 py-6 flex-row items-center justify-between bg-bodyBackground">
@@ -35,133 +176,69 @@ const Navbar = () => {
         height={67}
       />
 
-      <div
-        className={`${
-          navbar
-            ? "hidden lg:flex"
-            : "absolute lg:relative top-0 left-0 z-20 block"
-        }`}
-      >
-        <ul className="w-screen lg:w-full absolute lg:relative flex items-center flex-col lg:flex-row pt-10 lg:pt-0 pb-20 lg:pb-0 gap-16 lg:gap-4 xl:gap-16 mt-24 sm:mt-28 lg:mt-0 text-gray-50 lg:text-gray-900 bg-darkblue-500 lg:bg-gray-50">
-          <div>
-            <li
-              className="flex items-center text-left gap-2 text-lg py-2 border-b-2  border-darkblue-500 lg:border-bodyBackground hover:border-white lg:hover:border-darkblue-500"
-              onClick={() => setOpenAbout((prev) => !prev)}
-            >
-              <h2>About BALS </h2>
-              {!openAbout ? <ArrowDown2 size="20" /> : <ArrowUp2 size="20" />}
-            </li>
+      <div ref={menuRef}>
+        <div
+          className={`${
+            navbar
+              ? "hidden lg:flex"
+              : "absolute lg:relative top-0 left-0 z-20 block"
+          }`}
+        >
+          <ul className="w-screen lg:w-full absolute lg:relative flex items-center flex-col lg:flex-row pt-10 lg:pt-0 pb-20 lg:pb-0 gap-16 lg:gap-4 xl:gap-16 mt-24 sm:mt-28 lg:mt-0 text-gray-50 lg:text-gray-900 bg-darkblue-500 lg:bg-gray-50">
+            <div>
+              <li
+                className="flex items-center text-left gap-2 text-lg py-2 border-b-2  border-darkblue-500 lg:border-bodyBackground hover:border-white lg:hover:border-darkblue-500"
+                onClick={() => setOpenMenu((prev) => !prev)}
+              >
+                <h2>About BALS </h2>
+                {!openMenu ? <ArrowDown2 size="20" /> : <ArrowUp2 size="20" />}
+              </li>
+              <div ref={aboutRef}>
+                {openMenu && (
+                  <main className="px-0 sm:px-5 py-4 w-screen lg:w-[1024px] bg-bodyBackground text-darkblue-500 absolute top-24 lg:top-20  -left-0 lg:-left-48 z-30">
+                    <div className="py-3 px-5 sm:px-10 text-gray-900 font-normal text-lg border-b-[2px] border-gray-400 ">
+                      Overview
+                    </div>
+                    <section className="text-[16px] py-5 px-5 sm:px-10 gap-8 grid grid-cols-2 grid-rows-2 pt-2 ">
+                      {AboutMenu.map((items) => {
+                        return (
+                          <div key={items.id}>
+                            <Link
+                              href={items.href}
+                              className="text-darkblue-500 flex flex-row gap-2 items-center "
+                            >
+                              {items.title}{" "}
+                              <ArrowRight size="20" color="#162A5A" />
+                            </Link>
+                            <h1 className="text-gray-500">{items.content}</h1>
+                          </div>
+                        );
+                      })}
+                    </section>
+                  </main>
+                )}
+              </div>
+            </div>
 
-            {openAbout && (
-              <main className="px-0 sm:px-5 py-4 w-screen lg:w-[1024px] bg-bodyBackground text-darkblue-500 absolute top-24 lg:top-20  -left-0 lg:-left-48 z-30">
-                <div className="py-3 px-5 sm:px-10 text-gray-900 font-normal text-lg border-b-[2px] border-gray-400 ">
-                  Overview
-                </div>
-                <section className="text-[16px] py-5 px-5 sm:px-10 gap-8 grid grid-cols-2 grid-rows-2 pt-2 ">
-                  {AboutMenu.map((items) => {
-                    return (
-                      <div key={items.id}>
-                        <Link
-                          href={items.href}
-                          className="text-darkblue-500 flex flex-row gap-2 items-center "
-                        >
-                          {items.title} <ArrowRight size="20" color="#162A5A" />
-                        </Link>
-                        <h1 className="text-gray-500">{items.content}</h1>
-                      </div>
-                    );
-                  })}
-                </section>
-              </main>
-            )}
-          </div>
-          <li
-            className="text-lg text-left py-2 border-b-2 border-darkblue-500 lg:border-bodyBackground hover:border-white lg:hover:border-darkblue-500"
-            onClick={toggleNavbar}
-          >
-            <Link href="/courses">Courses </Link>
-          </li>
-          <div>
             <li
-              className=" flex items-center gap-2 text-lg py-2 border-b-2 border-darkblue-500 lg:border-bodyBackground hover:border-white lg:hover:border-darkblue-500"
-              onClick={() => setOpenFeatures(!openFeatures)}
+              className="text-lg text-left py-2 border-b-2 border-darkblue-500 lg:border-bodyBackground hover:border-white lg:hover:border-darkblue-500"
+              onClick={toggleNavbar}
             >
-              <h2>Features </h2>
-              {!openFeatures ? (
-                <ArrowDown2 size="20" />
-              ) : (
-                <ArrowUp2 size="20" />
-              )}
+              <Link href="/courses">Courses </Link>
             </li>
+            <DropdownFeaturesMenu />
+            <DropdownResourcesMenu />
 
-            {openFeatures && (
-              <main className="px-5 py-4 w-screen lg:w-[1024px] bg-bodyBackground text-darkblue-500 absolute top-[315px] lg:top-20  -left-0 lg:-left-48 z-30 ">
-                <div className="py-3 px-5 sm:px-10 text-gray-900 font-normal text-lg border-b-[2px] border-gray-400 ">
-                  Overview
-                </div>
-                <section className="text-[16px] py-5 px-5 sm:px-10 gap-8 grid grid-cols-2 grid-rows-2 pt-2 ">
-                  {FeaturesMenu.map((items) => {
-                    return (
-                      <div key={items.id}>
-                        <Link
-                          href={items.href}
-                          className="text-darkblue-500 flex flex-row gap-2 items-center "
-                        >
-                          {items.title} <ArrowRight size="20" color="#162A5A" />
-                        </Link>
-                        <h1 className="text-gray-500">{items.content}</h1>
-                      </div>
-                    );
-                  })}
-                </section>
-              </main>
-            )}
-          </div>
-          <div>
             <li
-              className="flex items-center gap-2 text-lg py-2 border-b-2 border-darkblue-500 lg:border-bodyBackground hover:border-white lg:hover:border-darkblue-500"
-              onClick={() => setOpenResources(!openResources)}
+              className="flex items-center gap-2 text-lg"
+              onClick={toggleNavbar}
             >
-              <h2>Resources </h2>
-              {!openResources ? (
-                <ArrowDown2 size="20" />
-              ) : (
-                <ArrowUp2 size="20" />
-              )}
+              <button className="flex lg:hidden items-center justify-center  px-3 py-3 w-36 rounded-md text-darkblue-500 bg-gray-50 ">
+                Get Started
+              </button>
             </li>
-
-            {openResources && (
-              <main className="px-5 py-4 w-screen lg:w-[1024px] bg-bodyBackground text-darkblue-500 absolute top-[425px] lg:top-20  -left-0 lg:-left-48 z-30 ">
-                <div className="py-3 px-5 sm:px-10 text-gray-900 font-normal text-lg border-b-[2px] border-gray-400 ">
-                  Overview
-                </div>
-                <section className="text-[16px] py-5 px-5 sm:px-10 gap-8 grid grid-cols-2 grid-rows-2 pt-2 ">
-                  {ResourcesMenu.map((items) => {
-                    return (
-                      <div key={items.id}>
-                        <Link
-                          href={items.href}
-                          className="text-darkblue-500 flex flex-row gap-2 items-center "
-                        >
-                          {items.title} <ArrowRight size="20" color="#162A5A" />
-                        </Link>
-                        <h1 className="text-gray-500">{items.content}</h1>
-                      </div>
-                    );
-                  })}
-                </section>
-              </main>
-            )}
-          </div>
-          <li
-            className="flex items-center gap-2 text-lg"
-            onClick={toggleNavbar}
-          >
-            <button className="flex lg:hidden items-center justify-center  px-3 py-3 w-36 rounded-md text-darkblue-500 bg-gray-50 ">
-              Get Started
-            </button>
-          </li>
-        </ul>
+          </ul>
+        </div>
       </div>
 
       <div className="flex flex-row w-2/5 md:w-3/12 lg:w-40 xl:w-2/12 justify-between">
