@@ -1,11 +1,94 @@
 import Layout from "@/components/layout";
 import styles from "../styles/pageHeaderImage.module.scss";
-import React from "react";
+import React, { useState } from "react";
+import CoursesCard, {
+  CoursesCardSmall,
+  CoursesCardMedium,
+} from "@/components/courses/cards";
 
 const courses = () => {
+  type Props = {
+    title: string;
+    content: string;
+  };
+
+  const Faq = (props: Props) => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleOpen = () => {
+      console.log("clicked");
+      setIsOpen(!isOpen);
+    };
+
+    return (
+      <>
+        <div
+          onClick={toggleOpen}
+          className="flex flex-row items-center justify-between w-full border-b-2 border-lineColor px-2 sm:p-5"
+        >
+          <p className="text-darkblue-800 font-medium tracking-normal text-md lg:text-lg pr-3">
+            {props.title}
+          </p>
+          {isOpen ? (
+            <img
+              src="/assets/faqdashicon.svg"
+              className="py-4 px-5 mr-5 ml-auto sm:ml-10"
+              alt=""
+            />
+          ) : (
+            <img
+              src="/assets/faqplusicon.svg"
+              className="py-4 px-5 mr-5 ml-auto sm:ml-10"
+              alt=""
+            />
+          )}
+        </div>
+
+        {isOpen && (
+          <div className="w-full mr-20 pl-2 lg:pl-2 pr-16 bg-darkblue-50 py-2">
+            <p className="">{props.content}</p>
+          </div>
+        )}
+      </>
+    );
+  };
+
+  const faqData = [
+    {
+      id: 1,
+      title: "How do i make payment for double courses at a time?",
+      content:
+        "Lorem ipsum dolor sit amet consectetur. Eu elit platea ornare mauris tortor sagittis. Ut sit lorem amet bibendum amet nullam quam. Sed.",
+    },
+    {
+      id: 2,
+      title: "How do i make payment for double courses at a time?",
+      content:
+        "Lorem ipsum dolor sit amet consectetur. Eu elit platea ornare mauris tortor sagittis. Ut sit lorem amet bibendum amet nullam quam. Sed.",
+    },
+    {
+      id: 3,
+      title: "How do i make payment for double courses at a time?",
+      content:
+        "Lorem ipsum dolor sit amet consectetur. Eu elit platea ornare mauris tortor sagittis. Ut sit lorem amet bibendum amet nullam quam. Sed.",
+    },
+    {
+      id: 4,
+      title: "How do i make payment for double courses at a time?",
+      content:
+        "Lorem ipsum dolor sit amet consectetur. Eu elit platea ornare mauris tortor sagittis. Ut sit lorem amet bibendum amet nullam quam. Sed.",
+    },
+    {
+      id: 5,
+      title: "How do i make payment for double courses at a time?",
+      content:
+        "Lorem ipsum dolor sit amet consectetur. Eu elit platea ornare mauris tortor sagittis. Ut sit lorem amet bibendum amet nullam quam. Sed.",
+    },
+  ];
+
   return (
     <Layout>
-       <section className="">
+      <section className="">
         <div className="h-[438px] bg-cover bg-center relative">
           <img
             className="w-full h-[380px] sm:h-[430px] md:h-[350px] lg:h-[438px] xl:h-[438px] object-cover absolute mix-blend-overlay "
@@ -20,42 +103,142 @@ const courses = () => {
             </div>
             <div className="w-full mb-28 h-fit flex flex-col gap-3 lg:flex-row sm:gap-0 sm:flex-row xl:mr-28 lg:mt-10">
               <div className="w-full flex flex-col lg:flex-col gap-5 px-5 md:px-0 ">
-                <h1 className="font-bold text-2xl lg:text-5xl text-gray-50">Best selling courses on the planet</h1>
+                <h1 className="font-bold text-2xl lg:text-5xl text-gray-50">
+                  Best selling courses on the planet
+                </h1>
                 <h2 className="text-sm sm:text-md lg:text-lg font-md text-bodyBackground">
-                Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim condimentum nibh et. Vestibulum a non pharetra volutpat. 
+                  Lorem ipsum dolor sit amet consectetur. Adipiscing
+                  pellentesque placerat arcu dignissim condimentum nibh et.
+                  Vestibulum a non pharetra volutpat.
                 </h2>
                 <button className="w-fit my-auto font-normal text-md md:text-lg items-center px-4 py-2 lg:px-6 lg:py-4 h-fit rounded-md text-darkblue-500 bg-gray-50 ">
-                Get Started
-              </button>
+                  Get Started
+                </button>
               </div>
             </div>
           </div>
         </div>
+        <div className="flex flex-col gap-3 lg:flex-row shadow-lg shadow-gray-500 w-9/12 justify-around py-5 items-center mx-auto">
+          <div className="flex flex-col justify-center">
+            <img
+              src="/assets/icon(1).svg"
+              className="bg-cyan1-50 px-3 py-4 rounded-full w-14 h-14 mx-auto"
+              alt=""
+            />
+            <h1 className="text-darkblue-500 font-extrabold text-lg mt-3">
+              Seamless User experience
+            </h1>
+            <p className="text-gray-900 text-md font-thin">
+              Learn at your own pace
+            </p>
+          </div>
+
+          <div className="flex flex-col justify-center">
+            <img
+              src="/assets/icon(1).svg"
+              className="bg-cyan1-50 px-3 py-4 rounded-full w-14 h-14 mx-auto"
+              alt=""
+            />
+            <h1 className="text-darkblue-500 font-extrabold text-lg mt-3">
+              Practical courses
+            </h1>
+            <p className="text-gray-900 text-md font-thin">
+              Get implementable knowledge
+            </p>
+          </div>
+
+          <div className="flex flex-col justify-center">
+            <img
+              src="/assets/icon(1).svg"
+              className="bg-cyan1-50 px-3 py-4 rounded-full w-14 h-14 mx-auto"
+              alt=""
+            />
+            <h1 className="text-darkblue-500 font-extrabold text-lg mt-3">
+              Result driven courses
+            </h1>
+            <p className="text-gray-900 text-md font-thin">
+              Success in the digital space
+            </p>
+          </div>
+        </div>
+      </section>
+      <main className="w-full sm:py-14 md:py-14 lg:py-16 xl:py-20">
+        <section className="mt-10 pb-20">
+          <h1 className="text-darkblue-500 font-bold text-2xl lg:text-3xl ml-3">
+            Recommended for you
+          </h1>
+          <div className="flex flex-col lg:flex-row items-center gap-5 justify-start lg:justify-around mt-10 ml-3 mr-3">
+            <CoursesCard />
+            <CoursesCard />
+          </div>
         </section>
 
-        <main className="w-full pb-16 bg-bodyBackground">
-        
-        <div className="flex flex-col gap-3 lg:flex-row shadow-lg shadow-gray-500 w-9/12 justify-around py-5 items-center mx-auto mb-auto">
-            <div className="flex flex-col justify-center">
-                <img src="/assets/icon(1).svg" className="bg-cyan1-50 px-3 py-4 rounded-full w-14 h-14 mx-auto" alt="" />
-                <h1 className="text-darkblue-500 font-extrabold text-lg mt-3">Seamless User experience</h1>
-                <p className="text-gray-900 text-md font-thin">Learn at your own pace</p>
-            </div>
-  
-            <div className="flex flex-col justify-center">
-                <img src="/assets/icon(1).svg" className="bg-cyan1-50 px-3 py-4 rounded-full w-14 h-14 mx-auto" alt="" />
-                <h1 className="text-darkblue-500 font-extrabold text-lg mt-3">Practical courses</h1>
-                <p className="text-gray-900 text-md font-thin">Get implementable knowledge</p>
-            </div>
+        <section className="pb-10">
+          <h1 className="text-darkblue-500 font-bold text-2xl lg:text-3xl ml-5 lg:ml-20">
+            Free Courses
+          </h1>
 
-            <div className="flex flex-col justify-center">
-                <img src="/assets/icon(1).svg" className="bg-cyan1-50 px-3 py-4 rounded-full w-14 h-14 mx-auto" alt="" />
-                <h1 className="text-darkblue-500 font-extrabold text-lg mt-3">Result driven courses</h1>
-                <p className="text-gray-900 text-md font-thin">Success in the digital space</p>
-            </div>
-        </div>
-        </main>
+          <h5 className="text-darkblue-500 font-normal text-md lg:text-xl ml-5 lg:ml-20 mt-7">
+            Get started with these free courses
+          </h5>
 
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 lg:gap-32 xl:grid-cols-5 lg:flex-row items-center gap-10 xl:gap-96 mt-10 ml-5 lg:ml-20 mr-3 overflow-y-auto lg:overflow-x-auto">
+            <CoursesCardSmall />
+            <CoursesCardSmall />
+            <CoursesCardSmall />
+            <CoursesCardSmall />
+            <CoursesCardSmall />
+          </div>
+        </section>
+
+        <section className="mt-14">
+          <div className="mb-9 ml-16 mr-10">
+            <div className="flex flex-row items-center justify-between">
+              <div className="flex flex-col sm:flex-row gap-5 sm:gap-5 md:gap-5 lg:gap-18 xl:gap-32 ">
+                <h1 className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:lg:text-3xl  font-medium text-gray-900 border-bodyBackground border-b-4   hover:border-b-4 hover:border-darkblue-500 px-5px md:px-[6px] lg:md:px-[10px] py-[10px]  ">
+                  All Courses
+                </h1>
+                <h1 className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:lg:text-3xl  font-medium text-gray-900  hover:border-b-4 hover:border-darkblue-500 px-5px md:px-[6px] lg:md:px-[10px] py-[10px] ">
+                  Skill Acquisition
+                </h1>
+                <h1 className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:lg:text-3xl  font-medium text-gray-900 hover:border-b-4 hover:border-darkblue-500 px-5px md:px-[6px] lg:md:px-[10px] py-[10px] ">
+                  Talent Acquisition
+                </h1>
+              </div>
+              <div className="flex flex-row gap-[2px] sm:gap-2 ">
+                <img src="/assets/search-icon.svg" alt="search" />
+                <img src="/assets/sort-by-icon.svg" alt="sort" />
+              </div>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 lg:gap-32 xl:grid-cols-5 lg:flex-row items-center gap-10 xl:gap-96 mt-10 ml-5 lg:ml-20 mr-3 overflow-y-auto lg:overflow-x-auto">
+            <CoursesCardMedium />
+            <CoursesCardMedium />
+            <CoursesCardMedium />
+            <CoursesCardMedium />
+            <CoursesCardMedium />
+          </div>
+        </section>
+
+        <section className="flex flex-col items-center justify-center px-5 sm:px-12 md:px-14 lg:px-16 xl:px-16 mt-10">
+          <h5 className="text-darkblue-500 font-semibold text-2xl sm:text-3xl md:sm:text-4xl mt-12 tracking-wider text-center pb-10">
+            Frequently Asked Questions
+          </h5>
+          <div className="flex w-full flex-col gap-10 ml-auto mr-auto items-center">
+            {faqData.map((data) => {
+              return (
+                <div
+                  className="flex flex-col gap-5 lg:gap-7 w-fit sm:w-8/12 md:w-9/12 xl:w-6/12  p-0 py-3 md:px-12 ml-2 mr-2"
+                  key={data.id}
+                >
+                  <Faq title={data.title} content={data.content} />
+                </div>
+              );
+            })}
+          </div>
+        </section>
+      </main>
     </Layout>
   );
 };
