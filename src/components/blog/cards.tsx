@@ -136,60 +136,9 @@ const BlogData = [
   },
 ];
 
-export const BlogCardSmall = () => {
-  return (
-    <>
-      {BlogData.map((data) => {
-        return (
-          <section
-            key={data.id}
-            className="max-w-[280px] lg:max-w-[300px] border-[px] shadow-md bg-gray-100 "
-          >
-            <img className="rounded-t-3xl " src={data.imageSrc} alt="logo" />
-            <main className="px-4  py-5 flex flex-col h-[auto]  gap-6">
-              <div className="flex flex-row items-center justify-between ">
-                <div className="flex flex-row items-center gap-2">
-                  <img
-                    className="w-[37px] h-[37px]"
-                    src={data.avatarSrc}
-                    alt="avatar"
-                  />
-                  <div>
-                    <h5 className="text-base font-bold text-gray-900">
-                      {data.author}
-                    </h5>
-                    <h6 className="text-xs font-normal text-darkblue-500">
-                      {data.date}
-                    </h6>
-                  </div>
-                </div>
-                <h1 className="py-1 text-center text-lg font-normal text-gray-900 border-[2px] border-gray-300 w-[95px] ">
-                  {data.category}
-                </h1>
-              </div>
-              <div className="flex flex-col gap-2 ">
-                <div className="text-xl font-medium text-gray-900">
-                  {data.blogTitle}
-                </div>
-                <div className="text-ellipses overflow-hidden h-[50px] text-base font-normal text-gray-900">
-                  {data.blogContent}
-                </div>
-              </div>
-              <h1 className="flex flex-row gap-2 text-lg font-medium text-darkblue-500  pb-5 ">
-                Read Post
-                <img src="/assets/post-arrow.svg" alt="post" />
-              </h1>
-            </main>
-          </section>
-        );
-      })}{" "}
-    </>
-  );
-};
-
 const BlogCards = () => {
   return (
-    <div className="flex flex-row gap-8 ">
+    <div className="flex flex-row gap-[22px] sm:gap-[40px]">
       {BlogData.map((data) => {
         return (
           <section
