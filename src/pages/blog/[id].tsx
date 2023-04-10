@@ -1,22 +1,55 @@
 import Newsletter from "@/components/blog/newsletter";
 import Layout from "@/components/layout";
+import axios from "axios";
+import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from "next";
 import React from "react";
 
-const BlogPage = () => {
+export const getStaticPaths: GetStaticPaths = async () => {
+  const res = await axios.get("https://bals-testapi.onrender.com/BlogData");
+  const data = await res.data;
+
+  const paths = data.map((blog: { id: any }) => {
+    return {
+      params: {
+        id: blog.id.toString(),
+      },
+    };
+  });
+
+  return {
+    paths,
+    fallback: false,
+  };
+};
+
+export const getStaticProps: GetStaticProps = async (context: any) => {
+  const { id } = context.params;
+  const res = await axios.get(
+    `https://bals-testapi.onrender.com/BlogData/` + id
+  );
+  const data = await res.data;
+
+  console.log("data>>>", data);
+
+  return {
+    props: { data },
+  };
+};
+
+const BlogPage = ({ data }: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <Layout>
       <main className="w-full px-5 sm:px-12 md:px-14 lg:px-16 xl:px-16  py-10 sm:py-10 md:py-10 lg:py-12 xl:py-12 bg-bodyBackground">
         <section className="flex flex-col items-center justify-center">
-          <h1 className="py-1 px-5 text-xl font-normal text-cyan1-800 border-[2px] border-cyan1-700 w-[95px]">
-            Design
+          <h1 className="py-1 px-1 text-center text-xl font-normal text-cyan1-800 border-[2px] border-cyan1-700 w-[auto]">
+            {data.category}
           </h1>
           <div className="flex flex-col items-center justify-between gap-5 mt-12">
             <div className=" text-4xl sm:text-6xl font-medium text-darkblue-500">
-              UI/UX design tips
+              {data.blogTitle}
             </div>
             <div className="text-lg text-center font-normal text-gray-900 w-[300px] sm:w-[400px] ">
-              Lorem ipsum dolor sit amet consectetur. Auctor ullamcorper
-              sagittis interdum ...
+              {data.blogContent}
             </div>
           </div>
           <div className="flex flex-row items-center justify-center gap-3 mt-8">
@@ -27,10 +60,10 @@ const BlogPage = () => {
             />
             <div>
               <h5 className="text-lg font-bold text-darkblue-500">
-                Lydia Phils
+                {data.author}
               </h5>
               <h6 className="text-lg font-normal text-darkblue-500       ">
-                20 March, 2023
+                {data.date}
               </h6>
             </div>
           </div>
@@ -162,7 +195,7 @@ const BlogPage = () => {
         <section className="flex flex-col sm:flex-row gap-10 sm:gap-0  items-center justify-between mb-28">
           <div className="flex flex-row gap-4">
             <h1 className="py-1 px-5 text-xl font-normal text-cyan2-800 border-[2px]  border-cyan1-700 w-auto">
-              Design
+              {data.category}
             </h1>
             <h1 className="py-1 px-5 text-xl font-normal text-cyan2-800 border-[2px] border-cyan1-700 w-auto">
               Tool

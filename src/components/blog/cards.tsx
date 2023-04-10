@@ -1,145 +1,32 @@
+import { useQuery } from "@tanstack/react-query";
+import axios from "axios";
 import Link from "next/link";
 import React from "react";
 
-const BlogData = [
-  {
-    id: 1,
-    imageSrc: "/assets/blog-logo.svg",
-    avatarSrc: "/assets/post-avatar.svg",
-    author: " Lydia Phils",
-    date: "20 March, 2023",
-    category: "Design",
-    blogTitle: " UI/UX design tips",
-    blogContent:
-      "Lorem ipsum dolor sit amet consectetur. Auctor ullamcorper sagittis interdum.Lorem ipsum dolor sit amet consectetur. Auctor ullamcorper sagittis interdum. Lorem ipsum dolor sit amet consectetur. Auctor ullamcorper sagittis interdum .Lorem ipsum dolor sit amet consectetur. Auctor ullamcorper sagittis interdum  ...",
-  },
-  {
-    id: 2,
-    imageSrc: "/assets/blog-logo.svg",
-    avatarSrc: "/assets/post-avatar.svg",
-    author: "Saheed Phils",
-    date: "20 March, 2023",
-    category: "Social-Media",
-    blogTitle: "Impact of social media on businesses",
-    blogContent:
-      "Lorem ipsum dolor sit amet consectetur. Auctor ullamcorper sagittis interdum ...",
-  },
-  {
-    id: 3,
-    imageSrc: "/assets/blog-logo.svg",
-    avatarSrc: "/assets/post-avatar.svg",
-    author: "Sarah Miles",
-    date: "20 March, 2023",
-    category: "Computer",
-    blogTitle: "Operating Systems",
-    blogContent:
-      "Lorem ipsum dolor sit amet consectetur. Auctor ullamcorper sagittis interdum ...",
-  },
-  {
-    id: 4,
-    imageSrc: "/assets/blog-logo.svg",
-    avatarSrc: "/assets/post-avatar.svg",
-    author: "Terry Awkins",
-    date: "20 March, 2023",
-    category: "Technology",
-    blogTitle: "Web App Development",
-    blogContent:
-      "Lorem ipsum dolor sit amet consectetur. Auctor ullamcorper sagittis interdum ...",
-  },
-  {
-    id: 5,
-    imageSrc: "/assets/blog-logo.svg",
-    avatarSrc: "/assets/post-avatar.svg",
-    author: "Jessica Lewis",
-    date: "20 March, 2023",
-    category: "Music",
-    blogTitle: "Key Signatures",
-    blogContent:
-      "Lorem ipsum dolor sit amet consectetur. Auctor ullamcorper sagittis interdum ...",
-  },
-  {
-    id: 6,
-    imageSrc: "/assets/blog-logo.svg",
-    avatarSrc: "/assets/post-avatar.svg",
-    author: " Lydia Phils",
-    date: "20 March, 2023",
-    category: "Design",
-    blogTitle: " UI/UX design tips",
-    blogContent:
-      "Lorem ipsum dolor sit amet consectetur. Auctor ullamcorper sagittis interdum.Lorem ipsum dolor sit amet consectetur. Auctor ullamcorper sagittis interdum. Lorem ipsum dolor sit amet consectetur. Auctor ullamcorper sagittis interdum .Lorem ipsum dolor sit amet consectetur. Auctor ullamcorper sagittis interdum  ...",
-  },
-  {
-    id: 7,
-    imageSrc: "/assets/blog-logo.svg",
-    avatarSrc: "/assets/post-avatar.svg",
-    author: "Saheed Phils",
-    date: "20 March, 2023",
-    category: "Social-Media",
-    blogTitle: "Impact of social media on businesses",
-    blogContent:
-      "Lorem ipsum dolor sit amet consectetur. Auctor ullamcorper sagittis interdum ...",
-  },
-  {
-    id: 8,
-    imageSrc: "/assets/blog-logo.svg",
-    avatarSrc: "/assets/post-avatar.svg",
-    author: "Sarah Miles",
-    date: "20 March, 2023",
-    category: "Computer",
-    blogTitle: "Operating Systems",
-    blogContent:
-      "Lorem ipsum dolor sit amet consectetur. Auctor ullamcorper sagittis interdum ...",
-  },
-  {
-    id: 9,
-    imageSrc: "/assets/blog-logo.svg",
-    avatarSrc: "/assets/post-avatar.svg",
-    author: "Terry Awkins",
-    date: "20 March, 2023",
-    category: "Technology",
-    blogTitle: "Web App Development",
-    blogContent:
-      "Lorem ipsum dolor sit amet consectetur. Auctor ullamcorper sagittis interdum ...",
-  },
-  {
-    id: 10,
-    imageSrc: "/assets/blog-logo.svg",
-    avatarSrc: "/assets/post-avatar.svg",
-    author: "Jessica Lewis",
-    date: "20 March, 2023",
-    category: "Music",
-    blogTitle: "Key Signatures",
-    blogContent:
-      "Lorem ipsum dolor sit amet consectetur. Auctor ullamcorper sagittis interdum ...",
-  },
-  {
-    id: 11,
-    imageSrc: "/assets/blog-logo.svg",
-    avatarSrc: "/assets/post-avatar.svg",
-    author: "Terry Awkins",
-    date: "20 March, 2023",
-    category: "Technology",
-    blogTitle: "Web App Development",
-    blogContent:
-      "Lorem ipsum dolor sit amet consectetur. Auctor ullamcorper sagittis interdum ...",
-  },
-  {
-    id: 12,
-    imageSrc: "/assets/blog-logo.svg",
-    avatarSrc: "/assets/post-avatar.svg",
-    author: "Jessica Lewis",
-    date: "20 March, 2023",
-    category: "Music",
-    blogTitle: "Key Signatures",
-    blogContent:
-      "Lorem ipsum dolor sit amet consectetur. Auctor ullamcorper sagittis interdum ...",
-  },
-];
+const fetchBlogs = () => {
+  return axios.get(`https://bals-testapi.onrender.com/BlogData`);
+};
 
 const BlogCards = () => {
+  const { isLoading, isError, data, isFetching } = useQuery(
+    ["colors"],
+    () => fetchBlogs(),
+    {
+      keepPreviousData: true,
+    }
+  );
+
+  if (isLoading) {
+    return <h2>Loading...</h2>;
+  }
+
+  if (isError) {
+    return <h2>{isError}</h2>;
+  }
+
   return (
     <div className="flex flex-row gap-[22px] sm:gap-[40px]">
-      {BlogData.map((data) => {
+      {data?.data?.map((data: any) => {
         return (
           <section
             key={data.id}
@@ -176,7 +63,7 @@ const BlogCards = () => {
                 </div>
               </div>
               <Link
-                href="/blog-page"
+                href={`/blog/` + data.id}
                 className="flex flex-row gap-2 text-lg sm:text-xl font-medium text-darkblue-500  pb-5 "
               >
                 Read Post
