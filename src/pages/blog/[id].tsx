@@ -1,11 +1,12 @@
 import Newsletter from "@/components/blog/newsletter";
 import Layout from "@/components/layout";
+import axios from "axios";
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from "next";
 import React from "react";
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const res = await fetch("http://localhost:4000/BlogData");
-  const data = await res.json();
+  const res = await axios.get("http://localhost:4000/BlogData");
+  const data = await res.data;
 
   const paths = data.map((blog: { id: any }) => {
     return {
@@ -23,8 +24,10 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async (context: any) => {
   const { id } = context.params;
-  const res = await fetch(`http://localhost:4000/BlogData/` + id);
-  const data = await res.json();
+  const res = await axios.get(`http://localhost:4000/BlogData/` + id);
+  const data = await res.data;
+
+  console.log("data>>>", data);
 
   return {
     props: { data },
