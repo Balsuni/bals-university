@@ -1,10 +1,9 @@
 import Layout from "@/components/layout";
 import styles from "../styles/pageHeaderImage.module.scss";
 import React, { useState } from "react";
-import CoursesCard, {
-  CoursesCardSmall,
-  CoursesCardMedium,
-} from "@/components/courses/cards";
+import CoursesCard from "@/components/courses/cards";
+import CourseGallery from "@/components/courses/courseGallery";
+import FreeCoursesGallery from "@/components/courses/freeCoursesGallery";
 
 const courses = () => {
   type Props = {
@@ -167,7 +166,7 @@ const courses = () => {
           <h1 className="text-darkblue-500 font-bold text-2xl lg:text-3xl ml-3 lg:ml-20">
             Recommended for you
           </h1>
-          <div className="flex flex-col lg:flex-row items-center gap-5 justify-start lg:justify-around mt-10 ml-3 mr-3">
+          <div className="flex flex-col lg:flex-row justify-start items-center xl:justify-around mt-10 ml-3 lg:ml-3 gap-5 mr-3">
             <CoursesCard />
             <CoursesCard />
           </div>
@@ -178,16 +177,12 @@ const courses = () => {
             Free Courses
           </h1>
 
-          <h5 className="text-darkblue-500 font-normal text-md lg:text-xl ml-5 lg:ml-20 mt-7">
+          <h5 className="text-gray-900 font-normal text-md lg:text-xl ml-5 lg:ml-20 mt-7">
             Get started with these free courses
           </h5>
 
-          <div className="grid justify-center md:justify-start md:grid-cols-2 lg:grid-cols-3 lg:gap-32 xl:grid-cols-5 lg:flex-row items-center gap-10 xl:gap-96 mt-10 ml-5 lg:ml-20 mr-3  lg:overflow-x-auto overflow-hidden">
-            <CoursesCardSmall />
-            <CoursesCardSmall />
-            <CoursesCardSmall />
-            <CoursesCardSmall />
-            <CoursesCardSmall />
+          <div className="items-center gap-10 xl:gap-96 mt-10 ml-5 lg:ml-20 mr-3">
+            <FreeCoursesGallery />
           </div>
         </section>
 
@@ -212,16 +207,18 @@ const courses = () => {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 justify-center md:justify-start lg:grid-cols-3 lg:gap-32 xl:grid-cols-5 lg:flex-row items-center gap-10 xl:gap-96 mt-10 ml-5 lg:ml-20 mr-3 overflow-y-auto lg:overflow-x-auto">
-            <CoursesCardMedium />
-            <CoursesCardMedium />
-            <CoursesCardMedium />
-            <CoursesCardMedium />
-            <CoursesCardMedium />
+          <div className="items-center ml-5 lg:ml-20 mr-3">
+            <CourseGallery />
+            <div className="flex gap-3">
+              <p className="text-darkblue-500 text-lg font-semibold tracking-wider">
+                See More
+              </p>
+              <img src="/assets/next.svg" className="my-auto" alt="" />
+            </div>
           </div>
         </section>
 
-        <section className="flex flex-col items-center justify-center px-5 sm:px-12 md:px-14 lg:px-16 xl:px-16 mt-20">
+        <section className="flex flex-col items-center justify-center px-5 sm:px-12 md:px-14 lg:px-16 xl:px-16 pb-20">
           <h5 className="text-darkblue-500 font-semibold text-2xl sm:text-3xl md:sm:text-4xl mt-12 tracking-wider text-center pb-10">
             Frequently Asked Questions
           </h5>
