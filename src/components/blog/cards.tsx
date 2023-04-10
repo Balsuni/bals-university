@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react";
 
 const fetchBlogs = () => {
-  return axios.get(`http://localhost:4000/BlogDataDisplay`);
+  return axios.get(`http://localhost:4000/BlogData`);
 };
 
 const BlogCards = () => {
