@@ -2,16 +2,16 @@ import React from "react";
 import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
+import Link from "next/link";
 
-const fetchColors = (currentPage: any) => {
+const fetchBlogs = (currentPage: any) => {
   const itemsPerPage = 12;
-
   return axios.get(
     `http://localhost:4000/BlogData?_limit=${itemsPerPage}&_page=${currentPage}`
   );
 };
 
-function PaginatedBlogs() {
+const PaginatedBlogs = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const totalPages = 5;
 
@@ -19,9 +19,9 @@ function PaginatedBlogs() {
     setCurrentPage(page);
   };
 
-  const { isLoading, isError, error, data, isFetching } = useQuery(
+  const { isLoading, isError, data, isFetching } = useQuery(
     ["colors", currentPage],
-    () => fetchColors(currentPage),
+    () => fetchBlogs(currentPage),
     {
       keepPreviousData: true,
     }
@@ -34,10 +34,6 @@ function PaginatedBlogs() {
   if (isError) {
     return <h2>{isError}</h2>;
   }
-
-  console.log("isLoading", isLoading);
-  console.log("iserror", error);
-  console.log("data", data);
 
   return (
     <div className="flex flex-col gap-10 items-center justify-center">
@@ -66,7 +62,7 @@ function PaginatedBlogs() {
                       </h6>
                     </div>
                   </div>
-                  <h1 className="py-1 text-center text-lg font-normal text-gray-900 border-[2px] border-gray-300 w-[95px] ">
+                  <h1 className="py-1 px-1 text-center text-lg font-normal text-gray-900 border-[2px] border-gray-300 w-[95px] ">
                     {data.category}
                   </h1>
                 </div>
@@ -78,10 +74,13 @@ function PaginatedBlogs() {
                     {data.blogContent}
                   </div>
                 </div>
-                <h1 className="flex flex-row gap-2 text-lg font-medium text-darkblue-500  pb-5 ">
+                <Link
+                  href={`/blog/` + data.id}
+                  className="flex flex-row gap-2 text-lg font-medium text-darkblue-500  pb-5 "
+                >
                   Read Post
                   <img src="/assets/post-arrow.svg" alt="post" />
-                </h1>
+                </Link>
               </main>
             </section>
           );
@@ -128,6 +127,6 @@ function PaginatedBlogs() {
       {isFetching && "Loading"}
     </div>
   );
-}
+};
 
 export default PaginatedBlogs;
