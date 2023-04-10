@@ -7,7 +7,7 @@ import Link from "next/link";
 const fetchBlogs = (currentPage: any) => {
   const itemsPerPage = 12;
   return axios.get(
-    `http://localhost:4000/BlogData?_limit=${itemsPerPage}&_page=${currentPage}`
+    `https://bals-testapi.onrender.com/BlogData?_limit=${itemsPerPage}&_page=${currentPage}`
   );
 };
 
