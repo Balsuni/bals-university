@@ -1,5 +1,5 @@
 import Layout from "@/components/layout";
-import styles from "../styles/pageHeaderImage.module.scss";
+import styles from "@/styles/pageHeaderImage.module.scss";
 import React, { useState } from "react";
 import CoursesCard from "@/components/courses/cards";
 import CourseGallery from "@/components/courses/courseGallery";
@@ -167,7 +167,6 @@ const courses = () => {
             Recommended for you
           </h1>
           <div className="flex flex-col lg:flex-row justify-start items-center xl:justify-around mt-10 ml-3 lg:ml-3 gap-5 mr-3">
-            <CoursesCard />
             <CoursesCard />
           </div>
         </section>

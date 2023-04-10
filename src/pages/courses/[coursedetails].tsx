@@ -1,8 +1,9 @@
 import Layout from "@/components/layout";
 import React, { useState } from "react";
-import styles from "../styles/pageHeaderImage.module.scss";
+import styles from "@/styles/pageHeaderImage.module.scss";
 import InstructorCard from "@/components/course-details/instructor";
 import { WeeklyOutlineData } from "@/components/course-details/courseDetailsData";
+import { useRouter } from "next/router";
 
 type Props = {
   weekNumber: number;
@@ -79,6 +80,12 @@ const WeeklyOutline = (props: Props) => {
 };
 
 const CourseDetails = () => {
+  const router = useRouter();
+  const query = router.query;
+  const title = query.coursedetails;
+  const price = query.price;
+  const description = query.coursedescription;
+  console.log(title);
   return (
     <Layout>
       <section>
@@ -90,17 +97,23 @@ const CourseDetails = () => {
           />
           <div className="flex flex-col items-center px-0 md:px-10 lg:px-16 xl:px-20  py-0 md:py-5 lg:py-12 xl:py-10">
             <div className="w-screen flex flex-col items-center flex-wrap md:items-start px-0 sm:px-5 md:px-10  py-10 sm:py-10 md:py-[30px] lg:py-12 xl:py-14">
-              <h1 className={styles.course3}>Fundamentals of LinkedIn</h1>
-              <h1 className={styles.course2}>Fundamentals of LinkedIn</h1>
-              <h1 className={styles.course1}>Fundamentals of LinkedIn</h1>
+              <h1 className={styles.course3}>{title}</h1>
+              <h1 className={styles.course2}>{title}</h1>
+              <h1 className={styles.course1}>{title}</h1>
             </div>
             <div className="w-full flex flex-col gap-8 sm:gap-0 sm:flex-row">
               <div className="flex flex-col gap-2 px-5 md:px-0 ">
-                <h1 className="font-bold text-5xl text-gray-50">$20</h1>
+                <h1 className="font-bold text-5xl text-gray-50">{price}</h1>
                 <h2 className="text-xl font-bold text-bodyBackground ">
                   Available in English only
                 </h2>
-                <h3>*****</h3>
+                <div className="flex gap-1 ml-5 lg:mt-2 mt-5 xl:mt-5">
+                  <img src="/assets/star.svg" alt="" />
+                  <img src="/assets/star.svg" alt="" />
+                  <img src="/assets/star.svg" alt="" />
+                  <img src="/assets/star.svg" alt="" />
+                  <img src="/assets/star_disabled.svg" alt="" />
+                </div>
               </div>
               <button className="m-auto flex font-normal text-lg items-center justify-center px-6 py-4 h-12 rounded-md text-darkblue-500 bg-gray-50 ">
                 Pay Now
@@ -122,16 +135,7 @@ const CourseDetails = () => {
           />
 
           <div className="text-gray-900 font-normal text-xl">
-            <h1 className="mb-8">
-              Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum
-              nibh et. Vestibulum a non ph ar e t ravolutpatpellentesque
-              placerat arcu dignissim condimentum nibh et. Vestibulum a non
-              Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum
-              nibh et. Vestibulum a non ph ar e t ravol utpat pellente sq ue
-              placerat arcu dignissim condimentum nibh et. Vestibulum a non pha
-              lacerat arcu dignissim condimentum nibh et. Vestibulum a Lorem
-              ipsum dolor sit amet
-            </h1>
+            <h1 className="mb-8">{description}</h1>
             <div className="flex flex-col  gap-3">
               <h1 className="flex flex-row gap-4">
                 <img src="/assets/outline-delivery.svg" alt="lesson-delivery" />
