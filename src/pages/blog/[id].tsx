@@ -5,7 +5,7 @@ import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from "next";
 import React from "react";
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const res = await axios.get("https://bals-testapi.onrender.com/BlogData");
+  const res = await axios.get("https://bals-testapi.onrender.com/blog");
   const data = await res.data;
 
   const paths = data.map((blog: { id: any }) => {
@@ -24,9 +24,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async (context: any) => {
   const { id } = context.params;
-  const res = await axios.get(
-    `https://bals-testapi.onrender.com/BlogData/` + id
-  );
+  const res = await axios.get(`https://bals-testapi.onrender.com/blog/` + id);
   const data = await res.data;
 
   console.log("data>>>", data);

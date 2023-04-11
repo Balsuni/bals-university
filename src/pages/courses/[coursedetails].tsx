@@ -4,6 +4,8 @@ import styles from "@/styles/pageHeaderImage.module.scss";
 import InstructorCard from "@/components/course-details/instructor";
 import { WeeklyOutlineData } from "@/components/course-details/courseDetailsData";
 import { useRouter } from "next/router";
+import axios from "axios";
+import { useQuery } from "@tanstack/react-query";
 
 type Props = {
   weekNumber: number;
@@ -79,6 +81,10 @@ const WeeklyOutline = (props: Props) => {
   );
 };
 
+const fetchWeeklyOutline = () => {
+  return axios.get(`https://bals-testapi.onrender.com/weeklyoutline`);
+};
+
 const CourseDetails = () => {
   const router = useRouter();
   const query = router.query;
@@ -86,6 +92,23 @@ const CourseDetails = () => {
   const price = query.price;
   const description = query.coursedescription;
   console.log(title);
+
+  const { isLoading, isError, data, isFetching } = useQuery(
+    ["colors"],
+    () => fetchWeeklyOutline(),
+    {
+      keepPreviousData: true,
+    }
+  );
+
+  if (isLoading) {
+    return <h2>Loading...</h2>;
+  }
+
+  if (isError) {
+    return <h2>{isError}</h2>;
+  }
+
   return (
     <Layout>
       <section>
@@ -122,7 +145,7 @@ const CourseDetails = () => {
           </div>
         </div>
       </section>
-      {/* done */}
+
       <main className="w-full px-5 sm:px-12 md:px-14 lg:px-16 xl:px-16 pt-14 sm:py-14 md:py-14 lg:py-16 xl:py-20 bg-bodyBackground">
         <h1 className="pb-8 text-4xl font-medium text-darkblue-500  ">
           Course Description
@@ -166,19 +189,19 @@ const CourseDetails = () => {
         </section>
 
         <section className="mt-12">
-          {WeeklyOutlineData.map((items) => {
+          {data?.data?.map((data: any) => {
             return (
-              <div key={items.id}>
+              <div key={data.id}>
                 <WeeklyOutline
-                  weekNumber={items.week}
-                  topic={items.topic}
-                  objectives1={items.objectives1}
-                  objectives2={items.objectives2}
-                  objectives3={items.objectives3}
-                  syllabus1={items.syllabus1}
-                  syllabus2={items.syllabus2}
-                  syllabus3={items.syllabus3}
-                  courseMaterials={items.courseMaterials}
+                  weekNumber={data.week}
+                  topic={data.topic}
+                  objectives1={data.objectives1}
+                  objectives2={data.objectives2}
+                  objectives3={data.objectives3}
+                  syllabus1={data.syllabus1}
+                  syllabus2={data.syllabus2}
+                  syllabus3={data.syllabus3}
+                  courseMaterials={data.courseMaterials}
                 />
               </div>
             );

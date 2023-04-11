@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react";
 
 const fetchBlogs = () => {
-  return axios.get(`https://bals-testapi.onrender.com/BlogData`);
+  return axios.get(`https://bals-testapi.onrender.com/blog_display`);
 };
 
 const BlogCards = () => {
