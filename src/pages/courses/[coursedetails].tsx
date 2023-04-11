@@ -6,6 +6,7 @@ import { WeeklyOutlineData } from "@/components/course-details/courseDetailsData
 import { useRouter } from "next/router";
 import axios from "axios";
 import { useQuery } from "@tanstack/react-query";
+import Image from "next/image";
 
 type Props = {
   weekNumber: number;
@@ -91,7 +92,15 @@ const CourseDetails = () => {
   const title = query.coursedetails;
   const price = query.price;
   const description = query.coursedescription;
-  console.log(title);
+  const learningmethod = query.learningmethod;
+  const courselevel = query.courselevel;
+  const prequisitelevel = query.prequisitelevel;
+  const approxweek = query.approxweek;
+  const certificate = query.certificate;
+  const instructor = query.instructor;
+  const messagefrominstructor = query.messagefrominstructor;
+  const instructorprofile = query.instructorprofile;
+  const courseimage = query.courseimage;
 
   const { isLoading, isError, data, isFetching } = useQuery(
     ["colors"],
@@ -162,27 +171,25 @@ const CourseDetails = () => {
             <div className="flex flex-col  gap-3">
               <h1 className="flex flex-row gap-4">
                 <img src="/assets/outline-delivery.svg" alt="lesson-delivery" />
-                Video, Audio, Assignments, Interactive exercises, Project
+                {learningmethod}
               </h1>
               <h1 className="flex flex-row gap-4">
                 <img src="/assets/skill-level.svg" alt="skill level" />
-                Beginner
+                {courselevel}
               </h1>
               <h1 className="flex flex-row gap-4">
                 <img src="/assets/no-prerequsite.svg" alt="no prerequisite" />
-                No Prerequisite
+                {prequisitelevel}
               </h1>
               <h1 className="flex flex-row gap-4">
-                <img src="/assets/time-duration.svg" alt="time " /> Approx 2-4
-                Weeks
+                <img src="/assets/time-duration.svg" alt="time " /> {approxweek}
               </h1>
               <h1 className="flex flex-row gap-4">
                 <img src="/assets/no-certificate.svg" alt="certification" />
-                No Certificate
+                {certificate}
               </h1>
               <h1 className="flex flex-row gap-4">
-                <img src="/assets/mdi-teacher.svg" alt="mdi-teacher" /> Favour
-                Lucy
+                <img src="/assets/mdi-teacher.svg" alt="mdi-teacher" /> {instructor}
               </h1>
             </div>
           </div>
@@ -218,14 +225,8 @@ const CourseDetails = () => {
           </h1>
           <div className="flex flex-col md:flex-row mt-9  ">
             <InstructorCard
-              src="/assets/team-member-avatar.svg"
-              text="      learning, we understand , can be challenging, but rest assured that we
-          are here to support you every step of the way. Our courses ranges from
-          paid to free courses. Lorem ipsum dolor sit amet consectetur.
-          Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit
-          amet consectetur. Adipiscing pellentesque placerat arcu dignissim
-          Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque
-          placerat arcu dignissim"
+              src={instructorprofile}
+              text={messagefrominstructor}
             />
           </div>
         </section>

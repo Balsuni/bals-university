@@ -1,8 +1,8 @@
 import React from "react";
 
 type Props = {
-  src: string;
-  text: string;
+  src: any;
+  text: any;
 };
 
 const InstructorCard = (props: Props) => {
