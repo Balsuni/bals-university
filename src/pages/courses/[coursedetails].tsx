@@ -189,7 +189,8 @@ const CourseDetails = () => {
                 {certificate}
               </h1>
               <h1 className="flex flex-row gap-4">
-                <img src="/assets/mdi-teacher.svg" alt="mdi-teacher" /> {instructor}
+                <img src="/assets/mdi-teacher.svg" alt="mdi-teacher" />{" "}
+                {instructor}
               </h1>
             </div>
           </div>
