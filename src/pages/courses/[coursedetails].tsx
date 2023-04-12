@@ -102,6 +102,7 @@ const CourseDetails = () => {
   const instructorprofile = query.instructorprofile;
   const courseimage = query.courseimage;
 
+
   const { isLoading, isError, data, isFetching } = useQuery(
     ["colors"],
     () => fetchWeeklyOutline(),
