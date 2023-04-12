@@ -704,7 +704,7 @@ const CoursesCard = () => {
         >
           <div className="flex flex-col lg:flex-row bg-darkblue-50 w-fit lg:w-[550px] lg:h-[370px] rounded-xl">
             <div className="p-5 mt-5">
-              <h1 className="py-1 px-5 text-lg font-normal text-cyan1-800 border-[2px]  border-cyan1-800 w-[95px] ">
+              <h1 className="py-1 px-5 text-lg font-normal text-cyan1-800 border-B[2px]  border-cyan1-800 w-[95px] ">
                 {data.category}
               </h1>
 
