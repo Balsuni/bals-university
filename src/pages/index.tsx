@@ -1,4 +1,4 @@
-import { PreviousStudentsCards } from "@/components/about-us/teamCards";
+import { StudentsCards } from "@/components/about-us/teamCards";
 import { ServicesCard } from "@/components/about-us/valueCards";
 import Startup from "@/components/landing/start";
 import Layout from "@/components/layout";
@@ -100,7 +100,7 @@ const Home = () => {
           {Students.map((data) => {
             return (
               <div key={data.id}>
-                <PreviousStudentsCards
+                <StudentsCards
                   src={data.src}
                   student={data.student}
                   text={data.text}
