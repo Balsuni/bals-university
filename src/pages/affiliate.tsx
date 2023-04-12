@@ -94,8 +94,8 @@ const affiliate = () => {
             src="/assets/students.svg"
             alt="course-details logo"
           />
-          <div className="flex flex-col lg:flex-row items-center px-0 md:px-10 lg:px-16 xl:px-20  py-0 md:py-5 lg:py-12 xl:py-10">
-            <div className="w-screen gap-10 flex flex-col items-start flex-wrap md:items-start px-5 py-5 sm:px-5 md:px-10 sm:py-5 md:py-[10px] lg:py-5 xl:py-14">
+          <div className="flex flex-col gap-10 lg:flex-row items-center px-0 md:px-10 lg:px-16 xl:px-20  py-0 md:py-5 lg:py-12 xl:py-10">
+            <div className="w-screen flex flex-col items-start flex-wrap md:items-start px-5 py-5 sm:px-5 md:px-10 sm:py-5 md:py-[10px] lg:py-5 xl:py-14">
               <h1 className={styles.course3}>Affiliate</h1>
               <h1 className={styles.course2}>Affiliate</h1>
               <h1 className={styles.course1}>Affiliate</h1>
