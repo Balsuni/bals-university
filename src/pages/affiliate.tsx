@@ -2,52 +2,7 @@ import React, { useState } from "react";
 import Layout from "@/components/layout";
 import styles from "../styles/pageHeaderImage.module.scss";
 import InstructorCard from "@/components/course-details/instructor";
-
-type Props = {
-  title: string;
-  content: string;
-};
-
-export const Faq = (props: Props) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleOpen = () => {
-    console.log("clicked");
-    setIsOpen(!isOpen);
-  };
-
-  return (
-    <>
-      <div
-        onClick={toggleOpen}
-        className="flex flex-row items-center justify-between w-full border-b-2 border-lineColor px-2 sm:p-5"
-      >
-        <p className="text-darkblue-800 font-medium tracking-normal text-md lg:text-lg pr-3">
-          {props.title}
-        </p>
-        {isOpen ? (
-          <img
-            src="/assets/faqdashicon.svg"
-            className="py-4 px-5 mr-5 ml-auto sm:ml-10"
-            alt=""
-          />
-        ) : (
-          <img
-            src="/assets/faqplusicon.svg"
-            className="py-4 px-5 mr-5 ml-auto sm:ml-10"
-            alt=""
-          />
-        )}
-      </div>
-
-      {isOpen && (
-        <div className="w-full mr-20 pl-2 lg:pl-2 pr-16 bg-darkblue-50 py-2">
-          <p className="">{props.content}</p>
-        </div>
-      )}
-    </>
-  );
-};
+import Faq from "@/components/ui/faq";
 
 const affiliate = () => {
   const faqData = [
@@ -80,6 +35,33 @@ const affiliate = () => {
       title: "How do i make payment for double courses at a time?",
       content:
         "Lorem ipsum dolor sit amet consectetur. Eu elit platea ornare mauris tortor sagittis. Ut sit lorem amet bibendum amet nullam quam. Sed.",
+    },
+  ];
+
+  const howToBecomeAnAffiliate = [
+    {
+      id: 1,
+      title: "Sign Up",
+      content:
+        "Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque p",
+    },
+    {
+      id: 2,
+      title: "Sign Up",
+      content:
+        "Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque p",
+    },
+    {
+      id: 3,
+      title: "Sign Up",
+      content:
+        "Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque p",
+    },
+    {
+      id: 4,
+      title: "Sign Up",
+      content:
+        "Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque p",
     },
   ];
 
@@ -207,69 +189,35 @@ const affiliate = () => {
           </div>
 
           <div className="flex flex-col gap-5">
-            <div className="flex flex-col md:flex-row items-center justify-between w-[300px] md:w-[700px] m-auto gap-8 shadow-lg py-7 px-4  ">
-              <div className="flex flex-row gap-4 items-center ">
-                <h1 className="rounded-md px-5 py-2 text-5xl font-bold text-white bg-cyan1-900 ">
-                  1
-                </h1>
-                <h1 className="text-darkblue-900 font-bold text-3xl ">
-                  Sign Up
-                </h1>
-              </div>
-              <h2 className=" text-darkblue-900 font-normal text-xl w-[270px]">
-                Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque
-                p
-              </h2>
-            </div>
-
-            <div className="flex flex-col md:flex-row items-center justify-between w-[300px] md:w-[700px] m-auto gap-8 shadow-lg py-7 px-4  ">
-              <div className="flex flex-row gap-4 items-center ">
-                <h1 className="rounded-md px-5 py-2 text-5xl font-bold text-white bg-cyan1-900 ">
-                  2
-                </h1>
-                <h1 className="text-darkblue-900 font-bold text-3xl ">
-                  Sign Up
-                </h1>
-              </div>
-              <h2 className=" text-darkblue-900 font-normal text-xl w-[270px]">
-                Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque
-                p
-              </h2>
-            </div>
-
-            <div className="flex flex-col md:flex-row items-center justify-between w-[300px] md:w-[700px] m-auto gap-8 shadow-lg py-7 px-4  ">
-              <div className="flex flex-row gap-4 items-center ">
-                <h1 className="rounded-md px-5 py-2 text-5xl font-bold text-white bg-cyan1-900 ">
-                  3
-                </h1>
-                <h1 className="text-darkblue-900 font-bold text-3xl ">
-                  Sign Up
-                </h1>
-              </div>
-              <h2 className=" text-darkblue-900 font-normal text-xl w-[270px]">
-                Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque
-                p
-              </h2>
-            </div>
-
-            <div className="flex flex-col md:flex-row items-center justify-between w-[300px] md:w-[700px] m-auto gap-8 shadow-lg py-7 px-4  ">
-              <div className="flex flex-row gap-4 items-center ">
-                <h1 className="rounded-md px-5 py-2 text-5xl font-bold text-white bg-cyan1-900 ">
-                  4
-                </h1>
-                <h1 className="text-darkblue-900 font-bold text-3xl ">
-                  Sign Up
-                </h1>
-              </div>
-              <h2 className=" text-darkblue-900 font-normal text-xl w-[270px]">
-                Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque
-                p
-              </h2>
-            </div>
+            {howToBecomeAnAffiliate.map((step) => {
+              return (
+                <div
+                  className="flex flex-col md:flex-row items-center justify-between w-[300px] md:w-[700px] m-auto gap-8 shadow-lg py-7 px-4"
+                  key={step.id}
+                >
+                  <div className="flex flex-row gap-4 items-center ">
+                    <h1 className="rounded-md px-5 py-2 text-5xl font-bold text-white bg-cyan1-900 ">
+                      {step.id}
+                    </h1>
+                    <h1 className="text-darkblue-900 font-bold text-3xl ">
+                      {step.title}
+                    </h1>
+                  </div>
+                  <h2 className=" text-darkblue-900 font-normal text-xl w-[270px]">
+                    {step.content}
+                  </h2>
+                </div>
+              );
+            })}
           </div>
         </section>
 
         <section className="text-darkblue-900 flex flex-col lg:flex-row gap-5 items-center justify-between px-5 sm:px-12 md:px-14 lg:px-16 xl:px-16 ">
+          <div className="w-screen sm:w-full items-center justify-center py-12 ">
+            <h1 className="text-2xl text-center sm:text-3xl md:text-4xl font-medium mb-4 ">
+              Generate your Affiliate Link
+            </h1>
+          </div>
           <div className="sm:w-full px-0 sm:px-12 md:px-24 lg:px-3 lg:pl-5 py-12 bg-darkblue-50">
             <h3 className="text-lg sm:text-xl font-normal mb-10 max-w-[550px]  ">
               learning, we understand , can be challenging, but rest assured
@@ -286,11 +234,6 @@ const affiliate = () => {
                 className="my-auto ml-3"
               />
             </button>
-          </div>
-          <div className="w-screen sm:w-full items-center justify-center py-12 ">
-            <h1 className="text-2xl text-center sm:text-3xl md:text-4xl font-medium mb-4 ">
-              Generate your Affiliate Link
-            </h1>
           </div>
         </section>
 
