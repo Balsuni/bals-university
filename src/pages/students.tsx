@@ -2,7 +2,7 @@ import Layout from "@/components/layout";
 import React, { useState } from "react";
 import styles from "../styles/pageHeaderImage.module.scss";
 import InstructorCard from "@/components/course-details/instructor";
-import { Faq } from "./affiliate";
+import Faq from "@/components/ui/faq";
 
 const Students = () => {
   const faqData = [
