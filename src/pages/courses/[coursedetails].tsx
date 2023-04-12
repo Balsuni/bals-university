@@ -127,19 +127,19 @@ const CourseDetails = () => {
             src="/assets/students.svg"
             alt="course-details logo"
           />
-          <div className="flex flex-col items-center px-0 md:px-10 lg:px-16 xl:px-20  py-0 md:py-5 lg:py-12 xl:py-10">
-            <div className="w-screen flex flex-col items-center flex-wrap md:items-start px-0 sm:px-5 md:px-10  py-10 sm:py-10 md:py-[30px] lg:py-12 xl:py-14">
+          <div className="flex flex-col gap-28 sm:gap-10 md:gap-14 lg:gap-0 px-0 md:px-10 lg:px-16 xl:px-20  py-0 md:py-5 lg:py-12 xl:py-10">
+            <div className="ml-3 sm:ml-0 mt-3 lg:ml-0 w-full flex flex-col flex-wrap md:items-start pl-2 sm:pl-5   sm:py-10 md:pl-0 md:py-5 lg:py-12 xl:py-14">
               <h1 className={styles.course3}>{title}</h1>
               <h1 className={styles.course2}>{title}</h1>
               <h1 className={styles.course1}>{title}</h1>
             </div>
-            <div className="w-full flex flex-col gap-8 sm:gap-0 sm:flex-row">
+            <div className="w-full flex flex-col gap-8 sm:gap-0 lg:flex-row">
               <div className="flex flex-col gap-2 px-5 md:px-0 ">
-                <h1 className="font-bold text-5xl text-gray-50">{price}</h1>
+                <h1 className="font-bold text-2xl lg:text-5xl text-gray-50">{price}</h1>
                 <h2 className="text-xl font-bold text-bodyBackground ">
                   Available in English only
                 </h2>
-                <div className="flex gap-1 ml-5 lg:mt-2 mt-5 xl:mt-5">
+                <div className="flex gap-1 lg:mt-2 mt-5 xl:mt-5">
                   <img src="/assets/star.svg" alt="" />
                   <img src="/assets/star.svg" alt="" />
                   <img src="/assets/star.svg" alt="" />
@@ -147,7 +147,7 @@ const CourseDetails = () => {
                   <img src="/assets/star_disabled.svg" alt="" />
                 </div>
               </div>
-              <button className="m-auto flex font-normal text-lg items-center justify-center px-6 py-4 h-12 rounded-md text-darkblue-500 bg-gray-50 ">
+              <button className="ml-5 md:ml-0 flex mt-5 font-normal w-fit text-md items-center lg:mx-auto lg:py-2 lg:px-6 lg:text-xl px-3 py-2 h-auto lg:h-16 rounded-md text-darkblue-500 bg-gray-50 ">
                 Pay Now
               </button>
             </div>
