@@ -1,3 +1,4 @@
+import { PreviousStudentsCards } from "@/components/about-us/teamCards";
 import { ServicesCard } from "@/components/about-us/valueCards";
 import Startup from "@/components/landing/start";
 import Layout from "@/components/layout";
@@ -41,14 +42,52 @@ const ServicesData = [
   },
 ];
 
+const Students = [
+  {
+    id: 1,
+    src: "/assets/recent-graduate.png",
+    srcRinglight: "/assets/ellipse-recentGraduate.svg",
+    student: "Recent Graduate",
+    text: "Enter the favour market with irresistible skills that employers cannot overlook.",
+  },
+  {
+    id: 2,
+    src: "/assets/freelancer.png",
+    srcRinglight: "/assets/ellipse-freelancer.svg",
+    student: "Freelancer",
+    text: "Advance your career as a freelancer by arming yourself with knowledge prospects can’t resist.",
+  },
+  {
+    id: 3,
+    src: "/assets/student.png",
+    srcRinglight: "/assets/ellipse-student.svg",
+    student: "Student",
+    text: "Stand out from the multitude with knowledge that millions of persons are willing to pay millions for.",
+  },
+  {
+    id: 4,
+    src: "/assets/entrepreneur.png",
+    srcRinglight: "/assets/ellipse-entrepreneur.svg",
+    student: "Entrepreneur",
+    text: "Arm yourself with the knowledge to scale and advance your company in the digital space.",
+  },
+  {
+    id: 5,
+    src: "/assets/9-5ever.png",
+    srcRinglight: "/assets/ellipse-9-5ever.png",
+    student: "9-5ever",
+    text: "Make yourself invaluable in your workplace by equipping yourself with laser-focused knowledge to advance your company.",
+  },
+];
+
 const Home = () => {
   return (
     <Layout>
       <section className="py-12 px-5 sm:px-10 flex flex-col items-center justify-center">
-        <h1 className=" mb-12 text-darkblue-500 text-center text-3xl sm:text-3xl  md:text-4xl font-bold">
+        <h1 className="mb-10 sm:mb-5 md:mb-0 text-darkblue-500 text-center text-3xl sm:text-3xl md:text-4xl font-bold">
           Master The CyberSpace
         </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           <div className="flex flex-col max-w-[300px] items-start justify-center ">
             <h1 className="text-gray-900 text-xl sm:text-2xl md:text-3xl font-medium mb-8">
               What you do doesn&apos;t matter, BALS University is built for
@@ -58,13 +97,14 @@ const Home = () => {
               Get Started
             </button>
           </div>
-          {ServicesData.map((data) => {
+          {Students.map((data) => {
             return (
               <div key={data.id}>
-                <ServicesCard
+                <PreviousStudentsCards
                   src={data.src}
-                  valueTitle={data.service}
+                  student={data.student}
                   text={data.text}
+                  srcRinglight={data.srcRinglight}
                 />
               </div>
             );
