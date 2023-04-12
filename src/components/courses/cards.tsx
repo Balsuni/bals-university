@@ -28,6 +28,103 @@ const coursesCard = [
       "learning, we understand , can be challenging, but rest assured that we are here to support you every step of the way. Our courses ranges from paid to free courses. Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim",
     instructorProfile: "/assets/team-member-avatar.svg",
     courseImage: "/assets/course-description.svg",
+    weeklyOutline: [
+      {
+        id: 1,
+        week: 1,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 2,
+        week: 2,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 3,
+        week: 3,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 4,
+        week: 4,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 5,
+        week: 5,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+    ],
   },
   {
     id: 2,
@@ -55,6 +152,103 @@ const coursesCard = [
       "learning, we understand , can be challenging, but rest assured that we are here to support you every step of the way. Our courses ranges from paid to free courses. Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim",
     instructorProfile: "/assets/team-member-avatar.svg",
     courseImage: "/assets/course-description.svg",
+    weeklyOutline: [
+      {
+        id: 1,
+        week: 1,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 2,
+        week: 2,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 3,
+        week: 3,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 4,
+        week: 4,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 5,
+        week: 5,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+    ],
   },
 ];
 
@@ -75,6 +269,103 @@ const coursesCardSmallData = [
       "learning, we understand , can be challenging, but rest assured that we are here to support you every step of the way. Our courses ranges from paid to free courses. Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim",
     instructorProfile: "/assets/team-member-avatar.svg",
     courseImage: "/assets/course-description.svg",
+    weeklyOutline: [
+      {
+        id: 1,
+        week: 1,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 2,
+        week: 2,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 3,
+        week: 3,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 4,
+        week: 4,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 5,
+        week: 5,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+    ],
   },
   {
     id: 2,
@@ -109,6 +400,103 @@ const coursesCardSmallData = [
       "learning, we understand , can be challenging, but rest assured that we are here to support you every step of the way. Our courses ranges from paid to free courses. Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim",
     instructorProfile: "/assets/team-member-avatar.svg",
     courseImage: "/assets/course-description.svg",
+    weeklyOutline: [
+      {
+        id: 1,
+        week: 1,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 2,
+        week: 2,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 3,
+        week: 3,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 4,
+        week: 4,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 5,
+        week: 5,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+    ],
   },
   {
     id: 4,
@@ -126,6 +514,103 @@ const coursesCardSmallData = [
       "learning, we understand , can be challenging, but rest assured that we are here to support you every step of the way. Our courses ranges from paid to free courses. Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim",
     instructorProfile: "/assets/team-member-avatar.svg",
     courseImage: "/assets/course-description.svg",
+    weeklyOutline: [
+      {
+        id: 1,
+        week: 1,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 2,
+        week: 2,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 3,
+        week: 3,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 4,
+        week: 4,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 5,
+        week: 5,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+    ],
   },
   {
     id: 5,
@@ -143,6 +628,103 @@ const coursesCardSmallData = [
       "learning, we understand , can be challenging, but rest assured that we are here to support you every step of the way. Our courses ranges from paid to free courses. Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim",
     instructorProfile: "/assets/team-member-avatar.svg",
     courseImage: "/assets/course-description.svg",
+    weeklyOutline: [
+      {
+        id: 1,
+        week: 1,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 2,
+        week: 2,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 3,
+        week: 3,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 4,
+        week: 4,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 5,
+        week: 5,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+    ],
   },
   {
     id: 6,
@@ -160,6 +742,103 @@ const coursesCardSmallData = [
       "learning, we understand , can be challenging, but rest assured that we are here to support you every step of the way. Our courses ranges from paid to free courses. Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim",
     instructorProfile: "/assets/team-member-avatar.svg",
     courseImage: "/assets/course-description.svg",
+    weeklyOutline: [
+      {
+        id: 1,
+        week: 1,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 2,
+        week: 2,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 3,
+        week: 3,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 4,
+        week: 4,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 5,
+        week: 5,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+    ],
   },
   {
     id: 7,
@@ -177,6 +856,103 @@ const coursesCardSmallData = [
       "learning, we understand , can be challenging, but rest assured that we are here to support you every step of the way. Our courses ranges from paid to free courses. Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim",
     instructorProfile: "/assets/team-member-avatar.svg",
     courseImage: "/assets/course-description.svg",
+    weeklyOutline: [
+      {
+        id: 1,
+        week: 1,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 2,
+        week: 2,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 3,
+        week: 3,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 4,
+        week: 4,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 5,
+        week: 5,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+    ],
   },
   {
     id: 8,
@@ -194,6 +970,103 @@ const coursesCardSmallData = [
       "learning, we understand , can be challenging, but rest assured that we are here to support you every step of the way. Our courses ranges from paid to free courses. Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim",
     instructorProfile: "/assets/team-member-avatar.svg",
     courseImage: "/assets/course-description.svg",
+    weeklyOutline: [
+      {
+        id: 1,
+        week: 1,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 2,
+        week: 2,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 3,
+        week: 3,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 4,
+        week: 4,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 5,
+        week: 5,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+    ],
   },
   {
     id: 9,
@@ -211,6 +1084,103 @@ const coursesCardSmallData = [
       "learning, we understand , can be challenging, but rest assured that we are here to support you every step of the way. Our courses ranges from paid to free courses. Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim",
     instructorProfile: "/assets/team-member-avatar.svg",
     courseImage: "/assets/course-description.svg",
+    weeklyOutline: [
+      {
+        id: 1,
+        week: 1,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 2,
+        week: 2,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 3,
+        week: 3,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 4,
+        week: 4,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 5,
+        week: 5,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+    ],
   },
   {
     id: 10,
@@ -228,6 +1198,103 @@ const coursesCardSmallData = [
       "learning, we understand , can be challenging, but rest assured that we are here to support you every step of the way. Our courses ranges from paid to free courses. Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim",
     instructorProfile: "/assets/team-member-avatar.svg",
     courseImage: "/assets/course-description.svg",
+    weeklyOutline: [
+      {
+        id: 1,
+        week: 1,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 2,
+        week: 2,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 3,
+        week: 3,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 4,
+        week: 4,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 5,
+        week: 5,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+    ],
   },
   {
     id: 11,
@@ -245,6 +1312,103 @@ const coursesCardSmallData = [
       "learning, we understand , can be challenging, but rest assured that we are here to support you every step of the way. Our courses ranges from paid to free courses. Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim",
     instructorProfile: "/assets/team-member-avatar.svg",
     courseImage: "/assets/course-description.svg",
+    weeklyOutline: [
+      {
+        id: 1,
+        week: 1,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 2,
+        week: 2,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 3,
+        week: 3,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 4,
+        week: 4,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 5,
+        week: 5,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+    ],
   },
 ];
 
@@ -275,6 +1439,103 @@ const coursesCardMediumData = [
       "learning, we understand , can be challenging, but rest assured that we are here to support you every step of the way. Our courses ranges from paid to free courses. Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim",
     instructorProfile: "/assets/team-member-avatar.svg",
     courseImage: "/assets/course-description.svg",
+    weeklyOutline: [
+      {
+        id: 1,
+        week: 1,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 2,
+        week: 2,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 3,
+        week: 3,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 4,
+        week: 4,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 5,
+        week: 5,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+    ],
   },
   {
     id: 2,
@@ -302,6 +1563,103 @@ const coursesCardMediumData = [
       "learning, we understand , can be challenging, but rest assured that we are here to support you every step of the way. Our courses ranges from paid to free courses. Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim",
     instructorProfile: "/assets/team-member-avatar.svg",
     courseImage: "/assets/course-description.svg",
+    weeklyOutline: [
+      {
+        id: 1,
+        week: 1,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 2,
+        week: 2,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 3,
+        week: 3,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 4,
+        week: 4,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 5,
+        week: 5,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+    ],
   },
   {
     id: 3,
@@ -329,6 +1687,103 @@ const coursesCardMediumData = [
       "learning, we understand , can be challenging, but rest assured that we are here to support you every step of the way. Our courses ranges from paid to free courses. Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim",
     instructorProfile: "/assets/team-member-avatar.svg",
     courseImage: "/assets/course-description.svg",
+    weeklyOutline: [
+      {
+        id: 1,
+        week: 1,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 2,
+        week: 2,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 3,
+        week: 3,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 4,
+        week: 4,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 5,
+        week: 5,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+    ],
   },
   {
     id: 4,
@@ -356,6 +1811,103 @@ const coursesCardMediumData = [
       "learning, we understand , can be challenging, but rest assured that we are here to support you every step of the way. Our courses ranges from paid to free courses. Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim",
     instructorProfile: "/assets/team-member-avatar.svg",
     courseImage: "/assets/course-description.svg",
+    weeklyOutline: [
+      {
+        id: 1,
+        week: 1,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 2,
+        week: 2,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 3,
+        week: 3,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 4,
+        week: 4,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 5,
+        week: 5,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+    ],
   },
   {
     id: 5,
@@ -383,6 +1935,103 @@ const coursesCardMediumData = [
       "learning, we understand , can be challenging, but rest assured that we are here to support you every step of the way. Our courses ranges from paid to free courses. Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim",
     instructorProfile: "/assets/team-member-avatar.svg",
     courseImage: "/assets/course-description.svg",
+    weeklyOutline: [
+      {
+        id: 1,
+        week: 1,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 2,
+        week: 2,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 3,
+        week: 3,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 4,
+        week: 4,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 5,
+        week: 5,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+    ],
   },
   {
     id: 6,
@@ -410,6 +2059,103 @@ const coursesCardMediumData = [
       "learning, we understand , can be challenging, but rest assured that we are here to support you every step of the way. Our courses ranges from paid to free courses. Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim",
     instructorProfile: "/assets/team-member-avatar.svg",
     courseImage: "/assets/course-description.svg",
+    weeklyOutline: [
+      {
+        id: 1,
+        week: 1,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 2,
+        week: 2,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 3,
+        week: 3,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 4,
+        week: 4,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 5,
+        week: 5,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+    ],
   },
   {
     id: 7,
@@ -437,6 +2183,103 @@ const coursesCardMediumData = [
       "learning, we understand , can be challenging, but rest assured that we are here to support you every step of the way. Our courses ranges from paid to free courses. Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim",
     instructorProfile: "/assets/team-member-avatar.svg",
     courseImage: "/assets/course-description.svg",
+    weeklyOutline: [
+      {
+        id: 1,
+        week: 1,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 2,
+        week: 2,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 3,
+        week: 3,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 4,
+        week: 4,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 5,
+        week: 5,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+    ],
   },
   {
     id: 8,
@@ -464,6 +2307,103 @@ const coursesCardMediumData = [
       "learning, we understand , can be challenging, but rest assured that we are here to support you every step of the way. Our courses ranges from paid to free courses. Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim",
     instructorProfile: "/assets/team-member-avatar.svg",
     courseImage: "/assets/course-description.svg",
+    weeklyOutline: [
+      {
+        id: 1,
+        week: 1,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 2,
+        week: 2,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 3,
+        week: 3,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 4,
+        week: 4,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 5,
+        week: 5,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+    ],
   },
   {
     id: 9,
@@ -491,6 +2431,103 @@ const coursesCardMediumData = [
       "learning, we understand , can be challenging, but rest assured that we are here to support you every step of the way. Our courses ranges from paid to free courses. Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim",
     instructorProfile: "/assets/team-member-avatar.svg",
     courseImage: "/assets/course-description.svg",
+    weeklyOutline: [
+      {
+        id: 1,
+        week: 1,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 2,
+        week: 2,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 3,
+        week: 3,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 4,
+        week: 4,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 5,
+        week: 5,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+    ],
   },
   {
     id: 10,
@@ -518,6 +2555,103 @@ const coursesCardMediumData = [
       "learning, we understand , can be challenging, but rest assured that we are here to support you every step of the way. Our courses ranges from paid to free courses. Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim",
     instructorProfile: "/assets/team-member-avatar.svg",
     courseImage: "/assets/course-description.svg",
+    weeklyOutline: [
+      {
+        id: 1,
+        week: 1,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 2,
+        week: 2,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 3,
+        week: 3,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 4,
+        week: 4,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 5,
+        week: 5,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+    ],
   },
   {
     id: 11,
@@ -545,6 +2679,103 @@ const coursesCardMediumData = [
       "learning, we understand , can be challenging, but rest assured that we are here to support you every step of the way. Our courses ranges from paid to free courses. Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim",
     instructorProfile: "/assets/team-member-avatar.svg",
     courseImage: "/assets/course-description.svg",
+    weeklyOutline: [
+      {
+        id: 1,
+        week: 1,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 2,
+        week: 2,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 3,
+        week: 3,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 4,
+        week: 4,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+      {
+        id: 5,
+        week: 5,
+        topic: "What is LinkedIn",
+        objectives1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        objectives2:
+          " Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        objectives3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus1:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        syllabus2:
+          "Ilentesque placerat arcu dignissim condimentum nibh et.Vestibulum a non",
+        syllabus3:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing condimentu nibh et. Vestibulum a non ph ar e t ravolutpatpe",
+        courseMaterials:
+          " Textbook, Articles, supplementary resources. Lorem ipsum dolor sit amet consectetur. Adipiscing condimentum nibh et. Vestibulum a non ph ar e t ravolutpatpe llentesque placerat ar",
+      },
+    ],
   },
 ];
 

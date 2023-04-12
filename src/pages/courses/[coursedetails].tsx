@@ -89,7 +89,7 @@ const fetchWeeklyOutline = () => {
 const CourseDetails = () => {
   const router = useRouter();
   const query = router.query;
-  const title = query.coursedetails;
+  const title = query.coursetitle;
   const price = query.price;
   const description = query.coursedescription;
   const learningmethod = query.learningmethod;
