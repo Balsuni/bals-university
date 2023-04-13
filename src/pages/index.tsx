@@ -84,7 +84,7 @@ const Students = [
 const Home = () => {
   return (
     <Layout>
-      <section className="py-12 px-5 sm:px-10 flex flex-col items-center justify-center">
+      <section className="py-12 px-5 sm:px-10 flex flex-col items-center justify-center ">
         <h1 className="mb-10 sm:mb-5 md:mb-0 text-darkblue-500 text-center text-3xl sm:text-3xl md:text-4xl font-bold">
           Master The CyberSpace
         </h1>
@@ -114,7 +114,7 @@ const Home = () => {
       </section>
 
       <section className="flex flex-col items-center justify-center py-12 ">
-        <h1 className="mb-8 text-center text-2xl sm:text-3xl md:text-4xl font-bold text-darkblue-500 px-5 sm:px-14 md:px-24 lg:px-40 xl:px-64 ">
+        <h1 className="mb-8 text-center text-2xl sm:text-3xl md:text-4xl font-bold text-darkblue-500 px-5 sm:px-14 md:px-24 lg:px-40 xl:px-64 max-w-[1520px] ">
           Get Unimaginable but Achievable Influence & Revenue From the comfort
           of your home with;
         </h1>
@@ -196,7 +196,7 @@ const Home = () => {
               vel in lorem ut. Euismod nunc neque ut lorem aenean mauris neque
               libero amet.
             </h3>
-            <h4 className="flex flex-rwo gap-2 text-darkblue-500 text-lg font-medium  ">
+            <h4 className="flex flex-row items-center gap-2 text-darkblue-500 text-lg font-medium  ">
               See how it works{" "}
               <svg
                 width="21"
