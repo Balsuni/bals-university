@@ -172,7 +172,7 @@ const courses = () => {
           </div>
         </section>
 
-        <section className="flex flex-col items-center justify-center px-5 sm:px-12 md:px-14 lg:px-16 xl:px-16 pb-20">
+        <section className="flex flex-col items-center justify-center px-5 sm:px-12 md:px-14 lg:px-16 xl:px-16 pb-20 mt-10">
           <h5 className="text-darkblue-500 font-semibold text-2xl sm:text-3xl md:sm:text-4xl mt-12 tracking-wider text-center pb-10">
             Frequently Asked Questions
           </h5>

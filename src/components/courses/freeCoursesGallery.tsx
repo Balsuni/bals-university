@@ -15,7 +15,7 @@ const FreeCoursesGallery = () => {
     <div>
       <div
         ref={coursesRef}
-        className="mb-24 flex flex-row w-full overflow-auto transition duration-300 ease-in "
+        className="mb-5 flex flex-row w-full overflow-auto transition duration-300 ease-in "
         style={{ transform: "translateX(0)" }}
       >
         <CoursesCardSmall />
