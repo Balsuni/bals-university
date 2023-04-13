@@ -16,7 +16,7 @@ const Startup = () => {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 font-medium text-base sm:text-lg ">
           <button
             type="submit"
-            className="flex flex-row bg-gray-50 px-4 sm:px-6  py-3 sm:py-4 rounded-lg text-darkblue-500 gap-2 "
+            className="flex flex-row items-center bg-gray-50 px-4 sm:px-6  py-3 sm:py-4 rounded-lg text-darkblue-500 gap-2 "
           >
             Become a Student
             <svg
@@ -36,7 +36,7 @@ const Startup = () => {
           </button>{" "}
           <button
             type="submit"
-            className="flex flex-row gap-2 bg-inherit px-4 sm:px-6 py-3 sm:py-4 rounded-lg text-white border-2 border-white  "
+            className="flex flex-row items-center gap-2 bg-inherit px-4 sm:px-6 py-3 sm:py-4 rounded-lg text-white border-2 border-white  "
           >
             Become an Affiliate
             <svg
