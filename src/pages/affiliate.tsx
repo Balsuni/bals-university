@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Layout from "@/components/layout";
 import styles from "../styles/pageHeaderImage.module.scss";
 import InstructorCard from "@/components/course-details/instructor";

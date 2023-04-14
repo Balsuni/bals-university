@@ -3,6 +3,7 @@ import { ServicesCard } from "@/components/about-us/valueCards";
 import Startup from "@/components/landing/start";
 import Layout from "@/components/layout";
 import LandingPageCourseGallery from "@/components/landing-page/landingPageCourses";
+import React, { useRef } from "react";
 
 const ServicesData = [
   {
@@ -81,7 +82,61 @@ const Students = [
   },
 ];
 
+const whatOurStudentSay = [
+  {
+    id: 1,
+    name: "John Doe",
+    title: "Product Designer",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Augue sit neque sit varius aliquet. Faucibus elit id tortor convallis pulvinar tristique fringilla et enim. Tortor sit eu pretium varius tellus urna. Duis sit non volutpat.",
+  },
+  {
+    id: 2,
+    name: "John Doe",
+    title: "Product Designer",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Augue sit neque sit varius aliquet. Faucibus elit id tortor convallis pulvinar tristique fringilla et enim. Tortor sit eu pretium varius tellus urna. Duis sit non volutpat.",
+  },
+  {
+    id: 3,
+    name: "John Doe",
+    title: "Product Designer",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Augue sit neque sit varius aliquet. Faucibus elit id tortor convallis pulvinar tristique fringilla et enim. Tortor sit eu pretium varius tellus urna. Duis sit non volutpat.",
+  },
+  {
+    id: 4,
+    name: "John Doe",
+    title: "Product Designer",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Augue sit neque sit varius aliquet. Faucibus elit id tortor convallis pulvinar tristique fringilla et enim. Tortor sit eu pretium varius tellus urna. Duis sit non volutpat.",
+  },
+  {
+    id: 5,
+    name: "John Doe",
+    title: "Product Designer",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Augue sit neque sit varius aliquet. Faucibus elit id tortor convallis pulvinar tristique fringilla et enim. Tortor sit eu pretium varius tellus urna. Duis sit non volutpat.",
+  },
+];
+
 const Home = () => {
+  const studentRef = useRef<HTMLDivElement | null>(null);
+
+  const handlePrev = () => {
+    studentRef.current?.scrollBy({
+      left: -studentRef.current?.offsetWidth,
+      behavior: "smooth",
+    });
+  };
+
+  const handleNext = () => {
+    studentRef.current?.scrollBy({
+      left: studentRef.current?.offsetWidth,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <Layout>
       <section className="py-12 px-5 sm:px-10 flex flex-col items-center justify-center">
@@ -133,8 +188,99 @@ const Home = () => {
         </div>
       </section>
 
+      <section className="w-full bg-darkblue-50 h-[580px]">
+        <div className="flex flex-col justify-center lg:flex-row gap-3 pt-16 lg:justify-between items-center lg:mx-24">
+          <h1 className="text-darkblue-500 font-bold text-2xl sm:text-3xl md:text-4xl mb-4 lg:text-left text-center">
+            What our students say
+          </h1>
+          <div className="flex gap-5">
+            <button
+              // disabled={handlePrev === null}
+              className="bg-darkblue-500 text-white hover:bg-gray-900 p-2 py-4 px-3 rounded-full focus:outline-none"
+              onClick={handlePrev}
+            >
+              <img
+                src="/assets/previous-icon.svg"
+                width={20}
+                height={20}
+                alt=""
+              />
+            </button>
+            <button
+              // disabled={handleNext === null}
+              className="bg-darkblue-500 text-white hover:bg-gray-900 p-2 py-4 px-3 rounded-full focus:outline-none"
+              onClick={handleNext}
+            >
+              <img src="/assets/next-icon.svg" width={20} height={20} alt="" />
+            </button>
+          </div>
+        </div>
+        <div className="px-5 lg:ml-16 mt-10">
+          <div className="relative">
+            <div
+              ref={studentRef}
+              className="mb-5 flex flex-row w-full overflow-auto transition duration-300 ease-in "
+              style={{ transform: "translateX(0)" }}
+            >
+              <div className="flex flex-row gap-[22px] sm:gap-[40px]">
+                {whatOurStudentSay.map((data) => {
+                  return (
+                    <section
+                      className="flex flex-col flex-wrap bg-gray-50 h-[324px] w-[612px] sm:w-[612px] md:w-[612px] md:h-[324px] sm:h-[324px] pb-5 rounded-xl"
+                      key={data.id}
+                    >
+                      <div className="mt-10 ml-10">
+                        <img src="/assets/quotation.svg" alt="" />
+                      </div>
+                      <div className="w-[299px] mt-7 ml-20 text-[18px]">
+                        <p>{data.description}</p>
+                        <img
+                          src="/assets/quotation_2.svg"
+                          className="ml-auto mt-5"
+                          alt=""
+                        />
+                      </div>
+
+                      <div className="mt-20 ml-7">
+                        <div className="flex items-center">
+                          <img
+                            className="w-[122.98px] h-[122.98px] mr-[9px] mb-0 ml-2 absolute z-10"
+                            src="/assets/student_landingpage.svg"
+                            alt="logo"
+                          />
+                          <img
+                            className="w-[145px] relative z-0"
+                            src="/assets/ecclipse.svg"
+                            alt="logo"
+                          />
+                        </div>
+
+                        <div className="flex justify-center flex-col items-center mt-3">
+                          <p className="text-[18px] font-bold text-gray-900">
+                            {data.name}
+                          </p>
+                          <p className="text-[16px] font-light text-gray-900">
+                            {data.title}
+                          </p>
+                        </div>
+                      </div>
+                    </section>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex items-center justify-center gap-3 mt-5 lg:mt-10">
+          <img src="/assets/Rectangle_1.svg" onClick={handlePrev} alt="" />
+          <img src="/assets/Rectangle.svg" alt="" />
+          <img src="/assets/Rectangle_1.svg" alt="" onClick={handleNext} />
+        </div>
+      </section>
+
       <main className="px-6 py-12 ">
-        <section className="flex flex-col py-12 pb-20">
+        <section className="flex flex-col pt-12">
           <div className="flex flex-col lg:flex-row gap-3 justify-normal lg:justify-between lg:items-center lg:mx-24">
             <h1 className="text-darkblue-500 font-bold text-2xl sm:text-3xl md:text-4xl mb-4">
               Check out our influential courses
@@ -158,32 +304,32 @@ const Home = () => {
               </svg>
             </h4>
           </div>
+        </section>
 
-          <section className="mt-14 lg:mx-5">
-            <div className="mb-9 lg:ml-16 ml-0 mr-10">
-              <div className="flex flex-row items-center justify-between border-b-4 border-darkblue-100">
-                <div className="flex flex-col sm:flex-row gap-5 sm:gap-5 md:gap-5 lg:gap-18 xl:gap-32">
-                  <h1 className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:lg:text-3xl  font-medium text-gray-900 border-b-4 border-darkblue-500 px-5px md:px-[6px] lg:md:px-[10px] py-[10px]  ">
-                    All Courses
-                  </h1>
-                  <h1 className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:lg:text-3xl  font-medium text-gray-900  hover:border-b-4 hover:border-darkblue-500 px-5px md:px-[6px] lg:md:px-[10px] py-[10px] ">
-                    Skill Acquisition
-                  </h1>
-                  <h1 className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:lg:text-3xl  font-medium text-gray-900 hover:border-b-4 hover:border-darkblue-500 px-5px md:px-[6px] lg:md:px-[10px] py-[10px] ">
-                    Talent Acquisition
-                  </h1>
-                </div>
-                <div className="flex flex-row gap-[2px] sm:gap-2 ">
-                  <img src="/assets/search-icon.svg" alt="search" />
-                  <img src="/assets/sort-by-icon.svg" alt="sort" />
-                </div>
+        <section className="mt-12 lg:mx-5">
+          <div className="mb-9 lg:ml-16 ml-0 mr-10">
+            <div className="flex flex-row items-center justify-between border-b-4 border-darkblue-100">
+              <div className="flex flex-col sm:flex-row gap-5 sm:gap-5 md:gap-5 lg:gap-18 xl:gap-32">
+                <h1 className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:lg:text-3xl  font-medium text-gray-900 border-b-4 border-darkblue-500 px-5px md:px-[6px] lg:md:px-[10px] py-[10px]  ">
+                  All Courses
+                </h1>
+                <h1 className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:lg:text-3xl  font-medium text-gray-900  hover:border-b-4 hover:border-darkblue-500 px-5px md:px-[6px] lg:md:px-[10px] py-[10px] ">
+                  Skill Acquisition
+                </h1>
+                <h1 className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:lg:text-3xl  font-medium text-gray-900 hover:border-b-4 hover:border-darkblue-500 px-5px md:px-[6px] lg:md:px-[10px] py-[10px] ">
+                  Talent Acquisition
+                </h1>
+              </div>
+              <div className="flex flex-row gap-[2px] sm:gap-2 ">
+                <img src="/assets/search-icon.svg" alt="search" />
+                <img src="/assets/sort-by-icon.svg" alt="sort" />
               </div>
             </div>
+          </div>
 
-            <div className="items-center ml-0 lg:ml-20 mr-3">
-              <LandingPageCourseGallery />
-            </div>
-          </section>
+          <div className="items-center ml-0 lg:ml-20 mr-3">
+            <LandingPageCourseGallery />
+          </div>
         </section>
 
         <section className="flex flex-col md:flex-row mb-16 gap-16 md:gap-8 lg:gap-10 items-center justify-center ">
