@@ -1,6 +1,6 @@
 import Layout from "@/components/layout";
 import styles from "@/styles/pageHeaderImage.module.scss";
-import React, { useState } from "react";
+import React from "react";
 import CoursesCard from "@/components/courses/cards";
 import CourseGallery from "@/components/courses/courseGallery";
 import FreeCoursesGallery from "@/components/courses/freeCoursesGallery";
