@@ -5,6 +5,7 @@ import Layout from "@/components/layout";
 import LandingPageCourseGallery from "@/components/landing-page/landingPageCourses";
 import React, { useRef } from "react";
 import Image from "next/image";
+import styles from "../styles/animation.module.scss";
 
 const ServicesData = [
   {
@@ -140,6 +141,56 @@ const Home = () => {
 
   return (
     <Layout>
+      <section className="w-full flex flex-col md:flex-row items-center justify-between px-5 py-10 sm:py-10 gap-4 md:gap-0  bg-darkblue-50">
+        <div className={styles.container}>
+          <img
+            className="w-[156px] h-[57px]"
+            src="/assets/google.svg"
+            alt="google logo"
+          />
+          <img
+            className="w-[173px] h-[50px]"
+            src="/assets/flutter.svg"
+            alt="flutter logo"
+          />
+          <img
+            className="w-[300px] h-[59px]"
+            src="/assets/cowrywise.svg"
+            alt="cowrywise logo"
+          />
+          <img
+            className="w-[156px] h-[57px]"
+            src="/assets/google.svg"
+            alt="google logo"
+          />
+          <img
+            className="w-[173px] h-[50px]"
+            src="/assets/flutter.svg"
+            alt="flutter logo"
+          />
+          <img
+            className="w-[300px] h-[59px]"
+            src="/assets/cowrywise.svg"
+            alt="cowrywise logo"
+          />{" "}
+          <img
+            className="w-[156px] h-[57px]"
+            src="/assets/google.svg"
+            alt="google logo"
+          />
+          <img
+            className="w-[173px] h-[50px]"
+            src="/assets/flutter.svg"
+            alt="flutter logo"
+          />
+          <img
+            className="w-[300px] h-[59px]"
+            src="/assets/cowrywise.svg"
+            alt="cowrywise logo"
+          />
+        </div>
+      </section>
+
       <section className="w-full mt-10 py-10">
         <div className="relative hidden lg:block">
           <img src="/assets/landing_vector.svg" className="absolute left-[635px]" alt="" />
@@ -204,7 +255,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-5 sm:gap-5 md:gap-10 sm:flex-row sm:mx-5 lg:mx-0 lg:ml-[350px] lg:flex-row lg:gap-32 justify-center mt-16 lg:mt-[120px] sm:items-start items-center">
+        <div className="flex flex-col mx-3 gap-5 sm:gap-5 md:gap-10 sm:flex-row sm:mx-5 lg:mx-0 lg:ml-[350px] lg:flex-row lg:gap-32 justify-center mt-16 lg:mt-[120px] sm:items-start items-center">
           <div className="sm:w-[500px] text-center sm:text-start">
             <p className="text-[18px]">GET MORE REVENUE AND INFLUENCE</p>
             <h2 className="lg:w-[392px] lg:text-[30px] font-bold sm:leading-[36px] leading-[25px]">
