@@ -139,6 +139,80 @@ const Home = () => {
 
   return (
     <Layout>
+      <section className="w-full bg-darkblue-50 h-[900px] sm:h-[800px] lg:h-[559px] mt-10">
+        <div className="relative top-[220px] hidden lg:block">
+          <img
+            src="/assets/pattern.svg"
+            alt=""
+            className="absolute top-[200px]"
+          />
+        </div>
+
+        <div className="flex flex-col lg:flex-row items-center lg:gap-5 lg:justify-between my-auto w-full h-[559px]">
+          <div className="lg:ml-16 mx-1 mt-5">
+            <h1 className="lg:w-[466px] sm:w-[550px] w-full lg:text-left text-center text-[18px] sm:text-[25px] lg:text-[36px] font-bold text-darkblue-500 leading-2 lg:leading-[40px]">
+              Our Foremost Goal is to give you an unforgettable learning
+              experience.
+            </h1>
+            <p className="lg:w-[395px] w-full mt-3 lg:text-left text-center text-[15px] sm:text-[18px] lg:text-[18px] font-light">
+              Ready to experience this in real time?. Here&apos;s how.
+            </p>
+          </div>
+          <div className="flex flex-col lg:mr-20 gap-10 mt-10 lg:mt-0">
+            <div className="w-full lg:w-[564px] flex flex-col lg:items-start items-center">
+              <div className="flex flex-col items-center lg:flex-row gap-2 lg:gap-10">
+                <p className="w-[24px] rounded-full bg-darkblue-500 text-center text-gray-50 text-[18px]">
+                  1
+                </p>
+                <p className="my-auto font-bold text-[20px] text-gray-900">
+                  Seamless Learning Experience
+                </p>
+              </div>
+              <p className="w-full sm:w-[564px] text-center lg:text-left text-[18px] mt-3 text-gray-900">
+                Stop battling with complex processes and steps while learning.
+                With a learning management system built for your ease, you can
+                learn on the go, at your own pace, but with your success in
+                mind.
+              </p>
+            </div>
+
+            <div className="w-full lg:w-[564px] flex flex-col lg:items-start items-center">
+              <div className="flex flex-col items-center lg:flex-row gap-2 lg:gap-10">
+                <p className="w-[24px] rounded-full bg-darkblue-500 text-center text-gray-50 text-[18px]">
+                  2
+                </p>
+                <p className="my-auto font-bold text-[20px] text-gray-900">
+                  Seamless Learning Experience
+                </p>
+              </div>
+              <p className="w-full sm:w-[564px] text-center lg:text-left text-[18px] mt-3 text-gray-900">
+                Stop battling with complex processes and steps while learning.
+                With a learning management system built for your ease, you can
+                learn on the go, at your own pace, but with your success in
+                mind.
+              </p>
+            </div>
+
+            <div className="w-full lg:w-[564px] flex flex-col lg:items-start items-center">
+              <div className="flex flex-col items-center lg:flex-row gap-2 lg:gap-10">
+                <p className="w-[24px] rounded-full bg-darkblue-500 text-center text-gray-50 text-[18px]">
+                  3
+                </p>
+                <p className="my-auto font-bold text-[20px] text-gray-900">
+                  Seamless Learning Experience
+                </p>
+              </div>
+              <p className="w-full sm:w-[564px] text-center lg:text-left text-[18px] mt-3 text-gray-900">
+                Stop battling with complex processes and steps while learning.
+                With a learning management system built for your ease, you can
+                learn on the go, at your own pace, but with your success in
+                mind.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
       <section className="py-12 px-5 sm:px-10 flex flex-col items-center justify-center ">
         <h1 className="mb-10 sm:mb-5 md:mb-0 text-darkblue-500 text-center text-3xl sm:text-3xl md:text-4xl font-bold">
           Master The CyberSpace
