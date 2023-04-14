@@ -122,6 +122,27 @@ const whatOurStudentSay = [
   },
 ];
 
+const goalsData = [
+  {
+    id: 1,
+    title: "Seamless Learning Experience",
+    description:
+      "Stop battling with complex processes and steps while learning. With a learning management system built for your ease, you can learn on the go, at your own pace, but with your success in mind.",
+  },
+  {
+    id: 2,
+    title: "Practical Courses",
+    description:
+      "Get implementable knowledge from practical and relevant courses taught by certified and experienced tutors. You can choose to learn in bite sizes or at a go. The choice is all yours.",
+  },
+  {
+    id: 3,
+    title: "Results-Driven Courses",
+    description:
+      "To ensure your success in the digital space, you get access to real-time support groups, and  tutors. You also get to take exams and assessments to determine how much you have comprehended your lessons.",
+  },
+];
+
 const Home = () => {
   const studentRef = useRef<HTMLDivElement | null>(null);
 
@@ -193,10 +214,18 @@ const Home = () => {
 
       <section className="w-full mt-10 py-10">
         <div className="relative hidden lg:block">
-          <img src="/assets/landing_vector.svg" className="absolute left-[635px]" alt="" />
+          <img
+            src="/assets/landing_vector.svg"
+            className="absolute left-[635px]"
+            alt=""
+          />
         </div>
         <div className="relative hidden lg:block">
-          <img src="/assets/pattern_2.svg" alt="" className="absolute left-[1300px] top-[200px]" />
+          <img
+            src="/assets/pattern_2.svg"
+            alt=""
+            className="absolute left-[1300px] top-[200px]"
+          />
         </div>
         <div className="flex flex-col sm:flex-row sm:gap-5 sm:mx-5 lg:mx-0 md:gap-10 lg:flex-row lg:gap-32 justify-center sm:items-start items-center">
           <img
@@ -308,56 +337,26 @@ const Home = () => {
             </p>
           </div>
           <div className="flex flex-col lg:mr-20 gap-10 mt-10 lg:mt-0">
-            <div className="w-full lg:w-[564px] flex flex-col lg:items-start items-center">
-              <div className="flex flex-col items-center lg:flex-row gap-2 lg:gap-10">
-                <p className="w-[24px] rounded-full bg-darkblue-500 text-center text-gray-50 text-[18px]">
-                  1
-                </p>
-                <p className="my-auto font-bold text-[20px] text-gray-900">
-                  Seamless Learning Experience
-                </p>
-              </div>
-              <p className="w-full sm:w-[564px] text-center lg:text-left text-[18px] mt-3 text-gray-900">
-                Stop battling with complex processes and steps while learning.
-                With a learning management system built for your ease, you can
-                learn on the go, at your own pace, but with your success in
-                mind.
-              </p>
-            </div>
-
-            <div className="w-full lg:w-[564px] flex flex-col lg:items-start items-center">
-              <div className="flex flex-col items-center lg:flex-row gap-2 lg:gap-10">
-                <p className="w-[24px] rounded-full bg-darkblue-500 text-center text-gray-50 text-[18px]">
-                  2
-                </p>
-                <p className="my-auto font-bold text-[20px] text-gray-900">
-                  Seamless Learning Experience
-                </p>
-              </div>
-              <p className="w-full sm:w-[564px] text-center lg:text-left text-[18px] mt-3 text-gray-900">
-                Stop battling with complex processes and steps while learning.
-                With a learning management system built for your ease, you can
-                learn on the go, at your own pace, but with your success in
-                mind.
-              </p>
-            </div>
-
-            <div className="w-full lg:w-[564px] flex flex-col lg:items-start items-center">
-              <div className="flex flex-col items-center lg:flex-row gap-2 lg:gap-10">
-                <p className="w-[24px] rounded-full bg-darkblue-500 text-center text-gray-50 text-[18px]">
-                  3
-                </p>
-                <p className="my-auto font-bold text-[20px] text-gray-900">
-                  Seamless Learning Experience
-                </p>
-              </div>
-              <p className="w-full sm:w-[564px] text-center lg:text-left text-[18px] mt-3 text-gray-900">
-                Stop battling with complex processes and steps while learning.
-                With a learning management system built for your ease, you can
-                learn on the go, at your own pace, but with your success in
-                mind.
-              </p>
-            </div>
+            {goalsData.map((goal) => {
+              return (
+                <div
+                  className="w-full lg:w-[564px] flex flex-col lg:items-start items-center"
+                  key={goal.id}
+                >
+                  <div className="flex flex-col items-center lg:flex-row gap-2 lg:gap-10">
+                    <p className="w-[24px] rounded-full bg-darkblue-500 text-center text-gray-50 text-[18px]">
+                      {goal.id}
+                    </p>
+                    <p className="my-auto font-bold text-[20px] text-gray-900">
+                      {goal.title}
+                    </p>
+                  </div>
+                  <p className="w-full sm:w-[564px] text-center lg:text-left text-[18px] mt-3 text-gray-900">
+                    {goal.description}
+                  </p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
