@@ -410,7 +410,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="w-full bg-darkblue-50 h-[580px]">
+      <section className="w-full bg-darkblue-50 h-[1000px] sm:h-[580px]">
         <div className="flex flex-col justify-center lg:flex-row gap-3 pt-16 lg:justify-between items-center lg:mx-24">
           <h1 className="text-darkblue-500 font-bold text-2xl sm:text-3xl md:text-4xl mb-4 lg:text-left text-center">
             What our students say
@@ -448,23 +448,23 @@ const Home = () => {
                 {whatOurStudentSay.map((data) => {
                   return (
                     <section
-                      className="flex flex-col flex-wrap bg-gray-50 h-[324px] w-[612px] sm:w-[612px] md:w-[612px] md:h-[324px] sm:h-[324px] pb-5 rounded-xl"
+                      className="flex flex-col flex-wrap bg-gray-50 h-[650px] w-full sm:w-[612px] md:w-[612px] md:h-[324px] sm:h-[324px] pb-5 rounded-xl"
                       key={data.id}
                     >
-                      <div className="mt-10 ml-10">
+                      <div className="mt-10 ml-3 sm:ml-10">
                         <img src="/assets/quotation.svg" alt="" />
                       </div>
-                      <div className="w-[299px] mt-7 ml-20 text-[18px]">
+                      <div className="w-[299px] mt-7 ml-5 sm:ml-20 text-[18px]">
                         <p>{data.description}</p>
                         <img
                           src="/assets/quotation_2.svg"
-                          className="ml-auto mt-5"
+                          className="ml-auto mr-5 sm:mr-0 mt-5"
                           alt=""
                         />
                       </div>
 
-                      <div className="mt-20 ml-7">
-                        <div className="flex items-center">
+                      <div className="mt-20 sm:ml-7">
+                        <div className="flex justify-center items-center">
                           <img
                             className="w-[122.98px] h-[122.98px] mr-[9px] mb-0 ml-2 absolute z-10"
                             src="/assets/student_landingpage.svg"
