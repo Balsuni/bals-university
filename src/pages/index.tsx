@@ -162,7 +162,7 @@ const Home = () => {
 
   return (
     <Layout>
-      <section className="w-full flex flex-col md:flex-row items-center justify-between px-5 py-10 sm:py-10 gap-4 md:gap-0  bg-darkblue-50">
+      <section className="w-full flex flex-col md:flex-row items-center justify-between px-5 py-3 sm:py-10 gap-4 md:gap-0  bg-darkblue-50">
         <div className={styles.container}>
           <img
             className="w-[156px] h-[57px]"
@@ -336,7 +336,7 @@ const Home = () => {
               Ready to experience this in real time?. Here&apos;s how.
             </p>
           </div>
-          <div className="flex flex-col lg:mr-20 gap-10 mt-10 lg:mt-0">
+          <div className="flex flex-col lg:mr-20 mx-3  gap-10 mt-10 lg:mt-0">
             {goalsData.map((goal) => {
               return (
                 <div
