@@ -2,10 +2,12 @@ import { StudentsCards } from "@/components/about-us/teamCards";
 import { ServicesCard } from "@/components/about-us/valueCards";
 import Startup from "@/components/landing/start";
 import Layout from "@/components/layout";
-import LandingPageCourseGallery from "@/components/landing-page/landingPageCourses";
-import React, { useRef } from "react";
-import Image from "next/image";
+import React from "react";
 import styles from "../styles/animation.module.scss";
+import GetStarted from "@/components/landing-page/getStarted";
+import Goals from "@/components/landing-page/goals";
+import WhatOurStudentsSay from "@/components/landing-page/whatOurStudentsSay";
+import Courses from "@/components/landing-page/courses";
 
 const ServicesData = [
   {
@@ -84,82 +86,7 @@ const Students = [
   },
 ];
 
-const whatOurStudentSay = [
-  {
-    id: 1,
-    name: "John Doe",
-    title: "Product Designer",
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Augue sit neque sit varius aliquet. Faucibus elit id tortor convallis pulvinar tristique fringilla et enim. Tortor sit eu pretium varius tellus urna. Duis sit non volutpat.",
-  },
-  {
-    id: 2,
-    name: "John Doe",
-    title: "Product Designer",
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Augue sit neque sit varius aliquet. Faucibus elit id tortor convallis pulvinar tristique fringilla et enim. Tortor sit eu pretium varius tellus urna. Duis sit non volutpat.",
-  },
-  {
-    id: 3,
-    name: "John Doe",
-    title: "Product Designer",
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Augue sit neque sit varius aliquet. Faucibus elit id tortor convallis pulvinar tristique fringilla et enim. Tortor sit eu pretium varius tellus urna. Duis sit non volutpat.",
-  },
-  {
-    id: 4,
-    name: "John Doe",
-    title: "Product Designer",
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Augue sit neque sit varius aliquet. Faucibus elit id tortor convallis pulvinar tristique fringilla et enim. Tortor sit eu pretium varius tellus urna. Duis sit non volutpat.",
-  },
-  {
-    id: 5,
-    name: "John Doe",
-    title: "Product Designer",
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Augue sit neque sit varius aliquet. Faucibus elit id tortor convallis pulvinar tristique fringilla et enim. Tortor sit eu pretium varius tellus urna. Duis sit non volutpat.",
-  },
-];
-
-const goalsData = [
-  {
-    id: 1,
-    title: "Seamless Learning Experience",
-    description:
-      "Stop battling with complex processes and steps while learning. With a learning management system built for your ease, you can learn on the go, at your own pace, but with your success in mind.",
-  },
-  {
-    id: 2,
-    title: "Practical Courses",
-    description:
-      "Get implementable knowledge from practical and relevant courses taught by certified and experienced tutors. You can choose to learn in bite sizes or at a go. The choice is all yours.",
-  },
-  {
-    id: 3,
-    title: "Results-Driven Courses",
-    description:
-      "To ensure your success in the digital space, you get access to real-time support groups, and  tutors. You also get to take exams and assessments to determine how much you have comprehended your lessons.",
-  },
-];
-
 const Home = () => {
-  const studentRef = useRef<HTMLDivElement | null>(null);
-
-  const handlePrev = () => {
-    studentRef.current?.scrollBy({
-      left: -studentRef.current?.offsetWidth,
-      behavior: "smooth",
-    });
-  };
-
-  const handleNext = () => {
-    studentRef.current?.scrollBy({
-      left: studentRef.current?.offsetWidth,
-      behavior: "smooth",
-    });
-  };
-
   return (
     <Layout>
       <section className="w-full flex flex-col md:flex-row items-center justify-between px-5 py-3 sm:py-10 gap-4 md:gap-0  bg-darkblue-50">
@@ -212,154 +139,8 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="w-full mt-10 py-10">
-        <div className="relative hidden lg:block">
-          <img
-            src="/assets/landing_vector.svg"
-            className="absolute left-[635px]"
-            alt=""
-          />
-        </div>
-        <div className="relative hidden lg:block">
-          <img
-            src="/assets/pattern_2.svg"
-            alt=""
-            className="absolute left-[1300px] top-[200px]"
-          />
-        </div>
-        <div className="flex flex-col sm:flex-row sm:gap-5 sm:mx-5 lg:mx-0 md:gap-10 lg:flex-row lg:gap-32 justify-center sm:items-start items-center">
-          <img
-            src="/assets/tired.svg"
-            className="rounded-3xl w-[300px]"
-            alt=""
-          />
-          <div>
-            <h1 className="text-[36px] text-darkblue-500 font-bold mx-5 sm:mx-0">
-              Surely, you&apos;re tired of:
-            </h1>
-            <div className="flex flex-col gap-5 mt-5">
-              <div className="flex flex-col items-center lg:flex-row gap-2 lg:gap-5">
-                <p className="w-[24px] rounded-full bg-red-800 text-center text-gray-50 text-[15px]">
-                  !
-                </p>
-                <p className="my-auto text-[17px] text-gray-900">
-                  Expensive courses
-                </p>
-              </div>
-
-              <div className="flex flex-col items-center lg:flex-row gap-2 lg:gap-5">
-                <p className="w-[24px] rounded-full bg-red-800 text-center text-gray-50 text-[15px]">
-                  !
-                </p>
-                <p className="my-auto text-[17px] text-gray-900">
-                  Overwhelming lessons
-                </p>
-              </div>
-
-              <div className="flex flex-col items-center lg:flex-row gap-2 lg:gap-5">
-                <p className="w-[24px] rounded-full bg-red-800 text-center text-gray-50 text-[15px]">
-                  !
-                </p>
-                <p className="my-auto text-[17px] text-gray-900">
-                  Unreachable Tutors
-                </p>
-              </div>
-              <div className="flex flex-col items-center lg:flex-row gap-2 lg:gap-5">
-                <p className="w-[24px] rounded-full bg-red-800 text-center text-gray-50 text-[15px]">
-                  !
-                </p>
-                <p className="my-auto text-[17px] text-gray-900">
-                  Impractical Courses
-                </p>
-              </div>
-              <div className="flex flex-col items-center lg:flex-row gap-2 lg:gap-5">
-                <p className="w-[24px] rounded-full bg-red-800 text-center text-gray-50 text-[15px]">
-                  !
-                </p>
-                <p className="my-auto text-[17px] text-gray-900">
-                  Getting little to no results
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex flex-col mx-3 gap-5 sm:gap-5 md:gap-10 sm:flex-row sm:mx-5 lg:mx-0 lg:ml-[350px] lg:flex-row lg:gap-32 justify-center mt-16 lg:mt-[120px] sm:items-start items-center">
-          <div className="sm:w-[500px] text-center sm:text-start">
-            <p className="text-[18px]">GET MORE REVENUE AND INFLUENCE</p>
-            <h2 className="lg:w-[392px] lg:text-[30px] font-bold sm:leading-[36px] leading-[25px]">
-              The most unique and Only{" "}
-              <span className="text-cyan1-600">You-Centric E-learning </span>
-              Platform For Your Personal Growth and Success
-            </h2>
-          </div>
-
-          <div className="sm:w-[500px] lg:mr-[350px] text-center sm:text-start">
-            <p className="lg:w-[464px] font-light text-gray-900 lg:text-[18px]">
-              BALS University is the all-encompassing e-learning platform geared
-              towards your growth and success in the digital space with
-              simplified and comprehensible lessons.
-            </p>
-            <button
-              type="submit"
-              className="flex bg-darkblue-500 mt-5 m-auto sm:mt-5 sm:mx-0 w-fit rounded-lg px-10 py-3 text-gray-50"
-            >
-              Get Started for free
-              <Image
-                src="/assets/arrow-up.svg"
-                alt="arrow up"
-                width={12}
-                height={12}
-                className="my-auto ml-3"
-              />
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <section className="w-full bg-darkblue-50 h-[900px] sm:h-[800px] lg:h-[559px] mt-10">
-        <div className="relative top-[220px] hidden lg:block">
-          <img
-            src="/assets/pattern.svg"
-            alt=""
-            className="absolute top-[200px]"
-          />
-        </div>
-
-        <div className="flex flex-col lg:flex-row items-center lg:gap-5 lg:justify-between my-auto w-full h-[559px]">
-          <div className="lg:ml-16 mx-1 mt-5">
-            <h1 className="lg:w-[466px] sm:w-[550px] w-full lg:text-left text-center text-[18px] sm:text-[25px] lg:text-[36px] font-bold text-darkblue-500 leading-2 lg:leading-[40px]">
-              Our Foremost Goal is to give you an unforgettable learning
-              experience.
-            </h1>
-            <p className="lg:w-[395px] w-full mt-3 lg:text-left text-center text-[15px] sm:text-[18px] lg:text-[18px] font-light">
-              Ready to experience this in real time?. Here&apos;s how.
-            </p>
-          </div>
-          <div className="flex flex-col lg:mr-20 mx-3  gap-10 mt-10 lg:mt-0">
-            {goalsData.map((goal) => {
-              return (
-                <div
-                  className="w-full lg:w-[564px] flex flex-col lg:items-start items-center"
-                  key={goal.id}
-                >
-                  <div className="flex flex-col items-center lg:flex-row gap-2 lg:gap-10">
-                    <p className="w-[24px] rounded-full bg-darkblue-500 text-center text-gray-50 text-[18px]">
-                      {goal.id}
-                    </p>
-                    <p className="my-auto font-bold text-[20px] text-gray-900">
-                      {goal.title}
-                    </p>
-                  </div>
-                  <p className="w-full sm:w-[564px] text-center lg:text-left text-[18px] mt-3 text-gray-900">
-                    {goal.description}
-                  </p>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
+      <GetStarted />
+      <Goals />
 
       <section className="py-12 px-5 sm:px-10 flex flex-col items-center justify-center ">
         <h1 className="mb-10 sm:mb-5 md:mb-0 text-darkblue-500 text-center text-3xl sm:text-3xl md:text-4xl font-bold">
@@ -410,96 +191,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="w-full bg-darkblue-50 h-[1000px] sm:h-[580px]">
-        <div className="flex flex-col justify-center lg:flex-row gap-3 pt-16 lg:justify-between items-center lg:mx-24">
-          <h1 className="text-darkblue-500 font-bold text-2xl sm:text-3xl md:text-4xl mb-4 lg:text-left text-center">
-            What our students say
-          </h1>
-          <div className="flex gap-5">
-            <button
-              // disabled={handlePrev === null}
-              className="bg-darkblue-500 text-white hover:bg-gray-900 p-2 py-4 px-3 rounded-full focus:outline-none"
-              onClick={handlePrev}
-            >
-              <img
-                src="/assets/previous-icon.svg"
-                width={20}
-                height={20}
-                alt=""
-              />
-            </button>
-            <button
-              // disabled={handleNext === null}
-              className="bg-darkblue-500 text-white hover:bg-gray-900 p-2 py-4 px-3 rounded-full focus:outline-none"
-              onClick={handleNext}
-            >
-              <img src="/assets/next-icon.svg" width={20} height={20} alt="" />
-            </button>
-          </div>
-        </div>
-        <div className="px-5 lg:ml-16 mt-10">
-          <div className="relative">
-            <div
-              ref={studentRef}
-              className="mb-5 flex flex-row w-full overflow-auto transition duration-300 ease-in "
-              style={{ transform: "translateX(0)" }}
-            >
-              <div className="flex flex-row gap-[22px] sm:gap-[40px]">
-                {whatOurStudentSay.map((data) => {
-                  return (
-                    <section
-                      className="flex flex-col flex-wrap bg-gray-50 h-[650px] w-full sm:w-[612px] md:w-[612px] md:h-[324px] sm:h-[324px] pb-5 rounded-xl"
-                      key={data.id}
-                    >
-                      <div className="mt-10 ml-3 sm:ml-10">
-                        <img src="/assets/quotation.svg" alt="" />
-                      </div>
-                      <div className="w-[299px] mt-7 ml-5 sm:ml-20 text-[18px]">
-                        <p>{data.description}</p>
-                        <img
-                          src="/assets/quotation_2.svg"
-                          className="ml-auto mr-5 sm:mr-0 mt-5"
-                          alt=""
-                        />
-                      </div>
-
-                      <div className="mt-20 sm:ml-7">
-                        <div className="flex justify-center items-center">
-                          <img
-                            className="w-[122.98px] h-[122.98px] mr-[9px] mb-0 ml-2 absolute z-10"
-                            src="/assets/student_landingpage.svg"
-                            alt="logo"
-                          />
-                          <img
-                            className="w-[145px] relative z-0"
-                            src="/assets/ecclipse.svg"
-                            alt="logo"
-                          />
-                        </div>
-
-                        <div className="flex justify-center flex-col items-center mt-3">
-                          <p className="text-[18px] font-bold text-gray-900">
-                            {data.name}
-                          </p>
-                          <p className="text-[16px] font-light text-gray-900">
-                            {data.title}
-                          </p>
-                        </div>
-                      </div>
-                    </section>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex items-center justify-center gap-3 mt-5 lg:mt-10">
-          <img src="/assets/Rectangle_1.svg" onClick={handlePrev} alt="" />
-          <img src="/assets/Rectangle.svg" alt="" />
-          <img src="/assets/Rectangle_1.svg" alt="" onClick={handleNext} />
-        </div>
-      </section>
+      <WhatOurStudentsSay />
 
       <main className="px-6 py-12 ">
         <section className="flex flex-col pt-12">
@@ -528,31 +220,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="mt-12 lg:mx-5">
-          <div className="mb-9 lg:ml-16 ml-0 mr-10">
-            <div className="flex flex-row items-center justify-between border-b-4 border-darkblue-100">
-              <div className="flex flex-col sm:flex-row gap-5 sm:gap-5 md:gap-5 lg:gap-18 xl:gap-32">
-                <h1 className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:lg:text-3xl  font-medium text-gray-900 border-b-4 border-darkblue-500 px-5px md:px-[6px] lg:md:px-[10px] py-[10px]  ">
-                  All Courses
-                </h1>
-                <h1 className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:lg:text-3xl  font-medium text-gray-900  hover:border-b-4 hover:border-darkblue-500 px-5px md:px-[6px] lg:md:px-[10px] py-[10px] ">
-                  Skill Acquisition
-                </h1>
-                <h1 className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:lg:text-3xl  font-medium text-gray-900 hover:border-b-4 hover:border-darkblue-500 px-5px md:px-[6px] lg:md:px-[10px] py-[10px] ">
-                  Talent Acquisition
-                </h1>
-              </div>
-              <div className="flex flex-row gap-[2px] sm:gap-2 ">
-                <img src="/assets/search-icon.svg" alt="search" />
-                <img src="/assets/sort-by-icon.svg" alt="sort" />
-              </div>
-            </div>
-          </div>
-
-          <div className="items-center ml-0 lg:ml-20 mr-3">
-            <LandingPageCourseGallery />
-          </div>
-        </section>
+        <Courses />
 
         <section className="flex flex-col md:flex-row mb-16 gap-16 md:gap-8 lg:gap-10 items-center justify-center ">
           <div className="max-w-[450px]">
