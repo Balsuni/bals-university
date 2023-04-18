@@ -135,7 +135,9 @@ const CourseDetails = () => {
             </div>
             <div className="w-full flex flex-col gap-8 sm:gap-0 lg:flex-row">
               <div className="flex flex-col gap-2 px-5 md:px-0 ">
-                <h1 className="font-bold text-2xl lg:text-5xl text-gray-50">{price}</h1>
+                <h1 className="font-bold text-2xl lg:text-5xl text-gray-50">
+                  {price}
+                </h1>
                 <h2 className="text-xl font-bold text-bodyBackground ">
                   Available in English only
                 </h2>
