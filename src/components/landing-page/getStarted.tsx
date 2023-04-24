@@ -37,22 +37,8 @@ const GetStarted = () => {
         />
       </div>
       <div className="flex flex-col sm:flex-row sm:gap-5 sm:mx-5 lg:mx-0 md:gap-10 lg:flex-row lg:gap-32 justify-center sm:items-start items-center">
-        <motion.div
-          animate={{ x: [50, 150, 50], opacity: 1, scale: 1 }}
-          transition={{
-            duration: 5,
-            delay: 0.3,
-            ease: [0.5, 0.71, 1, 1.5],
-          }}
-          initial={{ opacity: 0, scale: 0.5 }}
-          whileHover={{ scale: 1.2 }}
-        >
-          <img
-            src="/assets/tired.svg"
-            className="rounded-3xl w-[300px]"
-            alt=""
-          />
-        </motion.div>
+        <img src="/assets/tired.svg" className="rounded-3xl w-[300px]" alt="" />
+
         <div>
           <h1 className="text-[36px] text-darkblue-500 font-bold mx-5 sm:mx-0 animate-pulse">
             Surely, you&apos;re tired of:
@@ -105,25 +91,15 @@ const GetStarted = () => {
       </div>
 
       <div className="flex flex-col mx-3 gap-5 sm:gap-5 md:gap-10 sm:flex-row sm:mx-5 lg:mx-0 lg:ml-[350px] lg:flex-row lg:gap-32 justify-center mt-16 lg:mt-[120px] sm:items-start items-center">
-        <motion.h1
-          animate={{ x: [50, 150, 50], opacity: 1, scale: 1 }}
-          transition={{
-            duration: 5,
-            delay: 0.3,
-            ease: [0.5, 0.71, 1, 1.5],
-          }}
-          initial={{ opacity: 0, scale: 0.5 }}
-          whileHover={{ scale: 1.2 }}
-        >
-          <div className="sm:w-[500px] text-center sm:text-start">
-            <p className="text-[18px]">GET MORE REVENUE AND INFLUENCE</p>
-            <h2 className="lg:w-[392px] lg:text-[30px] font-bold sm:leading-[36px] leading-[25px]">
-              The most unique and Only{" "}
-              <span className="text-cyan1-600">You-Centric E-learning </span>
-              Platform For Your Personal Growth and Success
-            </h2>
-          </div>
-        </motion.h1>
+        <div className="sm:w-[500px] text-center sm:text-start">
+          <p className="text-[18px]">GET MORE REVENUE AND INFLUENCE</p>
+          <h2 className="lg:w-[392px] lg:text-[30px] font-bold sm:leading-[36px] leading-[25px]">
+            The most unique and Only{" "}
+            <span className="text-cyan1-600">You-Centric E-learning </span>
+            Platform For Your Personal Growth and Success
+          </h2>
+        </div>
+
         <motion.div
           className="box"
           ref={ref}
