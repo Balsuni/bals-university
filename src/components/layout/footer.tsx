@@ -112,15 +112,16 @@ const Footer = () => {
             We will ensure you don&apos;t get spammed
           </p>
 
-          <form className="mt-10 flex">
+          <form className="mt-10 flex w-10/12 h-12">
             <input
-              type="text"
-              className="w-10/12 px-5 h-12 rounded-lg font-light"
+              type="email"
+              className="font-bold text-gray-900 px-5 h-12 rounded-lg outline-none border-none"
               placeholder="Enter Email..."
+              required
             />
             <button
               type="submit"
-              className="bg-cyan1-500 active:bg-cyan1-700 hover:bg-cyan1-400  px-7 py-1 rounded-lg text-gray-100"
+              className="bg-cyan1-500 active:bg-cyan1-700 hover:bg-cyan1-400  px-7 py-1 rounded-lg text-gray-100 absolute h-12 left-[250px]"
             >
               Submit
             </button>
