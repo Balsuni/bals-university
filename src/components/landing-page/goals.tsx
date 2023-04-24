@@ -39,7 +39,7 @@ const Goals = () => {
     },
   ];
   return (
-    <section className="w-full bg-darkblue-50 pt-16 h-[900px] sm:h-[800px] lg:h-[559px] mt-10">
+    <section className="w-full bg-darkblue-50 pt-16 h-[1000px] sm:h-[900px] lg:h-[600px] mt-10">
       <div className="relative top-[220px] hidden lg:block">
         <img
           src="/assets/pattern.svg"
@@ -57,7 +57,7 @@ const Goals = () => {
           animate={control}
         >
           <div className="lg:ml-16 mx-1 mt-5 animate-bounce">
-            <h1 className="lg:w-[466px] sm:w-[550px] w-full lg:text-left text-center text-[18px] sm:text-[25px] lg:text-[36px] font-bold text-darkblue-500 leading-2 lg:leading-[40px]">
+            <h1 className="lg:w-[400px] xl:w-[466px] sm:w-[550px] w-full lg:text-left text-center text-[18px] sm:text-[25px] lg:text-[36px] font-bold text-darkblue-500 leading-2 lg:leading-[40px]">
               Our Foremost Goal is to give you an unforgettable learning
               experience.
             </h1>
@@ -81,7 +81,7 @@ const Goals = () => {
                     {goal.title}
                   </p>
                 </div>
-                <p className="w-full sm:w-[564px] text-center lg:text-left text-[18px] mt-3 text-gray-900">
+                <p className="w-full sm:w-[564px] lg:w-[500px] xl:w-[564px] text-center lg:text-left text-[18px] mt-3 text-gray-900">
                   {goal.description}
                 </p>
               </div>
