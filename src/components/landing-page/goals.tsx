@@ -39,7 +39,7 @@ const Goals = () => {
     },
   ];
   return (
-    <section className="w-full bg-darkblue-50 h-[900px] sm:h-[800px] lg:h-[559px] mt-10">
+    <section className="w-full bg-darkblue-50 pt-16 h-[900px] sm:h-[800px] lg:h-[559px] mt-10">
       <div className="relative top-[220px] hidden lg:block">
         <img
           src="/assets/pattern.svg"
