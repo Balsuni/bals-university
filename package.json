@@ -23,6 +23,8 @@
     "react-dom": "18.2.0",
     "react-intersection-observer": "^9.4.3",
     "react-query": "^3.39.3",
+    "react-simple-typewriter": "^5.0.1",
+    "react-typewriter-effect": "^1.1.0",
     "sass": "^1.60.0",
     "typescript": "5.0.2"
   },
