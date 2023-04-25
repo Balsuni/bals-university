@@ -9,7 +9,6 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <AnimatePresence mode="wait" initial={true}>
       <QueryClientProvider client={queryClient}>
-        {" "}
         <Component {...pageProps} />{" "}
       </QueryClientProvider>
     </AnimatePresence>
