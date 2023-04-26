@@ -6,6 +6,7 @@ import ValueCards, {
 import Layout from "@/components/layout";
 import React from "react";
 import styles from "../styles/animation.module.scss";
+import MarqueeSlider from "@/components/landing-page/marqueeSlider";
 
 const AboutUs = () => {
   return (
@@ -148,53 +149,7 @@ const AboutUs = () => {
         </section>
       </main>
       <section className="w-full flex flex-col md:flex-row items-center justify-between px-5 py-10 sm:py-14 gap-4 md:gap-0  bg-gray-200">
-        <div className={styles.container}>
-          <img
-            className="w-[156px] h-[57px]"
-            src="/assets/google.svg"
-            alt="google logo"
-          />
-          <img
-            className="w-[173px] h-[50px]"
-            src="/assets/flutter.svg"
-            alt="flutter logo"
-          />
-          <img
-            className="w-[300px] h-[59px]"
-            src="/assets/cowrywise.svg"
-            alt="cowrywise logo"
-          />
-          <img
-            className="w-[156px] h-[57px]"
-            src="/assets/google.svg"
-            alt="google logo"
-          />
-          <img
-            className="w-[173px] h-[50px]"
-            src="/assets/flutter.svg"
-            alt="flutter logo"
-          />
-          <img
-            className="w-[300px] h-[59px]"
-            src="/assets/cowrywise.svg"
-            alt="cowrywise logo"
-          />{" "}
-          <img
-            className="w-[156px] h-[57px]"
-            src="/assets/google.svg"
-            alt="google logo"
-          />
-          <img
-            className="w-[173px] h-[50px]"
-            src="/assets/flutter.svg"
-            alt="flutter logo"
-          />
-          <img
-            className="w-[300px] h-[59px]"
-            src="/assets/cowrywise.svg"
-            alt="cowrywise logo"
-          />
-        </div>
+        <MarqueeSlider />
       </section>
     </Layout>
   );

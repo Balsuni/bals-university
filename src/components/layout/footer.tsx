@@ -98,13 +98,15 @@ const Footer = () => {
     <FooterWrapper>
       <FooterFlexWrapper>
         <div className="lg:ml-10 xl:ml-10 text-gray-50">
-          <Image
-            className="mt-auto mb-auto text-cyan1-500"
-            src="/assets/logo.svg"
-            alt="Logo"
-            width={150}
-            height={150}
-          />
+          <Link href="/">
+            <Image
+              className="mt-auto mb-auto text-cyan1-500"
+              src="/assets/logo.svg"
+              alt="Logo"
+              width={150}
+              height={150}
+            />
+          </Link>
           <h5 className="font-bold text-xl mt-16 tracking-wide">
             Subscribe to our newsletters
           </h5>
@@ -121,7 +123,7 @@ const Footer = () => {
             />
             <button
               type="submit"
-              className="bg-cyan1-500 active:bg-cyan1-700 hover:bg-cyan1-400  px-7 py-1 rounded-lg text-gray-100 absolute h-12 left-[250px]"
+              className="bg-cyan1-500 active:bg-cyan1-700 hover:bg-cyan1-400  px-7 py-1 rounded-lg text-gray-100 absolute h-12 left-[260px]"
             >
               Submit
             </button>
