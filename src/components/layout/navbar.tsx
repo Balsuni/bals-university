@@ -168,13 +168,15 @@ const Navbar: React.FC = () => {
 
   return (
     <div className="flex h-auto px-3 sm:px-7 md:px-10 lg:px-8 xl:px-16 py-6 flex-row items-center justify-between bg-bodyBackground">
-      <Image
-        className="w-28 sm:w-36 h-12 sm:h-16"
-        src="/assets/balis-logo.svg"
-        alt="balis-logo"
-        width={131}
-        height={67}
-      />
+      <Link href="/">
+        <Image
+          className="w-28 sm:w-36 h-12 sm:h-16"
+          src="/assets/balis-logo.svg"
+          alt="balis-logo"
+          width={131}
+          height={67}
+        />
+      </Link>
 
       <div ref={menuRef}>
         <div

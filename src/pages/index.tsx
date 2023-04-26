@@ -3,13 +3,13 @@ import { ServicesCard } from "@/components/about-us/valueCards";
 import Startup from "@/components/landing/start";
 import Layout from "@/components/layout";
 import React from "react";
-import styles from "../styles/animation.module.scss";
 import GetStarted from "@/components/landing-page/getStarted";
 import Goals from "@/components/landing-page/goals";
 import WhatOurStudentsSay from "@/components/landing-page/whatOurStudentsSay";
 import Courses from "@/components/landing-page/courses";
 import MasterTheCyberSpace from "@/components/landing-page/masterTheCyberSpace";
 import AnimateText from "@/components/landing-page/animateText";
+import MarqueeSlider from "@/components/landing-page/marqueeSlider";
 
 const ServicesData = [
   {
@@ -54,60 +54,13 @@ const Home = () => {
   return (
     <Layout>
       <AnimateText />
+
       <section className="w-full flex flex-col md:flex-row items-center justify-between px-5 py-3 sm:py-10 gap-4 md:gap-0 bg-darkblue-50">
-        <div className={styles.container}>
-          <img
-            className="w-[156px] h-[57px]"
-            src="/assets/google.svg"
-            alt="google logo"
-          />
-          <img
-            className="w-[173px] h-[50px]"
-            src="/assets/flutter.svg"
-            alt="flutter logo"
-          />
-          <img
-            className="w-[300px] h-[59px]"
-            src="/assets/cowrywise.svg"
-            alt="cowrywise logo"
-          />
-          <img
-            className="w-[156px] h-[57px]"
-            src="/assets/google.svg"
-            alt="google logo"
-          />
-          <img
-            className="w-[173px] h-[50px]"
-            src="/assets/flutter.svg"
-            alt="flutter logo"
-          />
-          <img
-            className="w-[300px] h-[59px]"
-            src="/assets/cowrywise.svg"
-            alt="cowrywise logo"
-          />{" "}
-          <img
-            className="w-[156px] h-[57px]"
-            src="/assets/google.svg"
-            alt="google logo"
-          />
-          <img
-            className="w-[173px] h-[50px]"
-            src="/assets/flutter.svg"
-            alt="flutter logo"
-          />
-          <img
-            className="w-[300px] h-[59px]"
-            src="/assets/cowrywise.svg"
-            alt="cowrywise logo"
-          />
-          <div></div>
-          <div></div>
-        </div>
-        <div className={styles.container}></div>
+        <MarqueeSlider />
       </section>
 
       <GetStarted />
+
       <Goals />
 
       <MasterTheCyberSpace />
@@ -134,7 +87,7 @@ const Home = () => {
 
       <WhatOurStudentsSay />
 
-      <main className="py-12 ">
+      <main className="py-12 bg-bodyBackground">
         <section className="flex flex-col pt-12">
           <div className="flex flex-col lg:flex-row gap-3 justify-normal lg:justify-between lg:items-center lg:mx-24">
             <h1 className="text-darkblue-500 font-bold text-2xl sm:text-3xl md:text-4xl mb-4">
