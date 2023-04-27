@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 import Link from "next/link";
+import { blogDisplayData } from "./blogDisplayData";
 
 const fetchBlogs = (currentPage: any) => {
   const itemsPerPage = 12;
@@ -38,7 +39,7 @@ const PaginatedBlogs = () => {
   return (
     <div className="flex flex-col gap-10 items-center justify-center">
       <div className="gap-10 grid grid-rows-6 grid-cols-1 sm:grid-rows-3 sm:grid-cols-2  lg:grid-rows-2 lg:grid-cols-3 xl:grid-rows-2 xl:grid-cols-4  ">
-        {data?.data?.map((data: any) => {
+        {blogDisplayData.map((data: any) => {
           return (
             <Link
               href={{
@@ -56,14 +57,14 @@ const PaginatedBlogs = () => {
               as={`blog/${data.id}/${data.blogTitle.toLocaleLowerCase()}`}
               key={data.id}
             >
-              <section className="max-w-[280px] lg:max-w-[300px] border-[px] shadow-md bg-gray-100 ">
+              <section className="max-w-[280px] lg:max-w-[320px] border-[px] shadow-md bg-gray-100 ">
                 <img
                   className="rounded-t-3xl "
                   src={data.imageSrc}
                   alt="logo"
                 />
-                <main className="px-4  py-5 flex flex-col h-[auto]  gap-6">
-                  <div className="flex flex-row items-center justify-between ">
+                <main className="px-4  py-5 flex flex-col h-[auto]  gap-5">
+                  <div className="flex flex-row items-center justify-between h-[75px]">
                     <div className="flex flex-row items-center gap-2">
                       <img
                         className="w-[37px] h-[37px]"
@@ -92,9 +93,21 @@ const PaginatedBlogs = () => {
                     </div>
                   </div>
                   <Link
-                    // href={`/blog/` + data.id}
-                    href={""}
-                    className="flex flex-row gap-2 text-lg font-medium text-darkblue-500  pb-5 "
+                    href={{
+                      pathname: "/blog/[blogTitle]/",
+                      query: {
+                        imageSrc: data.imageSrc,
+                        avatarSrc: data.avatarSrc,
+                        author: data.author,
+                        date: data.date,
+                        category: data.category,
+                        blogTitle: data.blogTitle,
+                        blogContent: data.blogContent,
+                      },
+                    }}
+                    as={`blog/${data.id}/${data.blogTitle.toLocaleLowerCase()}`}
+                    key={data.id}
+                    className="flex flex-row gap-2 text-lg font-medium text-darkblue-500 py-5 "
                   >
                     Read Post
                     <img src="/assets/post-arrow.svg" alt="post" />

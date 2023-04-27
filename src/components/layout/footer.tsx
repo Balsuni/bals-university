@@ -1,11 +1,11 @@
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
+import { Copyright } from "iconsax-react";
+import FooterLinks from "../ui/footerLinks";
 import FooterWrapper from "../ui/footerWrapper";
 import FooterFlexWrapper from "../ui/footerFlexWrapper";
-import FooterLinks from "../ui/footerLinks";
 import FooterLinksParagraph from "../ui/footerLinksParagraph";
-import Link from "next/link";
-import { Copyright } from "iconsax-react";
 
 const Footer = () => {
   const FooterSocialIcons = [

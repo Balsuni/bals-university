@@ -25,15 +25,15 @@ const Header = () => {
               updates
             </h1>
           </div>
-          <form className="flex w-[280px]">
+          <form className="flex pt-3 w-[280px]">
             <input
               type="text"
-              className="w-10/12 px-5 h-12 rounded-lg font-light"
+              className="w-auto px-5 h-12 rounded-lg font-light"
               placeholder="Enter Email..."
             />
             <button
               type="submit"
-              className="bg-cyan1-500 px-7 py-1 rounded-lg text-gray-100"
+              className="relative bg-cyan1-500 px-7 py-1 rounded-lg text-gray-100 right-[120px] "
             >
               Subscribe
             </button>
