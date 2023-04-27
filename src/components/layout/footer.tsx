@@ -123,7 +123,7 @@ const Footer = () => {
             />
             <button
               type="submit"
-              className="bg-cyan1-500 active:bg-cyan1-700 hover:bg-cyan1-400  px-7 py-1 rounded-lg text-gray-100 absolute h-12 left-[260px]"
+              className="bg-cyan1-500 active:bg-cyan1-700 hover:bg-cyan1-400  px-7 py-1 rounded-lg text-gray-100 absolute h-12 left-[205px] md:left-[220px] lg:left-[260px]   "
             >
               Submit
             </button>
