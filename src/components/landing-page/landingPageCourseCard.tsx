@@ -34,7 +34,7 @@ const landingPageCoursesCardData = [
     id: 2,
     category: "Design",
     imageSrc: "/assets/courses_1.svg",
-    courseTitle: "Introduction to Web Development",
+    courseTitle: "Introduction to Web Development and Design",
     ratings: [
       "/assets/star_enabled.svg",
       "/assets/star_enabled.svg",
@@ -314,7 +314,7 @@ const landingPageCoursesCardData = [
 
 const LandingPageCourseCard = () => {
   return (
-    <div className="flex flex-row gap-[22px] sm:gap-[40px] px-1 pb-5">
+    <div className="flex flex-row gap-6 sm:gap-8 xl:gap-9 mr-[14px] sm:mr-[20px] ">
       {landingPageCoursesCardData.map((data) => {
         return (
           <Link
@@ -340,7 +340,7 @@ const LandingPageCourseCard = () => {
             as={`courses/${data.id}/${data.courseTitle.toLocaleLowerCase()}`}
             key={data.id}
           >
-            <section className="flex flex-col bg-darkblue-50 w-[300px] sm:w-[500px] md:w-[350px] md:h-[520px] shadow-lg sm:h-[600px] pb-5 rounded-xl">
+            <section className="flex flex-col bg-darkblue-50 w-[300px] sm:w-[320px] md:w-[350px] md:h-[auto] shadow-lg sm:h-[auto] pb-5 rounded-xl">
               <div className="h-auto">
                 <img
                   src={data.imageSrc}
@@ -351,7 +351,7 @@ const LandingPageCourseCard = () => {
               <h1 className="py-1 px-5 ml-5 mt-5 text-lg font-normal text-gray-900 border-[2px]  border-gray-500 w-[95px] ">
                 {data.category}
               </h1>
-              <h1 className="text-gray-900 ml-5 text-[19px] font-bold tracking-wider mt-5">
+              <h1 className="text-gray-900 ml-5 text-[19px] font-bold mt-5 min-h-[60px] ">
                 {data.courseTitle}
               </h1>
 
@@ -374,7 +374,7 @@ const LandingPageCourseCard = () => {
                 {data.price}
               </p>
 
-              <button className="ml-5 lg:mt-1 mt-3 xl:mt-3 border-2 bg-darkblue-500 text-gray-50 rounded-md w-11/12 h-fit lg:px-11 xl:px-18 px-14 py-2 text-center">
+              <button className="ml-5 lg:mt-1 mt-3 xl:mt-3 border-2 bg-darkblue-500 text-gray-50 rounded-md w-11/12 h-fit lg:px-11 xl:px-18 px-14 py-2 mb-3 text-center">
                 {data.buttonTitle}
               </button>
             </section>

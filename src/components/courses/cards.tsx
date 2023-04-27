@@ -576,7 +576,7 @@ export const CoursesCardMedium = () => {
             as={`courses/${data.id}/${data.courseTitle.toLocaleLowerCase()}`}
             key={data.id}
           >
-            <section className="flex flex-col bg-darkblue-50 w-[300px] sm:w-[500px] md:w-[350px] md:h-[500px] sm:h-[600px] pb-5 rounded-xl">
+            <section className="flex flex-col bg-darkblue-50 w-[300px] sm:w-[500px] md:w-[350px] md:h-[auto] sm:h-[auto] pb-5 rounded-xl">
               <div className="h-auto">
                 <img
                   src={data.imageSrc}
@@ -587,7 +587,7 @@ export const CoursesCardMedium = () => {
               <h1 className="py-1 px-5 ml-5 mt-5 text-lg font-normal text-cyan1-800 border-[2px]  border-cyan1-800 w-[95px] ">
                 {data.category}
               </h1>
-              <h1 className="text-darkblue-500 ml-5 text-[19px] font-bold tracking-wider mt-5">
+              <h1 className="text-darkblue-500 ml-5 text-[19px] font-bold tracking-wider h-[60px]  mt-5">
                 {data.courseTitle}
               </h1>
 
@@ -605,7 +605,7 @@ export const CoursesCardMedium = () => {
                 {data.price}
               </p>
 
-              <button className="ml-5 lg:mt-1 mt-3 xl:mt-3 border-2 border-darkblue-500 rounded-md w-11/12 h-fit lg:px-11 xl:px-18 px-14 py-2 text-center">
+              <button className="ml-5  lg:mt-1 mt-3 xl:mt-3 mb-3 border-2 border-darkblue-500 rounded-md w-11/12 h-fit lg:px-11 xl:px-18 px-14 py-2 text-center">
                 {data.buttonTitle}
               </button>
             </section>
@@ -702,14 +702,13 @@ const CoursesCard = () => {
           as={`courses/${data.id}/${data.courseTitle.toLocaleLowerCase()}`}
           key={data.id}
         >
-          
-          <div className="flex flex-col lg:flex-row bg-darkblue-50 w-fit lg:w-[550px] lg:h-[370px] rounded-xl">
-            <div className="p-5 mt-5">
+          <div className="flex flex-col lg:flex-row bg-darkblue-50 w-fit lg:w-[550px] lg:h-[auto] rounded-xl">
+            <div className="p-5 mt-5 mb-5">
               <h1 className="py-1 px-5 text-lg font-normal text-cyan1-800 border-B[2px]  border-cyan1-800 w-[95px] ">
                 {data.category}
               </h1>
 
-              <h1 className="text-darkblue-500 text-[19px] font-bold tracking-wider mt-5">
+              <h1 className="text-darkblue-500 text-[19px] font-bold mt-5 tracking-wider  h-[60px] ">
                 {data.courseTitle}
               </h1>
 
