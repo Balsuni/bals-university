@@ -40,7 +40,7 @@ const GetStarted = () => {
         <img src="/assets/tired.svg" className="rounded-3xl w-[300px]" alt="" />
 
         <div>
-          <h1 className="text-[36px] text-darkblue-500 font-bold mx-5 sm:mx-0 animate-pulse">
+          <h1 className="text-[24px] sm:text-[36px] mt-8 sm:mt-0 text-darkblue-500 font-bold mx-5 sm:mx-0 animate-pulse">
             Surely, you&apos;re tired of:
           </h1>
           <div className="flex flex-col gap-5 mt-5">

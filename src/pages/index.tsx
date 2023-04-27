@@ -88,7 +88,7 @@ const Home = () => {
       <WhatOurStudentsSay />
 
       <main className="py-12 bg-bodyBackground">
-        <section className="flex flex-col pt-12">
+        <section className="flex flex-col px-5 bg-bodyBackground ">
           <div className="flex flex-col lg:flex-row gap-3 justify-normal lg:justify-between lg:items-center lg:mx-24">
             <h1 className="text-darkblue-500 font-bold text-2xl sm:text-3xl md:text-4xl mb-4">
               Check out our influential courses
@@ -113,75 +113,75 @@ const Home = () => {
             </h4>
           </div>
         </section>
-
-        <Courses />
-
-        <section className="flex flex-col md:flex-row pb-16 gap-16 md:gap-8 lg:gap-10 items-center justify-center bg-bodyBackground ">
-          <div className="max-w-[450px]">
-            <h1 className="text-darkblue-500 font-bold text-2xl sm:text-3xl md:text-4xl mb-4">
-              You can promote our courses and get a commission
-            </h1>
-            <h3 className="text-darkblue-900 text-basw sm:text-lg md:text-xl font-normal mb-10">
-              Lorem ipsum dolor sit amet consectetur. Cursus sed ullamcorper sit
-              vel in lorem ut. Euismod nunc neque ut lorem aenean mauris neque
-              libero amet.
-            </h3>
-            <h4 className="flex flex-row items-center gap-2 text-darkblue-500 text-lg font-medium  ">
-              See how it works{" "}
-              <svg
-                width="21"
-                height="21"
-                viewBox="0 0 20 21"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M12.293 5.80866C12.4805 5.62118 12.7348 5.51587 13 5.51587C13.2652 5.51587 13.5195 5.62118 13.707 5.80866L17.707 9.80866C17.8945 9.99618 17.9998 10.2505 17.9998 10.5157C17.9998 10.7808 17.8945 11.0351 17.707 11.2227L13.707 15.2227C13.5184 15.4048 13.2658 15.5056 13.0036 15.5033C12.7414 15.5011 12.4906 15.3959 12.3052 15.2105C12.1198 15.0251 12.0146 14.7743 12.0123 14.5121C12.01 14.2499 12.1108 13.9973 12.293 13.8087L14.586 11.5157H3C2.73478 11.5157 2.48043 11.4103 2.29289 11.2228C2.10536 11.0352 2 10.7809 2 10.5157C2 10.2504 2.10536 9.99609 2.29289 9.80855C2.48043 9.62101 2.73478 9.51566 3 9.51566H14.586L12.293 7.22266C12.1055 7.03513 12.0002 6.78082 12.0002 6.51566C12.0002 6.25049 12.1055 5.99618 12.293 5.80866Z"
-                  fill="#162A5A"
-                />
-              </svg>
-            </h4>
-          </div>
-          <div>
-            <img
-              className="w-[300px] sm:w-[400px] md:w-[350px] lg:w-[580px] xl:w-[725px]"
-              src="/assets/photo.jpg"
-              alt="lady-pic"
-            />
-          </div>
-        </section>
-
-        <section className="flex flex-col md:flex-row items-center justify-center gap-5 bg-bodyBackground ">
-          <div className="flex flex-row">
-            <img
-              className="relative z-10 w-[100px]"
-              src="/assets/student1.svg "
-              alt="student-avatar"
-            />
-            <img
-              className="rounded-full relative z-20 -left-6 w-[100px]  "
-              src="/assets/student2.svg "
-              alt="student-avatar"
-            />
-            <img
-              className="rounded-full relative z-30 -left-14 w-[100px] "
-              src="/assets/student3.svg "
-              alt="student-avatar"
-            />
-            <img
-              className="hidden lg:flex"
-              src="/assets/divider-vertical.svg"
-              alt="divider"
-            />
-          </div>
-          <h1 className="text-gray-900 text-2xl sm:text-3xl md:text-4xl font-bold w-[auto] md:w-[550px] lg:w-[700px] xl:w-[800px]  pl-0 lg:pl-5 ">
-            Over 2,000 students across Africa who have optimized their
-            potential.
-          </h1>
-        </section>
+        <div className="pl-3">
+          <Courses />
+        </div>
       </main>
+
+      <section className="px-5 sm:px-10 flex flex-col lg:flex-row pb-12 gap-16 md:gap-8 lg:gap-10 items-center justify-center bg-bodyBackground ">
+        <div className="max-w-[450px] ">
+          <h1 className="text-darkblue-500 font-bold text-2xl sm:text-3xl md:text-4xl mb-4">
+            You can promote our courses and get a commission
+          </h1>
+          <h3 className="text-darkblue-900 text-basw sm:text-lg md:text-xl font-normal mb-10">
+            Lorem ipsum dolor sit amet consectetur. Cursus sed ullamcorper sit
+            vel in lorem ut. Euismod nunc neque ut lorem aenean mauris neque
+            libero amet.
+          </h3>
+          <h4 className="flex flex-row items-center gap-2 text-darkblue-500 text-lg font-medium  ">
+            See how it works{" "}
+            <svg
+              width="21"
+              height="21"
+              viewBox="0 0 20 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M12.293 5.80866C12.4805 5.62118 12.7348 5.51587 13 5.51587C13.2652 5.51587 13.5195 5.62118 13.707 5.80866L17.707 9.80866C17.8945 9.99618 17.9998 10.2505 17.9998 10.5157C17.9998 10.7808 17.8945 11.0351 17.707 11.2227L13.707 15.2227C13.5184 15.4048 13.2658 15.5056 13.0036 15.5033C12.7414 15.5011 12.4906 15.3959 12.3052 15.2105C12.1198 15.0251 12.0146 14.7743 12.0123 14.5121C12.01 14.2499 12.1108 13.9973 12.293 13.8087L14.586 11.5157H3C2.73478 11.5157 2.48043 11.4103 2.29289 11.2228C2.10536 11.0352 2 10.7809 2 10.5157C2 10.2504 2.10536 9.99609 2.29289 9.80855C2.48043 9.62101 2.73478 9.51566 3 9.51566H14.586L12.293 7.22266C12.1055 7.03513 12.0002 6.78082 12.0002 6.51566C12.0002 6.25049 12.1055 5.99618 12.293 5.80866Z"
+                fill="#162A5A"
+              />
+            </svg>
+          </h4>
+        </div>
+        <div>
+          <img
+            className="w-[300px] sm:w-[400px] md:w-[500px] lg:w-[580px] xl:w-[725px]"
+            src="/assets/photo.jpg"
+            alt="lady-pic"
+          />
+        </div>
+      </section>
+
+      <section className="px-5 sm:px-10 flex flex-col md:flex-row items-center justify-center gap-5 bg-bodyBackground pb-5 sm:pb-8 ">
+        <div className="flex flex-row">
+          <img
+            className="relative z-10 w-[100px]"
+            src="/assets/student1.svg "
+            alt="student-avatar"
+          />
+          <img
+            className="rounded-full relative z-20 -left-6 w-[100px]  "
+            src="/assets/student2.svg "
+            alt="student-avatar"
+          />
+          <img
+            className="rounded-full relative z-30 -left-14 w-[100px] "
+            src="/assets/student3.svg "
+            alt="student-avatar"
+          />
+          <img
+            className="hidden lg:flex"
+            src="/assets/divider-vertical.svg"
+            alt="divider"
+          />
+        </div>
+        <h1 className="text-gray-900 text-2xl sm:text-3xl md:text-4xl font-bold w-[auto] md:w-[550px] lg:w-[700px] xl:w-[800px]  pl-0 lg:pl-5 ">
+          Over 2,000 students across Africa who have optimized their potential.
+        </h1>
+      </section>
 
       <Startup />
     </Layout>
