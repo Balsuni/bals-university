@@ -3641,6 +3641,26 @@ react-simple-typewriter@^5.0.1:
   resolved "https://registry.yarnpkg.com/react-simple-typewriter/-/react-simple-typewriter-5.0.1.tgz#cfdb896c868a55ed4d5f1f06d62b3a9d0f5ad9d7"
   integrity sha512-vA5HkABwJKL/DJ4RshSlY/igdr+FiVY4MLsSQYJX6FZG/f1/VwN4y1i3mPXRyfaswrvI8xii1kOVe1dYtO2Row==
 
+react-sub-unsub@^2.1.6:
+  version "2.1.11"
+  resolved "https://registry.yarnpkg.com/react-sub-unsub/-/react-sub-unsub-2.1.11.tgz#173d0803e1d7b29611cb29d95f47ed7798e93642"
+  integrity sha512-FNKy0uD5wSieRE+l5RXaS0bUu6cR8XAXLDwOJnvSDGBMHcWVb1dod8ZkXYjPKtKR74tjYCEpMWcEAWCOoWNXxQ==
+
+react-timed-image@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/react-timed-image/-/react-timed-image-1.1.1.tgz#41c0d9ef5d24fb947b87ab2387b94849d5ae75ee"
+  integrity sha512-Wd1d0gQRBTafruU4Gz6upr2WEg/DLBGuTjAYSTeXSOpokn2EC7UZyjOOne1yvUFOasgA6cyvsI7YKjuyeEycpg==
+  dependencies:
+    react-timed-renderer "^1.1.2"
+    react-uncached-image "^1.1.3"
+
+react-timed-renderer@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/react-timed-renderer/-/react-timed-renderer-1.1.2.tgz#834aabbc0d1a53656d0eb2b489544da35153504d"
+  integrity sha512-eGQYZ7qRhx1OIr+K8mK3upR+SLaA4+AZjaU+dNy3guKdvfHNms4jSUdTo1R/b8RjXkwcXlNNWBvkZCPPowiF6w==
+  dependencies:
+    react-use-precision-timer "^3.1.9"
+
 react-typewriter-effect@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/react-typewriter-effect/-/react-typewriter-effect-1.1.0.tgz#ab8c4e07a5d2dbc4505f2d53c324d73b8298d57b"
@@ -3649,6 +3669,18 @@ react-typewriter-effect@^1.1.0:
     react "^16.10.2"
     style-loader "^1.0.0"
     webpack "^4.41.2"
+
+react-uncached-image@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/react-uncached-image/-/react-uncached-image-1.1.3.tgz#deb4d3b97f4d7b000aaa4c931fb9bbbb8a5f34bb"
+  integrity sha512-mM8QaGLWvkIW21pI4/0nQ9ayUi/HVn0Y+sfk/eiXq7FqBBHh65DnHS9uXUPpBQxnhHiZPeWM2xvy+7rOAgoPPg==
+
+react-use-precision-timer@^3.1.9:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/react-use-precision-timer/-/react-use-precision-timer-3.3.1.tgz#8e49b6f58d507647925bf633a673a7cb0b2b924d"
+  integrity sha512-PUCpFp48ftKoV2C+hz57mbqzqojE/Ol169Lyk2fFEIapsOH6tKIis8vZwmloedRe916qmJCOkXp+h9IB6QJY+A==
+  dependencies:
+    react-sub-unsub "^2.1.6"
 
 react@18.2.0:
   version "18.2.0"

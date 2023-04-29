@@ -1,6 +1,34 @@
-import React from "react";
-import styles from "../../styles/type-text.module.scss";
+import React, { useEffect, useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
+import { TimedImage } from "react-timed-image";
+
+const images = [
+  "/assets/favour-1.svg",
+  "/assets/favour-2.svg",
+  "/assets/favour-3.svg",
+];
+
+export const ImageSwapper = () => {
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      if (currentImage === images.length) {
+        setCurrentImage(0);
+      } else {
+        setCurrentImage(currentImage + 1);
+      }
+    }, 7000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
+  return (
+    <div>
+      <img src={images[currentImage]} alt="heroicon" width={600} />
+    </div>
+  );
+};
 
 const AnimateText = () => {
   return (
@@ -32,28 +60,25 @@ const AnimateText = () => {
         </h2>
 
         <div className="flex flex-row items-center justify-start  gap-4 sm:gap-8 md:gap-12 pt-2">
-          <button className="py-3 px-6 bg-darkblue-500 text-base text-darkblue-50 w-[auto] border-[2px] border-darkblue-500 rounded-xl">
+          <button className="py-3 px-6 bg-darkblue-500 text-base text-darkblue-50 w-[auto] border-[2px] border-darkblue-500 rounded-xl hover:bg-darkblue-400 focus:ring focus:bg-darkblue2-500  ">
             Get Started
           </button>
-          <button className="py-3 px-6 bg-bodyBackground text-base text-darkblue-500 w-[auto] border-[2px] border-darkblue-500 rounded-xl">
+          <button className="py-3 px-6 bg-bodyBackground text-base text-darkblue-500 w-[auto] border-[2px] border-darkblue-500 rounded-xl hover:bg-gray-50 focus:ring focus:bg-gray-100  ">
             Contact Us
           </button>
         </div>
       </div>
-      <div className="w-[290px] sm:w-[400px] relative ">
-        {/* <div className="px-6 absolute z-0 -left-3 mt-7 flex flex-row items-center  bg-bodyBackground text-base text-darkblue-500 w-[200px] h-[60px] border-[2px] rounded-[50px]">
-          <img src="" alt="a" className="w-[30px] h-[30px] " />
-          <div className="flex flex-col w-[40px] ">
-            <h3 className="text-base font-bold leading-5 ">5k</h3>
-            <h3 className="text-[10px] leading-[10px]">students globally</h3>
-          </div>
-        </div> */}
+      <div className="w-[290px] sm:w-[auto] lg:w-[auto] relative ">
         <img
-          src="/assets/favour.svg"
-          alt="favour-logo"
-          width={500}
+          src="/assets/favour-3.svg"
+          // src="/assets/favour-2.svg"
+          // src="/assets/favour-1.svg"
+          alt="heoikon-logo"
+          width={600}
           className="relative z-10"
         />
+
+        {/* <ImageSwapper /> */}
       </div>
     </section>
   );

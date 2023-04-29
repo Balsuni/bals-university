@@ -128,7 +128,7 @@ const Home = () => {
             vel in lorem ut. Euismod nunc neque ut lorem aenean mauris neque
             libero amet.
           </h3>
-          <h4 className="flex flex-row items-center gap-2 text-darkblue-500 text-lg font-medium  ">
+          <h4 className="flex flex-row items-center gap-2 text-darkblue-500 text-lg font-medium hover:text-darkblue-400  ">
             See how it works{" "}
             <svg
               width="21"
@@ -149,8 +149,8 @@ const Home = () => {
         <div>
           <img
             className="w-[300px] sm:w-[400px] md:w-[500px] lg:w-[580px] xl:w-[725px]"
-            src="/assets/photo.jpg"
-            alt="lady-pic"
+            src="/assets/photo.svg"
+            alt="commission"
           />
         </div>
       </section>
