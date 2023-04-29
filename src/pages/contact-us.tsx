@@ -58,7 +58,7 @@ const ContactUs = () => {
               />
               <button
                 type="submit"
-                className="flex bg-darkblue-500 w-fit m-auto justify-center px-16 py-3 text-gray-50 mt-10"
+                className="flex bg-darkblue-500 w-fit m-auto justify-center px-16 py-3 text-gray-50 mt-10 hover:bg-darkblue-400 focus:ring focus:bg-darkblue2-500 "
               >
                 Send message
                 <Image

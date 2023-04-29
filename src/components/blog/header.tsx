@@ -30,10 +30,11 @@ const Header = () => {
               type="text"
               className="w-auto px-5 h-12 rounded-lg font-light"
               placeholder="Enter Email..."
+              required
             />
             <button
               type="submit"
-              className="relative bg-cyan1-500 px-7 py-1 rounded-lg text-gray-100 right-[120px] "
+              className="relative bg-cyan1-500 active:bg-cyan1-700 hover:bg-cyan1-400  px-7 py-1 rounded-lg text-gray-100 right-[120px] "
             >
               Subscribe
             </button>
