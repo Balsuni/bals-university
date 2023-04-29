@@ -15,7 +15,7 @@ const Newsletter = () => {
         <h1 className=" px-10 sm:px-0 text-center text-sm sm:text-xl font-regular text-darkblue-50  w-[300px] sm:w-auto ">
           Sign up for our newsletter and 5% off your next purchase
         </h1>
-        <form className="flex w-[280px]   ">
+        {/* <form className="flex w-[280px]   ">
           <input
             type="text"
             className="w-10/12 px-5 h-12 rounded-lg  bg-white font-light"
@@ -24,6 +24,21 @@ const Newsletter = () => {
           <button
             type="submit"
             className="bg-darkblue-500 font-bold -left-3 px-7 py-1 rounded-lg text-white relative"
+          >
+            Submit
+          </button>
+        </form> */}
+
+        <form className="flex w-[280px] h-12 items-center">
+          <input
+            type="email"
+            className="w-10/12 font-light text-gray-900 px-5 h-12 rounded-lg outline-none border-none"
+            placeholder="Enter Email..."
+            required
+          />
+          <button
+            type="submit"
+            className="bg-cyan1-500 active:bg-cyan1-700 hover:bg-cyan1-400  px-7 py-1 rounded-lg text-gray-100 absolute h-12 left-[180px] sm:left-[290px] md:left-[300px]    "
           >
             Submit
           </button>
