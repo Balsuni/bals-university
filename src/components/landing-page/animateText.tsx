@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
-import { TimedImage } from "react-timed-image";
 
 const images = [
   "/assets/favour-1.svg",
