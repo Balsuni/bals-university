@@ -115,7 +115,7 @@ const GetStarted = () => {
             </p>
             <button
               type="submit"
-              className="flex bg-darkblue-500 mt-5 m-auto sm:mt-5 sm:mx-0 w-fit rounded-lg px-10 py-3 text-gray-50"
+              className="flex bg-darkblue-500 mt-5 m-auto sm:mt-5 sm:mx-0 w-fit rounded-lg px-10 py-3 text-gray-50 hover:bg-darkblue-400 focus:ring focus:bg-darkblue2-500   "
             >
               Get Started for free
               <Image

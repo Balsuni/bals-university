@@ -80,7 +80,7 @@ const MasterTheCyberSpace = () => {
               What you do doesn&apos;t matter, BALS University is built for
               anyone who desires to get more from the digital space.
             </h1>
-            <button className="py-4 px-6 bg-darkblue-500 text-darkblue-50 w-[150px] rounded-xl">
+            <button className="py-4 px-6 bg-darkblue-500 text-darkblue-50 w-[150px] rounded-xl hover:bg-darkblue-400 focus:ring focus:bg-darkblue2-500 ">
               Get Started
             </button>
           </div>

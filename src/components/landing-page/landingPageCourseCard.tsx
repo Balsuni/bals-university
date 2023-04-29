@@ -374,7 +374,7 @@ const LandingPageCourseCard = () => {
                 {data.price}
               </p>
 
-              <button className="ml-5 lg:mt-1 mt-3 xl:mt-3 border-2 bg-darkblue-500 text-gray-50 rounded-md w-11/12 h-fit lg:px-11 xl:px-18 px-14 py-2 mb-3 text-center">
+              <button className="ml-5 lg:mt-1 mt-3 xl:mt-3 border-2 bg-darkblue-500 text-gray-50 rounded-md w-11/12 h-fit lg:px-11 xl:px-18 px-14 py-2 mb-3 text-center hover:bg-darkblue-400 focus:ring focus:bg-darkblue2-500   ">
                 {data.buttonTitle}
               </button>
             </section>

@@ -36,10 +36,10 @@ const DropdownResourcesMenu = () => {
   return (
     <div>
       <li
-        className="flex items-center text-left gap-2 text-lg py-2 border-b-2  border-darkblue-500 lg:border-bodyBackground hover:border-white lg:hover:border-darkblue-500"
+        className=" px-1 xl:px-2 flex items-center text-left gap-2 text-lg py-2 border-b-2  border-darkblue-500 lg:border-bodyBackground hover:border-white lg:hover:border-darkblue-500"
         onClick={() => setOpenMenu((prev) => !prev)}
       >
-        <h2>Resources </h2>
+        <h2 className="lg:hover:text-darkblue-500">Resources </h2>
         {!openMenu ? <ArrowDown2 size="20" /> : <ArrowUp2 size="20" />}
       </li>
       <div ref={mainMenuRef}>
@@ -92,10 +92,10 @@ const DropdownFeaturesMenu = () => {
   return (
     <div>
       <li
-        className="flex items-center text-left gap-2 text-lg py-2 border-b-2  border-darkblue-500 lg:border-bodyBackground hover:border-white lg:hover:border-darkblue-500"
+        className="px-1 xl:px-2 flex items-center text-left gap-2 text-lg py-2 border-b-2  border-darkblue-500 lg:border-bodyBackground hover:border-white lg:hover:border-darkblue-500"
         onClick={() => setOpenMenu((prev) => !prev)}
       >
-        <h2>Features </h2>
+        <h2 className="lg:hover:text-darkblue-500">Features </h2>
         {!openMenu ? <ArrowDown2 size="20" /> : <ArrowUp2 size="20" />}
       </li>
       <div ref={mainMenuRef}>
@@ -167,7 +167,7 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex h-auto px-3 sm:px-7 md:px-10 lg:px-8 xl:px-16 py-6 flex-row items-center justify-between bg-bodyBackground">
+    <div className="flex h-auto px-3 sm:px-7 md:px-10 lg:px-5 xl:px-16 py-6 flex-row items-center justify-between bg-bodyBackground">
       <Link href="/">
         <Image
           className="w-28 sm:w-36 h-12 sm:h-16"
@@ -189,10 +189,10 @@ const Navbar: React.FC = () => {
           <ul className="w-screen lg:w-full absolute lg:relative flex items-center flex-col lg:flex-row pt-10 lg:pt-0 pb-20 lg:pb-0 gap-16 lg:gap-4 xl:gap-16 mt-24 sm:mt-28 lg:mt-0 text-gray-50 lg:text-gray-900 bg-darkblue-500 lg:bg-gray-50">
             <div>
               <li
-                className="flex items-center text-left gap-2 text-lg py-2 border-b-2  border-darkblue-500 lg:border-bodyBackground hover:border-white lg:hover:border-darkblue-500"
+                className=" px-1 xl:px-2 flex items-center text-left gap-2 text-lg py-2 border-b-2  border-darkblue-500 lg:border-bodyBackground hover:border-white lg:hover:border-darkblue-500"
                 onClick={() => setOpenMenu((prev) => !prev)}
               >
-                <h2>About BALS </h2>
+                <h2 className="lg:hover:text-darkblue-500">About BALS </h2>
                 {!openMenu ? <ArrowDown2 size="20" /> : <ArrowUp2 size="20" />}
               </li>
               <div ref={aboutRef}>
@@ -223,11 +223,14 @@ const Navbar: React.FC = () => {
             </div>
 
             <li
-              className="text-lg text-left py-2 border-b-2 border-darkblue-500 lg:border-bodyBackground hover:border-white lg:hover:border-darkblue-500"
+              className=" px-1 xl:px-2  text-lg text-left py-2 border-b-2 border-darkblue-500 lg:border-bodyBackground hover:border-white lg:hover:border-darkblue-500"
               onClick={toggleNavbar}
             >
-              <Link href="/courses">Courses </Link>
+              <Link href="/courses" className="lg:hover:text-darkblue-500">
+                Courses{" "}
+              </Link>
             </li>
+
             <DropdownFeaturesMenu />
             <DropdownResourcesMenu />
 
@@ -235,7 +238,7 @@ const Navbar: React.FC = () => {
               className="flex items-center gap-2 text-lg"
               onClick={toggleNavbar}
             >
-              <button className="flex lg:hidden items-center justify-center  px-3 py-3 w-36 rounded-md text-darkblue-500 bg-gray-50 ">
+              <button className="flex lg:hidden items-center justify-center  px-3 py-3 w-36 rounded-md text-darkblue-500 bg-gray-200  hover:bg-gray-50 focus:ring focus:bg-gray-50 ">
                 Get Started
               </button>
             </li>
@@ -271,7 +274,7 @@ const Navbar: React.FC = () => {
         </button>
       </div>
 
-      <button className="hidden lg:flex items-center justify-center px-3 py-3 w-36 rounded-md text-gray-50 bg-darkblue-500 ">
+      <button className="hidden lg:flex items-center justify-center px-3 py-3 w-36 rounded-md text-gray-50 bg-darkblue-500 hover:bg-darkblue-400 focus:ring focus:bg-darkblue2-500 ">
         Get Started
       </button>
     </div>
