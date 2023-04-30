@@ -22,14 +22,14 @@ const GetStarted = () => {
 
   return (
     <section className="w-full mt-10 py-10">
-      <div className="relative hidden lg:block">
+      <div className="relative hidden lg:block 2xl:hidden">
         <img
           src="/assets/landing_vector.svg"
           className="absolute left-[635px]"
           alt=""
         />
       </div>
-      <div className="relative hidden lg:block">
+      <div className="relative hidden lg:block 2xl:hidden">
         <img
           src="/assets/pattern_2.svg"
           alt=""

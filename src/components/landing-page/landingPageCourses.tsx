@@ -29,7 +29,7 @@ const LandingPageCourseGallery = () => {
       <button
         onClick={handlePrev}
         // disabled={handlePrev === null}
-        className="absolute top-1/3 -left-5 sm:-left-12 transform -translate-y-1/2 bg-gray-400 hover:bg-gray-900 text-white p-2 py-4 px-3 rounded-full focus:outline-none"
+        className="absolute top-1/3 -left-5 sm:-left-12 transform -translate-y-1/2 bg-gray-400 hover:bg-gray-900 text-white p-2 py-4 px-3 ml-5 md:ml-0 rounded-full focus:outline-none"
       >
         <img src="/assets/previous-icon.svg" width={20} height={20} alt="" />
       </button>

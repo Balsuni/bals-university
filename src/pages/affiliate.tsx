@@ -101,7 +101,7 @@ const affiliate = () => {
               <h1 className={styles.course1}>Affiliate</h1>
             </div>
             <div className="w-full mb-28 h-fit flex flex-col gap-3 lg:flex-row sm:gap-0 sm:flex-row xl:mr-28 lg:mt-16">
-              <div className="w-full flex flex-col lg:flex-col gap-5 px-5 md:px-0 ">
+              <div className="w-full md:mt-10 lg:mt-0 flex flex-col lg:flex-col gap-5 px-5 md:px-0 ">
                 <h1 className="font-bold text-2xl tracking-normal lg:text-3xl text-gray-50">
                   Join our community of affiliates by promoting our high-quality
                   courses and start earning extra Income
@@ -164,7 +164,7 @@ const affiliate = () => {
             How to become an Affiliate
           </h1>
 
-          <div className="relative top-[150px] hidden xl:block">
+          <div className="relative top-[150px] hidden xl:block 2xl:hidden">
             <img
               src="/assets/pointer_shape(1).svg"
               className="absolute left-[250px]"
@@ -172,7 +172,7 @@ const affiliate = () => {
             />
           </div>
 
-          <div className="relative top-[0px] left-[180px] hidden xl:block">
+          <div className="relative top-[0px] left-[180px] hidden xl:block 2xl:hidden">
             <img
               src="/assets/pointer_shape.svg"
               className="absolute left-[900px]"
@@ -180,7 +180,7 @@ const affiliate = () => {
             />
           </div>
 
-          <div className="relative top-[330px] left-[180px] hidden xl:block">
+          <div className="relative top-[330px] left-[180px] hidden xl:block 2xl:hidden">
             <img
               src="/assets/pointer_shape.svg"
               className="absolute left-[900px]"
