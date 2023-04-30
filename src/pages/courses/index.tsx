@@ -118,7 +118,7 @@ const courses = () => {
       </section>
       <main className="w-full sm:py-14 md:py-14 lg:py-16 xl:py-20">
         <section className="mt-10 pb-20">
-          <h1 className="text-darkblue-500 font-bold text-3xl lg:text-3xl lg:ml-20 ml-20">
+          <h1 className="text-darkblue-500 font-bold text-3xl lg:text-3xl lg:ml-20 ml-3">
             Recommended for you
           </h1>
           <div className="flex flex-col lg:flex-row justify-start items-center md:justify-around mt-10 ml-3 lg:ml-3 gap-5 mr-3">
