@@ -55,9 +55,9 @@ const courses = () => {
               <h1 className={styles.course2}>Courses</h1>
               <h1 className={styles.course1}>Courses</h1>
             </div>
-            <div className="w-full mb-28 h-fit flex flex-col gap-3 lg:flex-row sm:gap-0 sm:flex-row xl:mr-28 lg:mt-10">
-              <div className="w-full flex flex-col lg:flex-col gap-5 px-5 md:px-0 ">
-                <h1 className="font-bold text-2xl lg:text-5xl text-gray-50">
+            <div className="w-full mb-28 h-fit flex flex-col gap-3 lg:flex-row sm:gap-0 sm:flex-row xl:mr-28 lg:mt-0 xl:mt-10">
+              <div className="w-full md:mt-10 lg:mt-0 flex flex-col lg:flex-col gap-5 px-5 md:px-0 ">
+                <h1 className="font-bold text-2xl md:text-lg lg:text-5xl text-gray-50">
                   Best selling courses on the planet
                 </h1>
                 <h2 className="text-sm sm:text-md lg:text-lg font-md text-bodyBackground">
@@ -72,7 +72,7 @@ const courses = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-3 lg:flex-row shadow-lg shadow-gray-500 w-9/12 justify-around py-5 items-center mx-auto">
+        <div className="flex flex-col gap-3 lg:flex-row shadow-lg shadow-gray-500 w-9/12 sm:w-2/3 md:w-2/4 lg:w-9/12 justify-around py-5 items-center mx-auto">
           <div className="flex flex-col justify-center">
             <img
               src="/assets/icon(1).svg"
@@ -118,10 +118,10 @@ const courses = () => {
       </section>
       <main className="w-full sm:py-14 md:py-14 lg:py-16 xl:py-20">
         <section className="mt-10 pb-20">
-          <h1 className="text-darkblue-500 font-bold text-2xl lg:text-3xl ml-3 lg:ml-20">
+          <h1 className="text-darkblue-500 font-bold text-3xl lg:text-3xl lg:ml-20 ml-20">
             Recommended for you
           </h1>
-          <div className="flex flex-col lg:flex-row justify-start items-center xl:justify-around mt-10 ml-3 lg:ml-3 gap-5 mr-3">
+          <div className="flex flex-col lg:flex-row justify-start items-center md:justify-around mt-10 ml-3 lg:ml-3 gap-5 mr-3">
             <CoursesCard />
           </div>
         </section>
@@ -141,9 +141,9 @@ const courses = () => {
         </section>
 
         <section className="mt-14">
-          <div className="mb-9 ml-16 mr-10">
+          <div className="mb-9 ml-5 mr-10">
             <div className="flex flex-row items-center justify-between">
-              <div className="flex flex-col sm:flex-row gap-5 sm:gap-5 md:gap-5 lg:gap-18 xl:gap-32 ">
+              <div className="sm:flex hidden flex-col sm:flex-row gap-5 sm:gap-5 md:gap-5 lg:gap-18 xl:gap-32 ">
                 <h1 className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:lg:text-3xl  font-medium text-gray-900 border-bodyBackground border-b-4   hover:border-b-4 hover:border-darkblue-500 px-5px md:px-[6px] lg:md:px-[10px] py-[10px]  ">
                   All Courses
                 </h1>
@@ -153,6 +153,16 @@ const courses = () => {
                 <h1 className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:lg:text-3xl  font-medium text-gray-900 hover:border-b-4 hover:border-darkblue-500 px-5px md:px-[6px] lg:md:px-[10px] py-[10px] ">
                   Talent Acquisition
                 </h1>
+              </div>
+              <div className="flex sm:hidden w-8/12">
+                <select
+                  id="selection"
+                  className="bg-cyan1-500 border border-cyan1-900 text-gray-50 font-bold text-md rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                >
+                  <option selected>All Courses</option>
+                  <option>Skill Acquisition</option>
+                  <option>Talent Acquisition</option>
+                </select>
               </div>
               <div className="flex flex-row gap-[2px] sm:gap-2 ">
                 <img src="/assets/search-icon.svg" alt="search" />

@@ -111,7 +111,9 @@ const CourseDetails = () => {
   );
 
   if (isLoading) {
-    return <h2>Loading...</h2>;
+    return (
+      <h1>Loading ....</h1>
+    );
   }
 
   if (isError) {
