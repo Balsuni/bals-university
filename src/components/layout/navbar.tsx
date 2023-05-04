@@ -167,10 +167,10 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex h-auto px-3 sm:px-7 md:px-10 lg:px-5 xl:px-16 py-6 flex-row items-center justify-between bg-bodyBackground">
+    <div className="flex h-auto px-4 sm:px-7 md:px-10 lg:px-5 xl:px-16 py-6 flex-row items-center justify-between bg-bodyBackground">
       <Link href="/">
         <Image
-          className="w-28 sm:w-36 h-12 sm:h-16"
+          className="w-[90px] sm:w-32 h-12 sm:h-16"
           src="/assets/balis-logo.svg"
           alt="balis-logo"
           width={131}
@@ -246,17 +246,23 @@ const Navbar: React.FC = () => {
         </div>
       </div>
 
-      <div className="flex flex-row w-2/5 md:w-3/12 lg:w-40 xl:w-2/12 justify-between">
-        <Image src="/assets/search.svg" alt="search" width={16} height={16} />
+      <div className="flex flex-row items-center w-2/5 md:w-3/12 lg:w-40 xl:w-2/12 justify-between">
         <Image
-          className="bg-darkblue-50 p-1 rounded-full"
+          className="w-[15px] sm:w-[20px]"
+          src="/assets/search.svg"
+          alt="search"
+          width={16}
+          height={16}
+        />
+        <Image
+          className="w-[30px] h-[30px] sm:w-[30px] bg-darkblue-50 px-1 sm:px- rounded-full"
           src="/assets/phone.svg"
           alt="phone"
           width={35}
           height={35}
         />
         <Image
-          className="bg-darkblue-50 p-1 rounded-full"
+          className="w-[30px] sm:w-[37px]  bg-darkblue-50 p-1 rounded-full"
           src="/assets/mail.svg"
           alt="mail"
           width={35}
@@ -264,12 +270,12 @@ const Navbar: React.FC = () => {
         />
       </div>
 
-      <div className="lg:hidden">
+      <div className="lg:hidden ">
         <button onClick={toggleNavbar}>
           {navbar ? (
-            <HambergerMenu size="32" color="#162A5A" />
+            <HambergerMenu size="30" color="#162A5A" />
           ) : (
-            <CloseSquare className="z-10" size="32" color="#162A5A" />
+            <CloseSquare className="z-10" size="30" color="#162A5A" />
           )}
         </button>
       </div>
