@@ -257,14 +257,16 @@ const CourseDetails = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-row gap-11 py-9 px-5 border-1 shadow-md w-[250px] ">
+            <div className="flex flex-row items-center gap-11 py-7 px-5 border-1 shadow-md w-[250px] ">
               <img
-                className="w-[40px] h-[35px] "
+                className="w-[30px] h-[30px] "
                 src="/assets/baal-mail-logo.svg"
                 alt="mail logo"
               />
               <div>
-                <h1 className="text-2xl font-medium">Email</h1>
+                <h1 className="text-lg sm:text-xl  md:text-2xl font-medium">
+                  Email
+                </h1>
                 <h3 className="text-lg font-normal">Baal@info.org</h3>
               </div>
             </div>
