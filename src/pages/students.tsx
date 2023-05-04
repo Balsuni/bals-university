@@ -56,7 +56,7 @@ const Students = () => {
               </div>
             </div>
             <div className="flex w-full flex-col md:flex-col items-center md:items-start justify-between gap-8 sm:gap-10">
-              <h1 className="px-1 sm:px-10 md:px-0 text-center md:text-start text-2xl sm:text-4xl font-medium text-gray-50">
+              <h1 className="px-8 sm:px-10 md:px-0 text-start text-2xl sm:text-4xl font-medium text-gray-50">
                 An Engaging learning Experience to fit your needs
               </h1>
 
@@ -100,11 +100,12 @@ const Students = () => {
             Why should you join as a student?
           </h1>
           <div className="flex flex-col lg:flex-row items-center justify-evenly gap-10">
-            <div className="flex flex-row gap-8">
+            <div className="flex flex-row gap-8 items-center ">
               <img
-                className="py-8 px-6 bg-white"
+                className="py-3 px-5 bg-white h-[70px]  "
                 src="/assets/baal-mail-logo.svg"
                 alt="folder"
+                width={65}
               />
               <div className="flex flex-col gap-1 w-[200px] text-darkblue-900">
                 <p className="text-2xl font-medium">Lorem ip</p>
@@ -115,9 +116,10 @@ const Students = () => {
             </div>
             <div className="flex flex-row gap-8">
               <img
-                className="py-8 px-6 bg-white"
+                className="py-3 px-5 bg-white h-[70px]  "
                 src="/assets/baal-mail-logo.svg"
                 alt="folder"
+                width={65}
               />
               <div className="flex flex-col gap-1 w-[200px] text-darkblue-900">
                 <p className="text-2xl font-medium">Lorem ip</p>
@@ -128,9 +130,10 @@ const Students = () => {
             </div>{" "}
             <div className="flex flex-row gap-8">
               <img
-                className="py-8 px-6 bg-white"
+                className="py-3 px-5 bg-white h-[70px]  "
                 src="/assets/baal-mail-logo.svg"
                 alt="folder"
+                width={65}
               />
               <div className="flex flex-col gap-1 w-[200px] text-darkblue-900">
                 <p className="text-2xl font-medium">Lorem ip</p>
@@ -154,14 +157,14 @@ const Students = () => {
           <div className="flex flex-col gap-5">
             <div className="flex flex-col md:flex-row items-center justify-between w-[300px] md:w-[700px] m-auto gap-8 shadow-lg py-7 px-4  ">
               <div className="flex flex-row gap-4 items-center ">
-                <h1 className="rounded-md px-5 py-2 text-5xl font-bold text-white bg-cyan1-900 ">
+                <h1 className="rounded-md px-5 py-3 text-3xl font-bold text-white bg-cyan1-900 ">
                   1
                 </h1>
-                <h1 className="text-darkblue-900 font-bold text-3xl ">
+                <h1 className="text-darkblue-900 font-bold text-2xl ">
                   Sign Up
                 </h1>
               </div>
-              <h2 className=" text-darkblue-900 font-normal text-xl w-[270px]">
+              <h2 className=" text-darkblue-900 font-normal text-lg md:text-xl text-center md:text-start  w-[270px]">
                 Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque
                 p
               </h2>
@@ -169,14 +172,14 @@ const Students = () => {
 
             <div className="flex flex-col md:flex-row items-center justify-between w-[300px] md:w-[700px] m-auto gap-8 shadow-lg py-7 px-4  ">
               <div className="flex flex-row gap-4 items-center ">
-                <h1 className="rounded-md px-5 py-2 text-5xl font-bold text-white bg-cyan1-900 ">
+                <h1 className="rounded-md px-5 py-3 text-3xl font-bold text-white bg-cyan1-900 ">
                   2
                 </h1>
-                <h1 className="text-darkblue-900 font-bold text-3xl ">
+                <h1 className="text-darkblue-900 font-bold text-2xl ">
                   Sign Up
                 </h1>
               </div>
-              <h2 className=" text-darkblue-900 font-normal text-xl w-[270px]">
+              <h2 className=" text-darkblue-900 font-normal text-lg md:text-xl text-center md:text-start  w-[270px]">
                 Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque
                 p
               </h2>
@@ -184,14 +187,14 @@ const Students = () => {
 
             <div className="flex flex-col md:flex-row items-center justify-between w-[300px] md:w-[700px] m-auto gap-8 shadow-lg py-7 px-4  ">
               <div className="flex flex-row gap-4 items-center ">
-                <h1 className="rounded-md px-5 py-2 text-5xl font-bold text-white bg-cyan1-900 ">
+                <h1 className="rounded-md px-5 py-3 text-3xl font-bold text-white bg-cyan1-900 ">
                   3
                 </h1>
-                <h1 className="text-darkblue-900 font-bold text-3xl ">
+                <h1 className="text-darkblue-900 font-bold text-2xl ">
                   Sign Up
                 </h1>
               </div>
-              <h2 className=" text-darkblue-900 font-normal text-xl w-[270px]">
+              <h2 className=" text-darkblue-900 font-normal text-lg md:text-xl text-center md:text-start  w-[270px]">
                 Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque
                 p
               </h2>
@@ -199,14 +202,14 @@ const Students = () => {
 
             <div className="flex flex-col md:flex-row items-center justify-between w-[300px] md:w-[700px] m-auto gap-8 shadow-lg py-7 px-4  ">
               <div className="flex flex-row gap-4 items-center ">
-                <h1 className="rounded-md px-5 py-2 text-5xl font-bold text-white bg-cyan1-900 ">
+                <h1 className="rounded-md px-5 py-3 text-3xl font-bold text-white bg-cyan1-900 ">
                   4
                 </h1>
-                <h1 className="text-darkblue-900 font-bold text-3xl ">
+                <h1 className="text-darkblue-900 font-bold text-2xl ">
                   Sign Up
                 </h1>
               </div>
-              <h2 className=" text-darkblue-900 font-normal text-xl w-[270px]">
+              <h2 className=" text-darkblue-900 font-normal text-lg md:text-xl text-center md:text-start  w-[270px]">
                 Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque
                 p
               </h2>

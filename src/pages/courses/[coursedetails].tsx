@@ -35,7 +35,7 @@ const WeeklyOutline = (props: Props) => {
       </h2>
       <h1
         onClick={toggleOpen}
-        className="px-0 sm:px-5 lg:px-10  text-gray-900 font-normal text-2xl mb-5 flex flex-row items-center justify-between "
+        className="px-0 sm:px-5 lg:px-10  text-gray-900 font-normal text-xl sm:text-2xl mb-5 flex flex-row items-center justify-between "
       >
         {props.topic}
         {isOpen ? (
@@ -220,7 +220,7 @@ const CourseDetails = () => {
           })}
         </section>
 
-        <div className="py-14 flex flex-row gap-10 sm:gap-24 lg:gap-24 px-0 sm:px-5  lg:px-10 text-darkblue-500 font-bold text-2xl uppercase ">
+        <div className="py-14 flex flex-row gap-10 sm:gap-24 lg:gap-24 px-0 sm:px-5  lg:px-10 text-darkblue-500 font-bold text-lg sm:text-xl lg:text-2xl uppercase ">
           <h1>reviews</h1>
           <h1>faqs</h1>
         </div>
