@@ -196,14 +196,14 @@ const affiliate = () => {
                   key={step.id}
                 >
                   <div className="flex flex-row gap-4 items-center ">
-                    <h1 className="rounded-md px-5 py-2 text-5xl font-bold text-white bg-cyan1-900 ">
+                    <h1 className="rounded-md px-5 py-3 text-3xl font-bold text-white bg-cyan1-900 ">
                       {step.id}
                     </h1>
-                    <h1 className="text-darkblue-900 font-bold text-3xl ">
+                    <h1 className="text-darkblue-900 font-bold text-2xl ">
                       {step.title}
                     </h1>
                   </div>
-                  <h2 className=" text-darkblue-900 font-normal text-xl w-[270px]">
+                  <h2 className=" text-darkblue-900 font-normal text-lg md:text-xl text-center md:text-start  w-[270px]">
                     {step.content}
                   </h2>
                 </div>
@@ -257,10 +257,10 @@ const affiliate = () => {
       </main>
 
       <section className="pl-2 pr-2 text-center bg-darkblue-50 pt-12 pb-16 flex flex-col items-center justify-center ">
-        <h1 className="text-3xl  sm:text-4xl font-medium text-darkblue-900 mb-4">
+        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium text-darkblue-900 mb-4">
           50% Bonus available for a limited time
         </h1>
-        <h2 className=" text-xl sm:text-2xl text-center font-normal text-darkblue-900 mb-6 ">
+        <h2 className="text-xl md:text-2xl text-center font-normal text-darkblue-900 mb-6 ">
           Comprehensive Learning at your Fingertips
         </h2>
         <button className="flex font-normal text-lg items-center px-6 py-4 h-12 rounded-md bg-darkblue-500 text-gray-50 ">
