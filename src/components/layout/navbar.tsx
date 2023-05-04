@@ -270,7 +270,7 @@ const Navbar: React.FC = () => {
         />
       </div>
 
-      <div className="lg:hidden ">
+      <div className="lg:hidden flex items-center ">
         <button onClick={toggleNavbar}>
           {navbar ? (
             <HambergerMenu size="30" color="#162A5A" />
