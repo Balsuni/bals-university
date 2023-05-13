@@ -79,9 +79,9 @@ const AboutUs = () => {
                interdum gjsjhdjd jddjdb sjhsjsjdn hdsdhj dx jhddj ..."
             />
           </main>
-          <div className="w-[270px] h-[710px] lg:h-[770px] xl:h-[810px]  bg-imageColor items-center justify-center flex  ">
+          {/* <div className="w-[270px] h-[710px] lg:h-[770px] xl:h-[810px]  bg-imageColor items-center justify-center flex  ">
             <img src="/assets/holding-hands.svg" alt="" />
-          </div>
+          </div> */}
         </section>
 
         <section className="mb-20 sm:mb-24  flex flex-col md:flex-row items-center xl:items-center justify-between gap-5 lg:gap-0 ">
