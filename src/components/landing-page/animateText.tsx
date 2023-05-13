@@ -1,57 +1,21 @@
 import React, { useEffect, useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
 
-// const images = [
-//   "/assets/favour-1.svg",
-//   "/assets/favour-2.svg",
-//   "/assets/favour-3.svg",
-// ];
-
-// export const ImageSwapper = () => {
-//   const [currentImage, setCurrentImage] = useState(0);
-
-//   useEffect(() => {
-//     const intervalId = setInterval(() => {
-//       if (currentImage === images.length) {
-//         setCurrentImage(0);
-//       } else {
-//         setCurrentImage(currentImage + 1);
-//       }
-//     }, 7000);
-
-//     return () => clearInterval(intervalId);
-//   }, []);
-
-//   return (
-//     <div>
-//       <img src={images[currentImage]} alt="heroicon" width={600} />
-//     </div>
-//   );
-// };
-
 const AnimateText = () => {
   return (
     <section className="bg-bodyBackground flex flex-col lg:flex-row items-center justify-start sm:justify-center gap-10 lg:gap-36 px-5 lg:px-14 py-12 ">
-      <div className="flex flex-col text-darkblue-500 font-bold text-3xl sm:text-5xl w-[auto] sm:w-[600px] gap-4 ">
-        {/* <div>
-          <h1>Unleash</h1>
-          <h1>
-            Your{" "}
-            <span className="text-cyan1-600">
-              <Typewriter
-                words={["Potential,", "Prowess,", "Genius,"]}
-                loop={0}
-                cursor
-                cursorStyle="|"
-                typeSpeed={100}
-                deleteSpeed={80}
-                delaySpeed={1000}
-              />
-            </span>
-          </h1>
-          <h1>Rule</h1>
-          <h1>The Digital Space</h1>
-        </div> */}
+      <div className="flex flex-col text-darkblue-500 font-bold text-3xl sm:text-5xl w-[auto] sm:w-[600px] gap-4">
+        <img
+          className="static w-[18px] sm:w-[26px] -mt-[20px] ml-[70px] sm:ml-[130px]"
+          src="/assets/blue-circle.svg"
+          alt="logo"
+        />
+        <img
+          className="static w-[7px] sm:w-[14px] top-[120px] sm:top-[140px] -ml-[30px] sm:-ml-[20px] md:-ml-[40px] lg:-ml-[30px]  xl:-ml-[40px] "
+          src="/assets/teal-circle.svg"
+          alt="logo"
+        />
+
         <div>
           <h1>Unleash Your </h1>
           <span className="text-cyan1-600">
@@ -78,8 +42,19 @@ const AnimateText = () => {
             Get Started
           </button>
         </div>
+
+        <img
+          className="static flex w-[100px] -ml-[30px] -mt-[100px] lg:w-[100px] lg:-ml-[30px] lg:-mt-[100px] xl:w-[180px] xl:-ml-[60px] xl:-mt-[150px] "
+          src="/assets/leaf-icon-bottom.svg"
+          alt="logo"
+        />
       </div>
       <div className="w-[290px] sm:w-[auto] lg:w-[auto] relative ">
+        <img
+          className="absolute w-[150px] -right-20 "
+          src="/assets/leaf-icon-top.svg"
+          alt="logo"
+        />
         <img
           src="/assets/favour-3.svg"
           // src="/assets/favour-2.svg"
