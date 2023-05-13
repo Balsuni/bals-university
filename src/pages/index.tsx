@@ -10,6 +10,7 @@ import Courses from "@/components/landing-page/courses";
 import MasterTheCyberSpace from "@/components/landing-page/masterTheCyberSpace";
 import AnimateText from "@/components/landing-page/animateText";
 import MarqueeSlider from "@/components/landing-page/marqueeSlider";
+import Link from "next/link";
 
 const ServicesData = [
   {
@@ -93,24 +94,26 @@ const Home = () => {
             <h1 className="text-darkblue-500 font-bold text-2xl sm:text-3xl md:text-4xl mb-4">
               Check out our influential courses
             </h1>
-            <h4 className="flex flex-rwo gap-2 text-gray-900 text-lg font-bold  ">
-              Explore Courses{" "}
-              <svg
-                width="21"
-                height="21"
-                viewBox="0 0 20 21"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="my-auto"
-              >
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M12.293 5.80866C12.4805 5.62118 12.7348 5.51587 13 5.51587C13.2652 5.51587 13.5195 5.62118 13.707 5.80866L17.707 9.80866C17.8945 9.99618 17.9998 10.2505 17.9998 10.5157C17.9998 10.7808 17.8945 11.0351 17.707 11.2227L13.707 15.2227C13.5184 15.4048 13.2658 15.5056 13.0036 15.5033C12.7414 15.5011 12.4906 15.3959 12.3052 15.2105C12.1198 15.0251 12.0146 14.7743 12.0123 14.5121C12.01 14.2499 12.1108 13.9973 12.293 13.8087L14.586 11.5157H3C2.73478 11.5157 2.48043 11.4103 2.29289 11.2228C2.10536 11.0352 2 10.7809 2 10.5157C2 10.2504 2.10536 9.99609 2.29289 9.80855C2.48043 9.62101 2.73478 9.51566 3 9.51566H14.586L12.293 7.22266C12.1055 7.03513 12.0002 6.78082 12.0002 6.51566C12.0002 6.25049 12.1055 5.99618 12.293 5.80866Z"
-                  fill="#162A5A"
-                />
-              </svg>
-            </h4>
+            <Link href="/courses">
+              <h4 className="flex flex-rwo gap-2 text-gray-900 text-lg font-bold  ">
+                Explore Courses{" "}
+                <svg
+                  width="21"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="my-auto"
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M12.293 5.80866C12.4805 5.62118 12.7348 5.51587 13 5.51587C13.2652 5.51587 13.5195 5.62118 13.707 5.80866L17.707 9.80866C17.8945 9.99618 17.9998 10.2505 17.9998 10.5157C17.9998 10.7808 17.8945 11.0351 17.707 11.2227L13.707 15.2227C13.5184 15.4048 13.2658 15.5056 13.0036 15.5033C12.7414 15.5011 12.4906 15.3959 12.3052 15.2105C12.1198 15.0251 12.0146 14.7743 12.0123 14.5121C12.01 14.2499 12.1108 13.9973 12.293 13.8087L14.586 11.5157H3C2.73478 11.5157 2.48043 11.4103 2.29289 11.2228C2.10536 11.0352 2 10.7809 2 10.5157C2 10.2504 2.10536 9.99609 2.29289 9.80855C2.48043 9.62101 2.73478 9.51566 3 9.51566H14.586L12.293 7.22266C12.1055 7.03513 12.0002 6.78082 12.0002 6.51566C12.0002 6.25049 12.1055 5.99618 12.293 5.80866Z"
+                    fill="#162A5A"
+                  />
+                </svg>
+              </h4>
+            </Link>
           </div>
         </section>
         <div className="pl-3">
