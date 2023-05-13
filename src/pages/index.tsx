@@ -149,11 +149,17 @@ const Home = () => {
             </svg>
           </h4>
         </div>
+
         <div>
           <img
-            className="w-[300px] sm:w-[400px] md:w-[500px] lg:w-[580px] xl:w-[725px]"
+            className="relative z-20 w-[300px] sm:w-[400px] md:w-[500px] lg:w-[580px] xl:w-[725px]"
             src="/assets/photo.svg"
             alt="commission"
+          />
+          <img
+            className="-mt-[370px] z-10 hidden xl:flex  "
+            src="/assets/background-vector.svg"
+            alt="vector"
           />
         </div>
       </section>
