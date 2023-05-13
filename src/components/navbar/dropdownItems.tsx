@@ -44,13 +44,13 @@ export const FeaturesMenu = [
     content:
       "Lorem ipsum dolor sit amet consectetur. Mauris cras neque in ultricies at. Elit venenatis ultricies dignissim bibendum. Aliquet sollicitudin ",
   },
-  {
-    id: 3,
-    href: "/",
-    title: "Instructor",
-    content:
-      "Lorem ipsum dolor sit amet consectetur. Mauris cras neque in ultricies at. Elit venenatis ultricies dignissim bibendum. Aliquet sollicitudin ",
-  },
+  // {
+  //   id: 3,
+  //   href: "/",
+  //   title: "Instructor",
+  //   content:
+  //     "Lorem ipsum dolor sit amet consectetur. Mauris cras neque in ultricies at. Elit venenatis ultricies dignissim bibendum. Aliquet sollicitudin ",
+  // },
 ];
 
 export const ResourcesMenu = [
