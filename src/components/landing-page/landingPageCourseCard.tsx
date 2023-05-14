@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const landingPageCoursesCardData = [
   {
@@ -342,10 +343,13 @@ const LandingPageCourseCard = () => {
           >
             <section className="flex flex-col bg-darkblue-50 w-[300px] sm:w-[320px] md:w-[350px] md:h-[auto] shadow-lg sm:h-[auto] pb-5 rounded-xl">
               <div className="h-auto">
-                <img
+                <Image
                   src={data.imageSrc}
                   className="sm:w-[500px] md:w-[350px] w-full rounded-t-xl"
                   alt=""
+                  width={50}
+                  height={50}
+                  loading="lazy"
                 />
               </div>
               <h1 className="py-1 px-5 ml-5 mt-5 text-lg font-normal text-gray-900 border-[2px]  border-gray-500 w-[95px] ">
@@ -358,7 +362,14 @@ const LandingPageCourseCard = () => {
               <div className="flex items-center gap-2">
                 <div className="flex gap-1 ml-5 lg:mt-2 mt-5 xl:mt-5">
                   {data.ratings.map((rating) => (
-                    <img src={rating} alt="" key={rating} />
+                    <Image
+                      src={rating}
+                      alt=""
+                      key={rating}
+                      width={10}
+                      height={10}
+                      loading="lazy"
+                    />
                   ))}
                 </div>
                 <div className="flex lg:mt-2 xl:mt-5 mt-5">

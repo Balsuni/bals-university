@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 type Props = {
   src: string;
@@ -9,7 +10,14 @@ type Props = {
 export const ServicesCard = (props: Props) => {
   return (
     <div className="gap-8 xl:gap-10 w-[280px] xl:w-[370px] h-[auto] px-6 py-10 flex flex-col border-2 shadow-md bg-gray-50">
-      <img className="w-[74px] h-[77px] " src={props.src} alt="logo" />
+      <Image
+        className="w-[74px] h-[77px] "
+        src={props.src}
+        alt="logo"
+        loading="lazy"
+        width={50}
+        height={50}
+      />
       <h1 className="h-[50px]  font-bold text-gray-900 text-2xl xl:text-3xl">
         {props.valueTitle}
       </h1>
@@ -23,7 +31,14 @@ export const ServicesCard = (props: Props) => {
 export const ValueCardsBlackText = (props: Props) => {
   return (
     <div className="gap-8 xl:gap-10 w-[280px] md:w-[320px] xl:w-[370px] h-[370px] xl:h-[390px] px-6 py-10 flex flex-col justify-between border-2 shadow-md bg-gray-50">
-      <img className="w-[74px] h-[77px] " src={props.src} alt="logo" />
+      <Image
+        className="w-[74px] h-[77px] "
+        src={props.src}
+        alt="logo"
+        loading="lazy"
+        width={50}
+        height={50}
+      />
       <h1 className="font-bold text-gray-900 text-2xl xl:text-3xl">
         {props.valueTitle}
       </h1>
@@ -37,7 +52,14 @@ export const ValueCardsBlackText = (props: Props) => {
 const ValueCards = (props: Props) => {
   return (
     <div className="gap-8 xl:gap-10 w-[280px] md:w-[320px] xl:w-[370px] h-[370px] xl:h-[390px] px-6 py-10 flex flex-col justify-between border-2 shadow-md bg-gray-50">
-      <img className="w-[74px] h-[77px] " src={props.src} alt="logo" />
+      <Image
+        className="w-[74px] h-[77px] "
+        src={props.src}
+        alt="logo"
+        loading="lazy"
+        width={50}
+        height={50}
+      />
       <h1 className="font-bold text-darkblue-500 text-2xl xl:text-3xl">
         {props.valueTitle}
       </h1>

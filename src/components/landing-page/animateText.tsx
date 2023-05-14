@@ -1,19 +1,26 @@
 import React, { useEffect, useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
+import Image from "next/image";
 
 const AnimateText = () => {
   return (
     <section className="bg-bodyBackground flex flex-col lg:flex-row items-center justify-start sm:justify-center gap-10 lg:gap-36 px-5 lg:px-14 py-12 ">
       <div className="flex flex-col text-darkblue-500 font-bold text-3xl sm:text-5xl w-[auto] sm:w-[600px] gap-4">
-        <img
+        <Image
           className="static w-[18px] sm:w-[26px] -mt-[20px] ml-[70px] sm:ml-[130px]"
           src="/assets/blue-circle.svg"
           alt="logo"
+          width={50}
+          height={50}
+          loading="lazy"
         />
-        <img
+        <Image
           className="static w-[7px] sm:w-[14px] top-[120px] sm:top-[140px] -ml-[30px] sm:-ml-[20px] md:-ml-[40px] lg:-ml-[30px]  xl:-ml-[40px] "
           src="/assets/teal-circle.svg"
           alt="logo"
+          width={50}
+          height={50}
+          loading="lazy"
         />
 
         <div>
@@ -43,25 +50,30 @@ const AnimateText = () => {
           </button>
         </div>
 
-        <img
+        <Image
           className="static flex w-[100px] -ml-[30px] -mt-[100px] lg:w-[100px] lg:-ml-[30px] lg:-mt-[100px] xl:w-[180px] xl:-ml-[60px] xl:-mt-[150px] "
           src="/assets/leaf-icon-bottom.svg"
           alt="logo"
+          width={50}
+          height={50}
         />
       </div>
       <div className="w-[290px] sm:w-[auto] lg:w-[auto] relative ">
-        <img
+        <Image
           className="absolute w-[150px] -right-20 "
           src="/assets/leaf-icon-top.svg"
           alt="logo"
+          width={50}
+          height={50}
         />
-        <img
+        <Image
           src="/assets/favour-3.svg"
           // src="/assets/favour-2.svg"
           // src="/assets/favour-1.svg"
           alt="heoikon-logo"
-          width={600}
           className="relative z-10"
+          width={600}
+          height={50}
         />
       </div>
     </section>

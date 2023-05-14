@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Image from "next/image";
 
 const sectionVariant = {
   visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
@@ -91,8 +92,9 @@ const WhatOurStudentsSay = () => {
               className="bg-darkblue-500 text-white hover:bg-gray-900 p-2 py-4 px-3 rounded-full focus:outline-none"
               onClick={handlePrev}
             >
-              <img
+              <Image
                 src="/assets/previous-icon.svg"
+                loading="lazy"
                 width={20}
                 height={20}
                 alt=""
@@ -103,7 +105,13 @@ const WhatOurStudentsSay = () => {
               className="bg-darkblue-500 text-white hover:bg-gray-900 p-2 py-4 px-3 rounded-full focus:outline-none"
               onClick={handleNext}
             >
-              <img src="/assets/next-icon.svg" width={20} height={20} alt="" />
+              <Image
+                src="/assets/next-icon.svg"
+                loading="lazy"
+                width={20}
+                height={20}
+                alt=""
+              />
             </button>
           </div>
         </div>
@@ -123,28 +131,43 @@ const WhatOurStudentsSay = () => {
                     key={data.id}
                   >
                     <div className="mt-10 ml-3 sm:ml-10">
-                      <img src="/assets/quotation.svg" alt="" />
+                      <Image
+                        src="/assets/quotation.svg"
+                        alt=""
+                        loading="lazy"
+                        width={50}
+                        height={50}
+                      />
                     </div>
                     <div className="w-[299px] mt-7 ml-5 sm:ml-20 text-[18px]">
                       <p>{data.description}</p>
-                      <img
+                      <Image
                         src="/assets/quotation_2.svg"
                         className="ml-auto mr-5 sm:mr-0 mt-5"
                         alt=""
+                        loading="lazy"
+                        width={50}
+                        height={50}
                       />
                     </div>
 
                     <div className="mt-20 sm:ml-7">
                       <div className="flex justify-center items-center">
-                        <img
+                        <Image
                           className="w-[122.98px] h-[122.98px] mr-[9px] mb-0 ml-2 absolute z-10"
                           src="/assets/student_landingpage.svg"
                           alt="logo"
+                          loading="lazy"
+                          width={50}
+                          height={50}
                         />
-                        <img
+                        <Image
                           className="w-[145px] relative z-0"
                           src="/assets/ecclipse.svg"
                           alt="logo"
+                          loading="lazy"
+                          width={50}
+                          height={50}
                         />
                       </div>
 
@@ -166,9 +189,29 @@ const WhatOurStudentsSay = () => {
       </div>
 
       <div className="flex items-center justify-center gap-3 mt-5 lg:mt-10">
-        <img src="/assets/Rectangle_1.svg" onClick={handlePrev} alt="" />
-        <img src="/assets/Rectangle.svg" alt="" />
-        <img src="/assets/Rectangle_1.svg" alt="" onClick={handleNext} />
+        <Image
+          src="/assets/Rectangle_1.svg"
+          onClick={handlePrev}
+          alt=""
+          loading="lazy"
+          width={50}
+          height={50}
+        />
+        <Image
+          src="/assets/Rectangle.svg"
+          alt=""
+          loading="lazy"
+          width={50}
+          height={50}
+        />
+        <Image
+          src="/assets/Rectangle_1.svg"
+          alt=""
+          onClick={handleNext}
+          loading="lazy"
+          width={50}
+          height={50}
+        />
       </div>
     </section>
   );

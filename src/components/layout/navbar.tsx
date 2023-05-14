@@ -175,6 +175,7 @@ const Navbar: React.FC = () => {
           alt="balis-logo"
           width={131}
           height={67}
+          loading="lazy"
         />
       </Link>
 
@@ -253,6 +254,7 @@ const Navbar: React.FC = () => {
           alt="search"
           width={16}
           height={16}
+          loading="lazy"
         />
         <Image
           className="w-[30px] h-[30px] sm:w-[30px] bg-darkblue-50 px-1 sm:px- rounded-full"
@@ -260,6 +262,7 @@ const Navbar: React.FC = () => {
           alt="phone"
           width={35}
           height={35}
+          loading="lazy"
         />
         <Image
           className="w-[30px] sm:w-[37px]  bg-darkblue-50 p-1 rounded-full"
@@ -267,6 +270,7 @@ const Navbar: React.FC = () => {
           alt="mail"
           width={35}
           height={35}
+          loading="lazy"
         />
       </div>
 

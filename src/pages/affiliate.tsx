@@ -212,13 +212,13 @@ const affiliate = () => {
           </div>
         </section>
 
-        <section className="text-darkblue-900 flex flex-col lg:flex-row gap-5 items-center justify-between px-5 sm:px-12 md:px-14 lg:px-16 xl:px-16 ">
+        <section className="text-darkblue-900 flex flex-col lg:flex-row gap-[-20px] sm:gap-5 items-center justify-between px-5 sm:px-12 md:px-14 lg:px-16 xl:px-16 ">
           <div className="w-screen sm:w-full items-center justify-center py-12 ">
             <h1 className="text-2xl text-center sm:text-3xl md:text-4xl font-medium mb-4 ">
               Generate your Affiliate Link
             </h1>
           </div>
-          <div className="sm:w-full px-0 sm:px-12 md:px-24 lg:px-3 lg:pl-5 py-12 bg-darkblue-50">
+          <div className="sm:w-full px-2 sm:px-12 md:px-24 lg:px-3 lg:pl-5 py-12 bg-darkblue-50">
             <h3 className="text-lg sm:text-xl font-normal mb-10 max-w-[550px]  ">
               learning, we understand , can be challenging, but rest assured
               that we are here to support you every step of the way. Our courses

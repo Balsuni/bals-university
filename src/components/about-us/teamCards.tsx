@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 type Props = {
   src: string;
@@ -17,15 +18,21 @@ export const StudentsCards = (props: StudentProps) => {
   return (
     <div className="mt-10 md:mt-10 lg:mt-2 xl:mt-0 mb-3 flex flex-col items-center justify-center w-[280px] sm:w-[300px] lg:w-[400px] h-[430px] lg:h-[500px]">
       <div className="flex flex-row items-center justify-center mb-8 ">
-        <img
-          className="w-[250px] lg:w-auto mr-[2px] mb-0 sm:mb-[0px] absolute z-10"
+        <Image
+          className="w-[250px] lg:w-[250px] mr-[2px] mb-0 sm:mb-[0px] absolute z-10"
           src={props.src}
           alt="logo"
+          width={200}
+          height={200}
+          loading="lazy"
         />
-        <img
-          className="w-[290px] lg:w-auto h-[285px] lg:h-auto relative z-0"
+        <Image
+          className="w-[290px] lg:w-[290px] h-[285px] lg:h-auto relative z-0"
           src={props.srcRinglight}
           alt="logo"
+          width={290}
+          height={285}
+          loading="lazy"
         />
       </div>
       <div className="relative flex flex-col items-center justify-center gap-3 ">

@@ -105,6 +105,7 @@ const Footer = () => {
               alt="Logo"
               width={150}
               height={150}
+              loading="lazy"
             />
           </Link>
           <h5 className="font-bold text-xl mt-16 tracking-wide">
@@ -146,6 +147,7 @@ const Footer = () => {
                         alt={icon.alt}
                         width={30}
                         height={30}
+                        loading="lazy"
                       />
                     </a>
                   </div>

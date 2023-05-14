@@ -11,6 +11,7 @@ import MasterTheCyberSpace from "@/components/landing-page/masterTheCyberSpace";
 import AnimateText from "@/components/landing-page/animateText";
 import MarqueeSlider from "@/components/landing-page/marqueeSlider";
 import Link from "next/link";
+import Image from "next/image";
 
 const ServicesData = [
   {
@@ -88,7 +89,7 @@ const Home = () => {
 
       <WhatOurStudentsSay />
 
-      <main className="py-12 bg-bodyBackground">
+      <main className="py-12 bg-bodyB jackground">
         <section className="flex flex-col px-5 bg-bodyBackground ">
           <div className="flex flex-col lg:flex-row gap-3 justify-normal lg:justify-between lg:items-center lg:mx-24">
             <h1 className="text-darkblue-500 font-bold text-2xl sm:text-3xl md:text-4xl mb-4">
@@ -151,13 +152,16 @@ const Home = () => {
         </div>
 
         <div>
-          <img
+          <Image
             className="relative z-20 w-[300px] sm:w-[400px] md:w-[500px] lg:w-[580px] xl:w-[725px]"
             src="/assets/photo.svg"
             alt="commission"
+            width={50}
+            height={50}
+            loading="lazy"
           />
           <img
-            className="-mt-[370px] z-10 hidden xl:flex  "
+            className="-mt-[370px] z-10 hidden xl:flex"
             src="/assets/background-vector.svg"
             alt="vector"
           />
@@ -167,7 +171,7 @@ const Home = () => {
       <section className="px-5 sm:px-10 flex flex-col md:flex-row items-center justify-center gap-5 bg-bodyBackground pb-5 sm:pb-8 ">
         <div className="flex flex-row">
           <img
-            className="relative z-10 w-[100px]"
+            className="relative z-10 w-[100px] h-[100px]"
             src="/assets/student1.svg "
             alt="student-avatar"
           />
