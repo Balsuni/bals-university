@@ -126,6 +126,68 @@ const DropdownFeaturesMenu = () => {
   );
 };
 
+const SearchDrop = () => {
+  const [openSearch, setOpenSearch] = useState(false);
+
+  const toggleSearchBox = () => {
+    return setOpenSearch(!openSearch);
+  };
+
+  const mainMenuRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    let aboutHandler = (e: any) => {
+      if (!mainMenuRef.current?.contains(e.target)) {
+        setOpenSearch(false);
+        console.log(mainMenuRef.current);
+      }
+    };
+    document.addEventListener("mousedown", aboutHandler);
+
+    return () => {
+      document.removeEventListener("mousedown", aboutHandler);
+    };
+  }, [toggleSearchBox]);
+
+  return (
+    <div>
+      <li className="px-1 xl:px-2 flex items-center text-left gap-2 text-lg py-2 lg:border-bodyBackground hover:border-white lg:hover:border-darkblue-500">
+        {!openSearch ? (
+          <Image
+            onClick={toggleSearchBox}
+            className="w-[15px] sm:w-[20px]"
+            src="/assets/search.svg"
+            alt="search"
+            width={16}
+            height={16}
+          />
+        ) : (
+          <CloseSquare className="z-10" size="24" color="#162A5A" />
+        )}
+      </li>
+      <div ref={mainMenuRef}>
+        {openSearch && (
+          <main className="absolute z-30 rounded-xl pl-3 py-3 h-[230px] w-[310px] sm:w-[320px] top-20 sm:top-24 -ml-[134px] sm:-ml-0 text-darkblue-500 bg-gray-200  ">
+            <div className="flex flex-row items-center">
+              <Image
+                className="w-[15p] absolute ml-1 "
+                src="/assets/search.svg"
+                alt="search"
+                width={16}
+                height={16}
+              />
+              <input
+                className="text-darkblue-500 text-3 h-10 pl-7 bg-gray-200"
+                placeholder="Search"
+              />
+            </div>
+          </main>
+        )}
+      </div>
+    </div>
+  );
+};
+
 const Navbar: React.FC = () => {
   const [navbar, setNavbar] = useState(true);
   const [openMenu, setOpenMenu] = useState(false);
@@ -175,7 +237,6 @@ const Navbar: React.FC = () => {
           alt="balis-logo"
           width={131}
           height={67}
-          loading="lazy"
         />
       </Link>
 
@@ -248,21 +309,13 @@ const Navbar: React.FC = () => {
       </div>
 
       <div className="flex flex-row items-center w-2/5 md:w-3/12 lg:w-40 xl:w-2/12 justify-between">
-        <Image
-          className="w-[15px] sm:w-[20px]"
-          src="/assets/search.svg"
-          alt="search"
-          width={16}
-          height={16}
-          loading="lazy"
-        />
+        <SearchDrop />
         <Image
           className="w-[30px] h-[30px] sm:w-[30px] bg-darkblue-50 px-1 sm:px- rounded-full"
           src="/assets/phone.svg"
           alt="phone"
           width={35}
           height={35}
-          loading="lazy"
         />
         <Image
           className="w-[30px] sm:w-[37px]  bg-darkblue-50 p-1 rounded-full"
@@ -270,7 +323,6 @@ const Navbar: React.FC = () => {
           alt="mail"
           width={35}
           height={35}
-          loading="lazy"
         />
       </div>
 
