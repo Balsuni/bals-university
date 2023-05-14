@@ -5,6 +5,7 @@ import CoursesCard from "@/components/courses/cards";
 import CourseGallery from "@/components/courses/courseGallery";
 import FreeCoursesGallery from "@/components/courses/freeCoursesGallery";
 import Faq from "@/components/ui/faq";
+import Image from "next/image";
 
 const courses = () => {
   const faqData = [
@@ -44,10 +45,13 @@ const courses = () => {
     <Layout>
       <section className="">
         <div className="h-[438px] bg-cover bg-center relative">
-          <img
+          <Image
             className="w-full h-[380px] sm:h-[430px] md:h-[350px] lg:h-[438px] xl:h-[438px] object-cover absolute mix-blend-overlay "
             src="/assets/students.svg"
             alt="course-details logo"
+            width={50}
+            height={50}
+            loading="lazy"
           />
           <div className="flex gap-10 flex-col lg:flex-row items-center px-0 md:px-10 lg:px-16 xl:px-20  py-0 md:py-5 lg:py-12 xl:py-10">
             <div className="w-screen flex flex-col items-start flex-wrap md:items-start px-5 py-5 sm:px-5 md:px-10 sm:py-5 md:py-[10px] lg:py-5 xl:py-14">

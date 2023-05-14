@@ -63,7 +63,7 @@ const MasterTheCyberSpace = () => {
 
   return (
     <section className="py-12 px-5 sm:px-10 flex flex-col items-center justify-center bg-bodyBackground ">
-      <h1 className="mb-10 sm:mb-5 md:mb-12 text-darkblue-500 text-center text-3xl sm:text-3xl md:text-4xl font-bold">
+      <h1 className="mb-10 sm:mb-5 md:mb-12 text-darkblue-500 text-left text-2xl sm:text-3xl md:text-4xl font-bold">
         Master The CyberSpace
       </h1>
 

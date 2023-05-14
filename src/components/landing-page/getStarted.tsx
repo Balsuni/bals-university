@@ -23,21 +23,34 @@ const GetStarted = () => {
   return (
     <section className="w-full mt-10 py-10">
       <div className="relative hidden lg:block 2xl:hidden">
-        <img
+        <Image
           src="/assets/landing_vector.svg"
           className="absolute left-[635px]"
           alt=""
+          width={50}
+          height={50}
+          loading="lazy"
         />
       </div>
       <div className="relative hidden lg:block 2xl:hidden">
-        <img
+        <Image
           src="/assets/pattern_2.svg"
           alt=""
           className="absolute left-[1300px] top-[200px]"
+          width={50}
+          height={50}
+          loading="lazy"
         />
       </div>
       <div className="flex flex-col sm:flex-row sm:gap-5 sm:mx-5 lg:mx-0 md:gap-10 lg:flex-row lg:gap-32 justify-center sm:items-start items-center">
-        <img src="/assets/tired.svg" className="rounded-3xl w-[300px]" alt="" />
+        <Image
+          src="/assets/tired.svg"
+          className="rounded-3xl w-[300px]"
+          alt=""
+          width={50}
+          height={50}
+          loading="lazy"
+        />
 
         <div>
           <h1 className="text-[24px] sm:text-[36px] mt-8 sm:mt-0 text-darkblue-500 font-bold mx-5 sm:mx-0 animate-pulse">
@@ -91,7 +104,7 @@ const GetStarted = () => {
       </div>
 
       <div className="flex flex-col mx-3 gap-5 sm:gap-5 md:gap-10 sm:flex-row sm:mx-5 lg:mx-0 lg:ml-[350px] lg:flex-row lg:gap-32 justify-center mt-16 lg:mt-[120px] sm:items-start items-center">
-        <div className="sm:w-[500px] text-center sm:text-start">
+        <div className="sm:w-[500px] lg:ml-10 text-center sm:text-start">
           <p className="text-[18px]">GET MORE REVENUE AND INFLUENCE</p>
           <h2 className="lg:w-[392px] lg:text-[30px] font-bold sm:leading-[36px] leading-[25px]">
             The most unique and Only{" "}
