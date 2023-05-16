@@ -170,16 +170,21 @@ const SearchDrop = () => {
           <main className="absolute z-30 rounded-xl pl-3 py-3 h-[230px] w-[310px] sm:w-[320px] top-20 sm:top-24 -ml-[134px] sm:-ml-0 text-darkblue-500 bg-gray-200  ">
             <div className="flex flex-row items-center">
               <Image
-                className="w-[15p] absolute ml-1 "
+                className="w-[15p] absolute ml-1 pointer-events-none"
                 src="/assets/search.svg"
                 alt="search"
                 width={16}
                 height={16}
               />
-              <input
-                className="text-darkblue-500 text-3 h-10 pl-7 bg-gray-200"
-                placeholder="Search"
-              />
+              <form action="">
+                <input
+                  type="text"
+                  name="search"
+                  placeholder="Search"
+                  autoComplete="off"
+                  className="text-darkblue-500 text-3 h-10 pl-7 bg-gray-200 "
+                />
+              </form>
             </div>
           </main>
         )}

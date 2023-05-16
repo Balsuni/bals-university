@@ -4,26 +4,26 @@ import Link from "next/link";
 import React from "react";
 import { blogDisplayData } from "./blogDisplayData";
 
-const fetchBlogs = () => {
-  return axios.get(`https://bals-testapi.onrender.com/blog_display`);
-};
+// const fetchBlogs = () => {
+//   return axios.get(`https://bals-testapi.onrender.com/blog_display`);
+// };
 
 const BlogCards = () => {
-  const { isLoading, isError, data, isFetching } = useQuery(
-    ["colors"],
-    () => fetchBlogs(),
-    {
-      keepPreviousData: true,
-    }
-  );
+  // const { isLoading, isError, data, isFetching } = useQuery(
+  //   ["colors"],
+  //   () => fetchBlogs(),
+  //   {
+  //     keepPreviousData: true,
+  //   }
+  // );
 
-  if (isLoading) {
-    return <h2>Loading...</h2>;
-  }
+  // if (isLoading) {
+  //   return <h2>Loading...</h2>;
+  // }
 
-  if (isError) {
-    return <h2>{isError}</h2>;
-  }
+  // if (isError) {
+  //   return <h2>{isError}</h2>;
+  // }
 
   return (
     <div className="flex flex-row gap-5 sm:gap-8 xl:gap-9 ml-[14px] mr-[14px] sm:mr-[20px]">
