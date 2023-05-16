@@ -3,10 +3,10 @@ import Header from "@/components/blog/header";
 import Newsletter from "@/components/blog/newsletter";
 import PaginatedBlogs from "@/components/blog/paginatedBlogs";
 import Layout from "@/components/layout";
-import { CloseSquare } from "iconsax-react";
+import { CloseSquare, Filter } from "iconsax-react";
 import React, { useEffect, useRef, useState } from "react";
 
-const SearchDrop = () => {
+const SearchDropPaginatedBlogs = () => {
   const [openSearch, setOpenSearch] = useState(false);
 
   const toggleSearchBox = () => {
@@ -42,7 +42,7 @@ const SearchDrop = () => {
             height={30}
           />
         ) : (
-          <CloseSquare className="z-10" size="25" color="#162A5A" />
+          <CloseSquare className="z-10 my-2" size="25" color="#162A5A" />
         )}
       </li>
       <div ref={mainMenuRef}>
@@ -71,6 +71,126 @@ const SearchDrop = () => {
   );
 };
 
+const SearchDropBlogGallery = () => {
+  const [openSearch, setOpenSearch] = useState(false);
+
+  const toggleSearchBox = () => {
+    return setOpenSearch(!openSearch);
+  };
+
+  const mainMenuRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    let aboutHandler = (e: any) => {
+      if (!mainMenuRef.current?.contains(e.target)) {
+        setOpenSearch(false);
+        console.log(mainMenuRef.current);
+      }
+    };
+    document.addEventListener("mousedown", aboutHandler);
+
+    return () => {
+      document.removeEventListener("mousedown", aboutHandler);
+    };
+  }, [toggleSearchBox]);
+
+  return (
+    <div>
+      <li className="px-1 xl:px-2 flex items-center text-left gap-2 text-lg py-2 lg:border-bodyBackground hover:border-white lg:hover:border-darkblue-500">
+        {!openSearch ? (
+          <img
+            onClick={toggleSearchBox}
+            className="w-[35px] sm:w-[40px]"
+            src="/assets/search-icon.svg"
+            alt="search"
+            width={30}
+            height={30}
+          />
+        ) : (
+          <CloseSquare className="z-10 my-2" size="25" color="#162A5A" />
+        )}
+      </li>
+      <div ref={mainMenuRef}>
+        {openSearch && (
+          <main className="absolute z-30 rounded-xl pl-3 py-3 h-[230px] w-[310px] sm:w-[320px] top-[680px] sm:top-[630px] md:top-[550px] lg:top-[650px]  -ml-[215px] md:-ml-[250px] text-darkblue-500 bg-gray-200  ">
+            <div className="flex flex-row items-center">
+              {/* <img
+                className="w-[15px] absolute ml-1 pointer-events-none"
+                src="/assets/search-icon.svg"
+                alt="search"
+              /> */}
+              <form action="">
+                <input
+                  type="text"
+                  name="search"
+                  placeholder="Search"
+                  autoComplete="off"
+                  className="text-darkblue-500 text-3 h-10 pl-7 bg-gray-200 "
+                />
+              </form>
+            </div>
+          </main>
+        )}
+      </div>
+    </div>
+  );
+};
+
+const FilterBlog = () => {
+  const [openFilter, setOpenFilter] = useState(false);
+
+  const toggleFilter = () => {
+    return setOpenFilter(!openFilter);
+  };
+
+  const mainMenuRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    let aboutHandler = (e: any) => {
+      if (!mainMenuRef.current?.contains(e.target)) {
+        setOpenFilter(false);
+        console.log(mainMenuRef.current);
+      }
+    };
+    document.addEventListener("mousedown", aboutHandler);
+
+    return () => {
+      document.removeEventListener("mousedown", aboutHandler);
+    };
+  }, [toggleFilter]);
+
+  return (
+    <div>
+      <li className="px-1 xl:px-2 flex items-center text-left gap-2 text-lg py-2 lg:border-bodyBackground hover:border-white lg:hover:border-darkblue-500">
+        {!openFilter ? (
+          <img
+            onClick={toggleFilter}
+            className="w-[35px] sm:w-[40px]"
+            src="/assets/sort-by-icon.svg"
+            alt="sort"
+            width={30}
+            height={30}
+          />
+        ) : (
+          <CloseSquare className="z-10 my-2" size="25" color="#162A5A" />
+        )}
+      </li>
+      <div ref={mainMenuRef}>
+        {openFilter && (
+          <main className="absolute z-30 rounded-xl pl-5 py-5 h-[auto] w-[310px] sm:w-[320px] top-[680px] sm:top-[630px] md:top-[550px] lg:top-[650px] -ml-[263px] md:-ml-[250px] text-darkblue-500 bg-gray-200  ">
+            <div className="flex flex-col items-start gap-8">
+              <h2>Search Engine Optimization (SEO)</h2>
+              <h2>Social Media Management (SMM)</h2>
+              <h2>Search Engine Optimization (SEO)</h2>
+              <h2>Social Media Management (SMM)</h2>
+            </div>
+          </main>
+        )}
+      </div>
+    </div>
+  );
+};
+
 const Blog = () => {
   return (
     <Layout>
@@ -82,8 +202,10 @@ const Blog = () => {
               Recent blog Posts
             </h1>
             <div className="flex flex-row gap-[2px] sm:gap-2 ">
-              <img src="/assets/search-icon.svg" alt="search" />
-              <img src="/assets/sort-by-icon.svg" alt="sort" />
+              {/* <img src="/assets/search-icon.svg" alt="search" /> */}
+              <SearchDropBlogGallery />
+              {/* <img src="/assets/sort-by-icon.svg" alt="sort" /> */}
+              <FilterBlog />
             </div>
           </div>
         </section>
@@ -114,7 +236,7 @@ const Blog = () => {
               </select>
             </div>
             {/* <img src="/assets/search-icon.svg" alt="search" /> */}
-            <SearchDrop />
+            <SearchDropPaginatedBlogs />
           </div>
         </section>
 

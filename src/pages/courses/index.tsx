@@ -1,11 +1,132 @@
 import Layout from "@/components/layout";
 import styles from "@/styles/pageHeaderImage.module.scss";
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import CoursesCard from "@/components/courses/cards";
 import CourseGallery from "@/components/courses/courseGallery";
 import FreeCoursesGallery from "@/components/courses/freeCoursesGallery";
 import Faq from "@/components/ui/faq";
 import Image from "next/image";
+import { CloseSquare } from "iconsax-react";
+
+const SearchCourses = () => {
+  const [openSearch, setOpenSearch] = useState(false);
+
+  const toggleSearchBox = () => {
+    return setOpenSearch(!openSearch);
+  };
+
+  const mainMenuRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    let aboutHandler = (e: any) => {
+      if (!mainMenuRef.current?.contains(e.target)) {
+        setOpenSearch(false);
+        console.log(mainMenuRef.current);
+      }
+    };
+    document.addEventListener("mousedown", aboutHandler);
+
+    return () => {
+      document.removeEventListener("mousedown", aboutHandler);
+    };
+  }, [toggleSearchBox]);
+
+  return (
+    <div>
+      <li className="px-1 xl:px-2 flex items-center text-left gap-2 text-lg py-2 lg:border-bodyBackground hover:border-white lg:hover:border-darkblue-500">
+        {!openSearch ? (
+          <img
+            onClick={toggleSearchBox}
+            className="w-[35px] sm:w-[40px]"
+            src="/assets/search-icon.svg"
+            alt="search"
+            width={30}
+            height={30}
+          />
+        ) : (
+          <CloseSquare className="z-10 my-2" size="25" color="#162A5A" />
+        )}
+      </li>
+      <div ref={mainMenuRef}>
+        {openSearch && (
+          <main className="absolute z-30 rounded-xl pl-3 py-3 h-[230px] w-[310px] sm:w-[320px] top-[680px] sm:top-[630px] md:top-[550px] lg:top-[650px]  -ml-[215px] md:-ml-[250px] text-darkblue-500 bg-gray-200  ">
+            <div className="flex flex-row items-center">
+              {/* <img
+                className="w-[15px] absolute ml-1 pointer-events-none"
+                src="/assets/search-icon.svg"
+                alt="search"
+              /> */}
+              <form action="">
+                <input
+                  type="text"
+                  name="search"
+                  placeholder="Search"
+                  autoComplete="off"
+                  className="text-darkblue-500 text-3 h-10 pl-7 bg-gray-200 "
+                />
+              </form>
+            </div>
+          </main>
+        )}
+      </div>
+    </div>
+  );
+};
+
+const FilterCourses = () => {
+  const [openFilter, setOpenFilter] = useState(false);
+
+  const toggleFilter = () => {
+    return setOpenFilter(!openFilter);
+  };
+
+  const mainMenuRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    let aboutHandler = (e: any) => {
+      if (!mainMenuRef.current?.contains(e.target)) {
+        setOpenFilter(false);
+        console.log(mainMenuRef.current);
+      }
+    };
+    document.addEventListener("mousedown", aboutHandler);
+
+    return () => {
+      document.removeEventListener("mousedown", aboutHandler);
+    };
+  }, [toggleFilter]);
+
+  return (
+    <div>
+      <li className="px-1 xl:px-2 flex items-center text-left gap-2 text-lg py-2 lg:border-bodyBackground hover:border-white lg:hover:border-darkblue-500">
+        {!openFilter ? (
+          <img
+            onClick={toggleFilter}
+            className="w-[35px] sm:w-[40px]"
+            src="/assets/sort-by-icon.svg"
+            alt="sort"
+            width={30}
+            height={30}
+          />
+        ) : (
+          <CloseSquare className="z-10 my-2" size="25" color="#162A5A" />
+        )}
+      </li>
+      <div ref={mainMenuRef}>
+        {openFilter && (
+          <main className="absolute z-30 rounded-xl pl-5 py-5 h-[auto] w-[310px] sm:w-[320px] top-[2090px] sm:top-[2090px] md:top-[2090px] lg:top-[2090px] -ml-[260px] md:-ml-[250px] text-darkblue-500 bg-gray-200  ">
+            <div className="flex flex-col items-start gap-8">
+              <h2>Search Engine Optimization (SEO)</h2>
+              <h2>Social Media Management (SMM)</h2>
+              <h2>Search Engine Optimization (SEO)</h2>
+              <h2>Social Media Management (SMM)</h2>
+            </div>
+          </main>
+        )}
+      </div>
+    </div>
+  );
+};
 
 const courses = () => {
   const faqData = [
@@ -44,7 +165,7 @@ const courses = () => {
   return (
     <Layout>
       <section className="">
-        <div className="h-[438px] bg-cover bg-center relative">
+        <div className="h-[438px] bg-cover bg-center bg-darkblue-500 relative">
           <Image
             className="w-full h-[380px] sm:h-[430px] md:h-[350px] lg:h-[438px] xl:h-[438px] object-cover absolute mix-blend-overlay "
             src="/assets/students.svg"
@@ -169,8 +290,10 @@ const courses = () => {
                 </select>
               </div>
               <div className="flex flex-row gap-[2px] sm:gap-2 ">
-                <img src="/assets/search-icon.svg" alt="search" />
-                <img src="/assets/sort-by-icon.svg" alt="sort" />
+                {/* <img src="/assets/search-icon.svg" alt="search" /> */}
+                <SearchCourses />
+                {/* <img src="/assets/sort-by-icon.svg" alt="sort" /> */}
+                <FilterCourses />
               </div>
             </div>
           </div>
