@@ -5,12 +5,12 @@ import axios from "axios";
 import Link from "next/link";
 import { blogDisplayData } from "./blogDisplayData";
 
-const fetchBlogs = (currentPage: any) => {
-  const itemsPerPage = 12;
-  return axios.get(
-    `https://bals-testapi.onrender.com/blog?_limit=${itemsPerPage}&_page=${currentPage}`
-  );
-};
+// const fetchBlogs = (currentPage: any) => {
+//   const itemsPerPage = 12;
+//   return axios.get(
+//     `https://bals-testapi.onrender.com/blog?_limit=${itemsPerPage}&_page=${currentPage}`
+//   );
+// };
 
 const PaginatedBlogs = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -20,21 +20,21 @@ const PaginatedBlogs = () => {
     setCurrentPage(page);
   };
 
-  const { isLoading, isError, data, isFetching } = useQuery(
-    ["colors", currentPage],
-    () => fetchBlogs(currentPage),
-    {
-      keepPreviousData: true,
-    }
-  );
+  // const { isLoading, isError, data, isFetching } = useQuery(
+  //   ["colors", currentPage],
+  //   () => fetchBlogs(currentPage),
+  //   {
+  //     keepPreviousData: true,
+  //   }
+  // );
 
-  if (isLoading) {
-    return <h2>Loading...</h2>;
-  }
+  // if (isLoading) {
+  //   return <h2>Loading...</h2>;
+  // }
 
-  if (isError) {
-    return <h2>{isError}</h2>;
-  }
+  // if (isError) {
+  //   return <h2>{isError}</h2>;
+  // }
 
   return (
     <div className="flex flex-col gap-10 items-center justify-center">
@@ -156,7 +156,7 @@ const PaginatedBlogs = () => {
           <img src="/assets/arrow-narrow-right.svg" alt="next" />
         </button>
       </section>
-      {isFetching && "Loading"}
+      {/* {isFetching && "Loading"} */}
     </div>
   );
 };

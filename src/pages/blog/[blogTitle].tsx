@@ -36,9 +36,9 @@ import React from "react";
 //   };
 // };
 
-const fetchBlogs = () => {
-  return axios.get(`https://bals-testapi.onrender.com/blog`);
-};
+// const fetchBlogs = () => {
+//   return axios.get(`https://bals-testapi.onrender.com/blog`);
+// };
 
 const BlogPage = () => {
   const router = useRouter();
@@ -51,21 +51,21 @@ const BlogPage = () => {
   const blogTitle = query.blogTitle;
   const blogContent = query.blogContent;
 
-  const { isLoading, isError, data, isFetching } = useQuery(
-    ["colors"],
-    () => fetchBlogs(),
-    {
-      keepPreviousData: true,
-    }
-  );
+  // const { isLoading, isError, data, isFetching } = useQuery(
+  //   ["colors"],
+  //   () => fetchBlogs(),
+  //   {
+  //     keepPreviousData: true,
+  //   }
+  // );
 
-  if (isLoading) {
-    return <h2>Loading...</h2>;
-  }
+  // if (isLoading) {
+  //   return <h2>Loading.</h2>;
+  // }
 
-  if (isError) {
-    return <h2>{isError}</h2>;
-  }
+  // if (isError) {
+  //   return <h2>{isError}</h2>;
+  // }
 
   return (
     <Layout>
