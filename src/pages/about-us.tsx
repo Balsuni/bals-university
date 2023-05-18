@@ -90,11 +90,11 @@ const AboutUs = () => {
             <h1>Together.</h1>
           </div>
           <div className="text-darkblue-500 bg-gray-200 w-[280px] xl:w-80 h-32 px-6 pt-5 pb-5 rounded-lg">
-            <h1 className=" text-4xl font-medium">7000+</h1>
+            <h1 className="text-3xl xl:text-4xl font-medium">7000+</h1>
             <h4 className=" text-xl font-normal">Registered Students</h4>
           </div>
           <div className="text-darkblue-500 bg-gray-200 w-[280px] xl:w-80 h-32 px-6 pt-5 pb-5 rounded-lg">
-            <h1 className=" text-4xl font-medium">7000+</h1>
+            <h1 className="text-3xl xl:text-4xl font-medium">7000+</h1>
             <h4 className=" text-xl font-normal">Registered Students</h4>
           </div>
         </section>
