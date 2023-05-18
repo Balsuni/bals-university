@@ -3,6 +3,12 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600&family=Roboto:wght@100;300&family=Rubik:wght@300;400;500&family=Work+Sans:wght@200;300;400&display=swap");
 
+@layer base {
+  html {
+    font-family: Ubuntu;
+  }
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

@@ -177,13 +177,33 @@ const FilterBlog = () => {
       </li>
       <div ref={mainMenuRef}>
         {openFilter && (
-          <main className="absolute z-30 rounded-xl pl-5 py-5 h-[auto] w-[310px] sm:w-[320px] top-[680px] sm:top-[630px] md:top-[550px] lg:top-[650px] -ml-[263px] md:-ml-[250px] text-darkblue-500 bg-gray-200  ">
-            <div className="flex flex-col items-start gap-8">
-              <h2>Search Engine Optimization (SEO)</h2>
-              <h2>Social Media Management (SMM)</h2>
-              <h2>Search Engine Optimization (SEO)</h2>
-              <h2>Social Media Management (SMM)</h2>
-            </div>
+          <main className="absolute z-30 rounded-xl pl-5 py-5 h-[auto] w-[310px] sm:w-[330px] top-[680px] sm:top-[630px] md:top-[550px] lg:top-[650px] -ml-[263px] md:-ml-[250px] text-darkblue-500 bg-gray-200  ">
+            <section className="flex flex-col items-start gap-7">
+              <div className="w-full pr-4 flex flex-row items-center justify-between  ">
+                <h2 className="text-sm sm:text-base ">
+                  Search Engine Optimization (SEO)
+                </h2>
+                <input type="radio" />
+              </div>
+              <div className="w-full pr-4 flex flex-row items-center justify-between  ">
+                <h2 className="text-sm sm:text-base ">
+                  Social Media Management (SMM)
+                </h2>
+                <input type="radio" className="ml-5" />
+              </div>
+              <div className="w-full pr-4 flex flex-row items-center justify-between  ">
+                <h2 className="text-sm sm:text-base ">
+                  Search Engine Optimization (SEO)
+                </h2>
+                <input type="radio" className="ml-5" />
+              </div>
+              <div className="w-full pr-4 flex flex-row items-center justify-between  ">
+                <h2 className="text-sm sm:text-base ">
+                  Social Media Management (SMM)
+                </h2>
+                <input type="radio" className="ml-5" />
+              </div>
+            </section>
           </main>
         )}
       </div>
