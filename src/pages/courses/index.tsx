@@ -190,7 +190,7 @@ const courses = () => {
                   pellentesque placerat arcu dignissim condimentum nibh et.
                   Vestibulum a non pharetra volutpat.
                 </h2>
-                <button className="w-fit my-auto font-normal text-md md:text-lg items-center px-4 py-2 lg:px-6 lg:py-4 h-fit rounded-md text-darkblue-500 bg-gray-50 ">
+                <button className="w-fit my-auto font-normal text-md md:text-lg items-center px-4 py-2 lg:px-6 lg:py-3 h-fit rounded-md text-darkblue-500 bg-gray-50 ">
                   Get Started
                 </button>
               </div>
