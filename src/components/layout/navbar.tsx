@@ -137,16 +137,16 @@ const SearchDrop = () => {
   const mainMenuRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    let aboutHandler = (e: any) => {
+    let searchHandler = (e: any) => {
       if (!mainMenuRef.current?.contains(e.target)) {
         setOpenSearch(false);
         console.log(mainMenuRef.current);
       }
     };
-    document.addEventListener("mousedown", aboutHandler);
+    document.addEventListener("mousedown", searchHandler);
 
     return () => {
-      document.removeEventListener("mousedown", aboutHandler);
+      document.removeEventListener("mousedown", searchHandler);
     };
   }, [toggleSearchBox]);
 
