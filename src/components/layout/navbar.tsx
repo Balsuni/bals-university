@@ -128,6 +128,7 @@ const DropdownFeaturesMenu = () => {
 
 const SearchDrop = () => {
   const [openSearch, setOpenSearch] = useState(false);
+  const [query, setQuery] = useState("");
 
   const toggleSearchBox = () => {
     return setOpenSearch(!openSearch);
@@ -136,16 +137,16 @@ const SearchDrop = () => {
   const mainMenuRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    let aboutHandler = (e: any) => {
+    let searchHandler = (e: any) => {
       if (!mainMenuRef.current?.contains(e.target)) {
         setOpenSearch(false);
         console.log(mainMenuRef.current);
       }
     };
-    document.addEventListener("mousedown", aboutHandler);
+    document.addEventListener("mousedown", searchHandler);
 
     return () => {
-      document.removeEventListener("mousedown", aboutHandler);
+      document.removeEventListener("mousedown", searchHandler);
     };
   }, [toggleSearchBox]);
 
@@ -168,23 +169,61 @@ const SearchDrop = () => {
       <div ref={mainMenuRef}>
         {openSearch && (
           <main className="absolute z-30 rounded-xl pl-3 py-3 h-[230px] w-[310px] sm:w-[320px] top-20 sm:top-24 -ml-[134px] sm:-ml-0 text-darkblue-500 bg-gray-200  ">
-            <div className="flex flex-row items-center">
-              <Image
-                className="w-[15p] absolute ml-1 pointer-events-none"
-                src="/assets/search.svg"
-                alt="search"
-                width={16}
-                height={16}
-              />
-              <form action="">
-                <input
-                  type="text"
-                  name="search"
-                  placeholder="Search"
-                  autoComplete="off"
-                  className="text-darkblue-500 text-3 h-10 pl-7 bg-gray-200 "
-                />
-              </form>
+            <div className="flex flex-col">
+              <div className="flex flex-row items-center justify-between ">
+                {query ? (
+                  ""
+                ) : (
+                  <img
+                    className="w-[16px] absolute pointer-events-none"
+                    src="/assets/search.svg"
+                    alt="search"
+                  />
+                )}
+                <form action="submit">
+                  <input
+                    type="text"
+                    value={query}
+                    name="search"
+                    autoComplete="off"
+                    placeholder="Search"
+                    onChange={(e) => setQuery(e.target.value)}
+                    className="text-darkblue-500 text-3 h-10 pl-7 bg-gray-200 w-[290px] focus:outline-none  "
+                  />
+                </form>
+                {query ? (
+                  <CloseSquare
+                    size="23"
+                    color="#162A5A"
+                    onClick={() => setQuery("")}
+                    className="absolute right-7"
+                  />
+                ) : (
+                  ""
+                )}
+              </div>
+              <div>
+                <div>
+                  <ul className="flex flex-col gap-3 mt-2  list-disc list-inside">
+                    <div className="flex flex-row items-center">
+                      <img
+                        className="w-[16px] absolute pointer-events-none"
+                        src="/assets/search.svg"
+                        alt="search"
+                      />{" "}
+                      <h1 className="ml-7"> Digital Marketing</h1>
+                    </div>
+                    <div className="flex flex-row items-center">
+                      <img
+                        className="w-[16px] absolute pointer-events-none"
+                        src="/assets/search.svg"
+                        alt="search"
+                      />{" "}
+                      <h1 className="ml-7"> Digital Learning</h1>
+                    </div>
+                  </ul>
+                </div>
+              </div>
             </div>
           </main>
         )}
