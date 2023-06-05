@@ -203,7 +203,7 @@ const SearchDrop = () => {
                 )}
               </div>
               <div>
-                <div>
+                {/* <div>
                   <ul className="flex flex-col gap-3 mt-2  list-disc list-inside">
                     <div className="flex flex-row items-center">
                       <img
@@ -222,7 +222,7 @@ const SearchDrop = () => {
                       <h1 className="ml-7"> Digital Learning</h1>
                     </div>
                   </ul>
-                </div>
+                </div> */}
               </div>
             </div>
           </main>
