@@ -183,6 +183,10 @@ const Courses = () => {
     }
   }, [control, inView]);
 
+  const onFilterValueChanged = (e: any) => {
+    console.log(e.target.value);
+  };
+
   return (
     <section className="mt-12 lg:mx-5 font-Ubuntu">
       <div className="mb-9 lg:ml-16 ml-0 mr-10">
@@ -200,30 +204,18 @@ const Courses = () => {
           </div>
           <div className="flex sm:hidden w-8/12">
             <select
-              id="selection"
+              // id="selection"
+              onChange={onFilterValueChanged}
               className="bg-cyan1-500 border border-cyan1-900 text-gray-50 font-bold text-md rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 pr-5"
             >
-              <option selected>All Courses</option>
-              <option>Skill Acquisition</option>
-              <option>Talent Acquisition</option>
+              <option value="all courses">All Courses</option>
+              <option value="skill acquisition">Skill Acquisition</option>
+              <option value="talent acquisition">Talent Acquisition</option>
             </select>
           </div>
           <div className="flex flex-row gap-[2px] sm:gap-2 ">
-            {/* <Image
-              src="/assets/search-icon.svg"
-              alt="search"
-              width={50}
-              height={50}
-              loading="lazy"
-            /> */}
             <SearchCourses />
-            {/* <Image
-              src="/assets/sort-by-icon.svg"
-              alt="sort"
-              width={50}
-              height={50}
-              loading="lazy"
-            /> */}
+
             <FilterCourses />
           </div>
         </div>
