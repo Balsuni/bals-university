@@ -126,7 +126,7 @@ const DropdownFeaturesMenu = () => {
   );
 };
 
-const SearchDrop = () => {
+export const SearchDrop = () => {
   const [openSearch, setOpenSearch] = useState(false);
   const [query, setQuery] = useState("");
 
@@ -188,7 +188,7 @@ const SearchDrop = () => {
                     autoComplete="off"
                     placeholder="Search"
                     onChange={(e) => setQuery(e.target.value)}
-                    className="text-darkblue-500 text-3 h-10 pl-7 bg-gray-200 w-[290px] focus:outline-none  "
+                    className="text-darkblue-500 text-3 h-10 pl-7 bg-gray-200 w-[290px] focus:outline-none"
                   />
                 </form>
                 {query ? (
