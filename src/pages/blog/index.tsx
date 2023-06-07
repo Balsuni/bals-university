@@ -48,7 +48,7 @@ export const SearchDropPaginatedBlogs = (props: any) => {
       </li>
       <div ref={mainMenuRef}>
         {openSearch && (
-          <main className="absolute z-30 rounded-xl pl-3 py-3 h-[230px] w-[310px] sm:w-[320px] top-[1410px] sm:top-[1360px] md:top-[1280px] lg:top-[1430px] xl:top-[1470px] -ml-[262px] md:-ml-[250px] text-darkblue-500 bg-gray-200  ">
+          <main className="bg-gray-200 absolute z-30 rounded-xl h-[41px] w-screen text-darkblue-500 left-0">
             <div className="flex flex-row items-center">
               <form action="submit">
                 <input
@@ -57,7 +57,7 @@ export const SearchDropPaginatedBlogs = (props: any) => {
                   placeholder="Search"
                   autoComplete="off"
                   onChange={props.searchValue}
-                  className="text-darkblue-500 text-3 h-10 pl-7 bg-gray-200 "
+                  className="text-darkblue-500 w-screen top-0 text-3 h-10 pl-5 bg-gray-200 focus:outline-none"
                 />
               </form>
             </div>
@@ -108,7 +108,7 @@ export const SearchDropBlogGallery = (props: any) => {
       </li>
       <div ref={mainMenuRef}>
         {openSearch && (
-          <main className="absolute z-30 rounded-xl pl-3 py-3 h-[230px] w-[310px] sm:w-[320px]  -ml-[215px] md:-ml-[250px] text-darkblue-500 bg-gray-200  ">
+          <main className="bg-gray-200 absolute z-30 rounded-xl h-[41px] w-screen text-darkblue-500 left-0">
             <div className="flex flex-row items-center">
               <form action="submit">
                 <input
@@ -117,7 +117,7 @@ export const SearchDropBlogGallery = (props: any) => {
                   placeholder="Search"
                   autoComplete="off"
                   onChange={props.searchValue}
-                  className="text-darkblue-500 text-3 h-10 pl-7 bg-gray-200 focus:outline-none"
+                  className="text-darkblue-500 w-screen top-0 text-3 h-10 pl-5 bg-gray-200 focus:outline-none"
                 />
               </form>
             </div>
@@ -173,7 +173,7 @@ export const FilterBlog = (props: any) => {
       </li>
       <div ref={mainMenuRef}>
         {openFilter && (
-          <main className="absolute z-30 rounded-xl pl-5 py-5 h-[auto] w-[310px] sm:w-[330px] top-[680px] sm:top-[630px] md:top-[550px] lg:top-[650px] -ml-[263px] md:-ml-[250px] text-darkblue-500 bg-gray-200  ">
+          <main className="absolute z-30 rounded-xl pl-2 py-2 h-[50px] w-[200px] right-0 mr-7 sm:mr-16 md:mr-22 lg:mr-20 text-darkblue-500 bg-gray-200  ">
             <section className="flex flex-col items-start gap-7">
               {/* <h2 className="text-sm sm:text-base ">
                 Social Media Management (SMM)
@@ -187,7 +187,10 @@ export const FilterBlog = (props: any) => {
               <h2 className="text-sm sm:text-base ">
                 Social Media Management (SMM)
               </h2> */}
-              <select onChange={onFilterValueChange}>
+              <select
+                onChange={onFilterValueChange}
+                className="w-[160px] h-[30px] pl-3"
+              >
                 <option>All</option>
                 <option>Computer</option>
                 <option>Technology</option>

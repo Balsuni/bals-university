@@ -354,20 +354,25 @@ const Navbar: React.FC = () => {
 
       <div className="flex flex-row items-center w-2/5 md:w-3/12 lg:w-40 xl:w-2/12 justify-between">
         <SearchDrop />
-        <Image
-          className="w-[30px] h-[30px] sm:w-[30px] bg-darkblue-50 px-1 sm:px- rounded-full"
-          src="/assets/phone.svg"
-          alt="phone"
-          width={35}
-          height={35}
-        />
-        <Image
-          className="w-[30px] sm:w-[37px]  bg-darkblue-50 p-1 rounded-full"
-          src="/assets/mail.svg"
-          alt="mail"
-          width={35}
-          height={35}
-        />
+        <Link href="/contact-us">
+          {" "}
+          <Image
+            className="w-[30px] h-[30px] sm:w-[30px] bg-darkblue-50 px-1 sm:px- rounded-full"
+            src="/assets/phone.svg"
+            alt="phone"
+            width={35}
+            height={35}
+          />
+        </Link>
+        <Link href="/contact-us">
+          <Image
+            className="w-[30px] sm:w-[37px]  bg-darkblue-50 p-1 rounded-full"
+            src="/assets/mail.svg"
+            alt="mail"
+            width={35}
+            height={35}
+          />
+        </Link>
       </div>
 
       <div className="lg:hidden flex items-center ">
