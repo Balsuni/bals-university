@@ -92,7 +92,7 @@ const BlogCards = () => {
             {filteredBlogList
               .filter((item) => {
                 return search.toLocaleLowerCase() === ""
-                  ? item
+                  ? item || "Item not found"
                   : item.blogTitle.toLocaleLowerCase().includes(search);
               })
               .map((data: any) => {
