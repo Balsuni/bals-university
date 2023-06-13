@@ -17,7 +17,7 @@ const ContactUs = () => {
       </div>
       <PageHeaderText
         title="Contact Us"
-        backgroundImageSrc="/assets/toy-bricks-table-with-word-blog-contact.svg"
+        backgroundImageSrc="/assets/toy-bricks-table-with-word-blog-contact.jpg"
         backgroundImageAlt="contact-us"
         text="Any question or remarks? Just write us a message!"
       />

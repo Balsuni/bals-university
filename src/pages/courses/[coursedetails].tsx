@@ -111,9 +111,7 @@ const CourseDetails = () => {
   );
 
   if (isLoading) {
-    return (
-      <h1>Loading ....</h1>
-    );
+    return <h1>Loading ....</h1>;
   }
 
   if (isError) {
@@ -166,7 +164,7 @@ const CourseDetails = () => {
         <section className="flex flex-col lg:flex-row gap-16 items-center  lg:items-start ">
           <img
             className="rounded-xl w-auto h-auto  lg:w-[400px] lg:h-[400px]  "
-            src="/assets/course-description.svg"
+            src="/assets/course-description.jpg"
             alt="course detaisl logo"
           />
 

@@ -6,7 +6,7 @@ const landingPageCoursesCardData = [
   {
     id: 1,
     category: "Design",
-    imageSrc: "/assets/courses_1.svg",
+    imageSrc: "/assets/courses_1.jpg",
     courseTitle: "Fundamentals of LinkedIn",
     ratings: [
       "/assets/star_enabled.svg",
@@ -29,12 +29,12 @@ const landingPageCoursesCardData = [
     messageFromInstructor:
       "learning, we understand , can be challenging, but rest assured that we are here to support you every step of the way. Our courses ranges from paid to free courses. Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim",
     instructorProfile: "/assets/team-member-avatar.svg",
-    courseImage: "/assets/course-description.svg",
+    courseImage: "/assets/course-description.jpg",
   },
   {
     id: 2,
     category: "Design",
-    imageSrc: "/assets/courses_1.svg",
+    imageSrc: "/assets/courses_1.jpg",
     courseTitle: "Introduction to Web Development and Design",
     ratings: [
       "/assets/star_enabled.svg",
@@ -57,12 +57,12 @@ const landingPageCoursesCardData = [
     messageFromInstructor:
       "learning, we understand , can be challenging, but rest assured that we are here to support you every step of the way. Our courses ranges from paid to free courses. Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim",
     instructorProfile: "/assets/team-member-avatar.svg",
-    courseImage: "/assets/course-description.svg",
+    courseImage: "/assets/course-description.jpg",
   },
   {
     id: 3,
     category: "Design",
-    imageSrc: "/assets/courses_1.svg",
+    imageSrc: "/assets/courses_1.jpg",
     courseTitle: "Learn Javascript",
     ratings: [
       "/assets/star_enabled.svg",
@@ -85,12 +85,12 @@ const landingPageCoursesCardData = [
     messageFromInstructor:
       "learning, we understand , can be challenging, but rest assured that we are here to support you every step of the way. Our courses ranges from paid to free courses. Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim",
     instructorProfile: "/assets/team-member-avatar.svg",
-    courseImage: "/assets/course-description.svg",
+    courseImage: "/assets/course-description.jpg",
   },
   {
     id: 4,
     category: "Design",
-    imageSrc: "/assets/courses_1.svg",
+    imageSrc: "/assets/courses_1.jpg",
     courseTitle: "Fundamentals of Cyber Security",
     ratings: [
       "/assets/star_enabled.svg",
@@ -113,12 +113,12 @@ const landingPageCoursesCardData = [
     messageFromInstructor:
       "learning, we understand , can be challenging, but rest assured that we are here to support you every step of the way. Our courses ranges from paid to free courses. Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim",
     instructorProfile: "/assets/team-member-avatar.svg",
-    courseImage: "/assets/course-description.svg",
+    courseImage: "/assets/course-description.jpg",
   },
   {
     id: 5,
     category: "Design",
-    imageSrc: "/assets/courses_1.svg",
+    imageSrc: "/assets/courses_1.jpg",
     courseTitle: "Data Structures",
     ratings: [
       "/assets/star_enabled.svg",
@@ -141,12 +141,12 @@ const landingPageCoursesCardData = [
     messageFromInstructor:
       "learning, we understand , can be challenging, but rest assured that we are here to support you every step of the way. Our courses ranges from paid to free courses. Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim",
     instructorProfile: "/assets/team-member-avatar.svg",
-    courseImage: "/assets/course-description.svg",
+    courseImage: "/assets/course-description.jpg",
   },
   {
     id: 6,
     category: "Design",
-    imageSrc: "/assets/courses_1.svg",
+    imageSrc: "/assets/courses_1.jpg",
     courseTitle: "Algorithms",
     ratings: [
       "/assets/star_enabled.svg",
@@ -169,12 +169,12 @@ const landingPageCoursesCardData = [
     messageFromInstructor:
       "learning, we understand , can be challenging, but rest assured that we are here to support you every step of the way. Our courses ranges from paid to free courses. Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim",
     instructorProfile: "/assets/team-member-avatar.svg",
-    courseImage: "/assets/course-description.svg",
+    courseImage: "/assets/course-description.jpg",
   },
   {
     id: 7,
     category: "Design",
-    imageSrc: "/assets/courses_1.svg",
+    imageSrc: "/assets/courses_1.jpg",
     courseTitle: "Mobile Development",
     ratings: [
       "/assets/star_enabled.svg",
@@ -197,12 +197,12 @@ const landingPageCoursesCardData = [
     messageFromInstructor:
       "learning, we understand , can be challenging, but rest assured that we are here to support you every step of the way. Our courses ranges from paid to free courses. Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim",
     instructorProfile: "/assets/team-member-avatar.svg",
-    courseImage: "/assets/course-description.svg",
+    courseImage: "/assets/course-description.jpg",
   },
   {
     id: 8,
     category: "Design",
-    imageSrc: "/assets/courses_1.svg",
+    imageSrc: "/assets/courses_1.jpg",
     courseTitle: "Game Development",
     ratings: [
       "/assets/star_enabled.svg",
@@ -225,12 +225,12 @@ const landingPageCoursesCardData = [
     messageFromInstructor:
       "learning, we understand , can be challenging, but rest assured that we are here to support you every step of the way. Our courses ranges from paid to free courses. Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim",
     instructorProfile: "/assets/team-member-avatar.svg",
-    courseImage: "/assets/course-description.svg",
+    courseImage: "/assets/course-description.jpg",
   },
   {
     id: 9,
     category: "Design",
-    imageSrc: "/assets/courses_1.svg",
+    imageSrc: "/assets/courses_1.jpg",
     courseTitle: "Learn C",
     ratings: [
       "/assets/star_enabled.svg",
@@ -253,12 +253,12 @@ const landingPageCoursesCardData = [
     messageFromInstructor:
       "learning, we understand , can be challenging, but rest assured that we are here to support you every step of the way. Our courses ranges from paid to free courses. Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim",
     instructorProfile: "/assets/team-member-avatar.svg",
-    courseImage: "/assets/course-description.svg",
+    courseImage: "/assets/course-description.jpg",
   },
   {
     id: 10,
     category: "Design",
-    imageSrc: "/assets/courses_1.svg",
+    imageSrc: "/assets/courses_1.jpg",
     courseTitle: "Learn C++",
     ratings: [
       "/assets/star_enabled.svg",
@@ -281,12 +281,12 @@ const landingPageCoursesCardData = [
     messageFromInstructor:
       "learning, we understand , can be challenging, but rest assured that we are here to support you every step of the way. Our courses ranges from paid to free courses. Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim",
     instructorProfile: "/assets/team-member-avatar.svg",
-    courseImage: "/assets/course-description.svg",
+    courseImage: "/assets/course-description.jpg",
   },
   {
     id: 11,
     category: "Design",
-    imageSrc: "/assets/courses_1.svg",
+    imageSrc: "/assets/courses_1.jpg",
     courseTitle: "Learn Python",
     ratings: [
       "/assets/star_enabled.svg",
@@ -309,7 +309,7 @@ const landingPageCoursesCardData = [
     messageFromInstructor:
       "learning, we understand , can be challenging, but rest assured that we are here to support you every step of the way. Our courses ranges from paid to free courses. Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit amet consectetur. Adipiscing pellentesque placerat arcu dignissim",
     instructorProfile: "/assets/team-member-avatar.svg",
-    courseImage: "/assets/course-description.svg",
+    courseImage: "/assets/course-description.jpg",
   },
 ];
 

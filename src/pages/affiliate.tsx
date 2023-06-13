@@ -148,7 +148,7 @@ const affiliate = () => {
           <div className="flex flex-col md:flex-row mt-9  ">
             <InstructorCard
               src="/assets/affiliate_1.svg"
-              text="      learning, we understand , can be challenging, but rest assured that we
+              text="learning, we understand , can be challenging, but rest assured that we
           are here to support you every step of the way. Our courses ranges from
           paid to free courses. Lorem ipsum dolor sit amet consectetur.
           Adipiscing pellentesque placerat arcu dignissim Lorem ipsum dolor sit

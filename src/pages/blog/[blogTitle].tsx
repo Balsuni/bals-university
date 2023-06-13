@@ -82,17 +82,17 @@ const BlogPage = () => {
               {blogContent}
             </div>
           </div>
-          <div className="flex flex-row items-center justify-center gap-3 mt-8">
-            <img
+          <div className="flex flex-row text-center gap-3 mt-8">
+            {/* <img
               className="w-[50px] h-[50px]"
               src="/assets/post-avatar.svg"
               alt="avatar"
-            />
+            /> */}
             <div>
-              <h5 className="text-lg font-bold text-darkblue-500">{author}</h5>
-              <h6 className="text-lg font-normal text-darkblue-500       ">
-                {date}
-              </h6>
+              <h5 className="text-lg font-bold text-darkblue-500">
+                Written by {author}
+              </h5>
+              <h6 className="text-lg font-normal text-darkblue-500">{date}</h6>
             </div>
           </div>
         </section>
@@ -134,7 +134,7 @@ const BlogPage = () => {
           </div>
           <img
             className="rounded-t-3xl my-12 m-auto"
-            src="/assets/blog-picture.svg"
+            src="/assets/blog-picture.jpg"
             alt="blog-picture"
           />
           <div className="flex flex-col gap-7">
