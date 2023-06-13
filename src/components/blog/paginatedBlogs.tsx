@@ -107,14 +107,14 @@ const PaginatedBlogs = () => {
                       <main className="px-4  py-5 flex flex-col h-[auto]  gap-5">
                         <div className="flex flex-row items-center justify-between h-[75px]">
                           <div className="flex flex-row items-center gap-2">
-                            <img
+                            {/* <img
                               className="w-[37px] h-[37px]"
                               src={data.avatarSrc}
                               alt="avatar"
-                            />
+                            /> */}
                             <div>
-                              <h5 className="text-base font-bold text-gray-900">
-                                {data.author}
+                              <h5 className="text-sm font-bold text-gray-900">
+                                Written by {data.author}
                               </h5>
                               <h6 className="text-xs font-normal text-darkblue-500">
                                 {data.date}

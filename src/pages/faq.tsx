@@ -162,7 +162,7 @@ const FAQ = () => {
 
       <PageHeaderText
         text=" Frequently Asked Questions"
-        backgroundImageSrc="/assets/toy-bricks-table-with-word-blog-faq.svg"
+        backgroundImageSrc="/assets/toy-bricks-table-with-word-blog-faq.jpg"
         backgroundImageAlt="faqs"
         title="FAQ"
       />

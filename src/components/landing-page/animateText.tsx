@@ -67,9 +67,8 @@ const AnimateText = () => {
           height={50}
         />
         <Image
+          // src="/assets/favour-3.jpg"
           src="/assets/favour-3.svg"
-          // src="/assets/favour-2.svg"
-          // src="/assets/favour-1.svg"
           alt="heoikon-logo"
           className="relative z-10"
           width={600}

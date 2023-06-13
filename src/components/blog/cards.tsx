@@ -122,14 +122,14 @@ const BlogCards = () => {
                       <main className="px-4 md:px-5 lg:px-7  py-5 md:py-5 flex flex-col h-[auto] gap-6">
                         <div className="flex flex-row items-center justify-between h-[70px]">
                           <div className="flex flex-row items-center gap-2">
-                            <img
+                            {/* <img
                               className="w-[37px] h-[37px]"
                               src={data.avatarSrc}
                               alt="avatar"
-                            />
+                            /> */}
                             <div>
-                              <h5 className="text-base font-bold text-gray-900">
-                                {data.author}
+                              <h5 className="text-sm font-bold text-gray-900">
+                                Written by {data.author}
                               </h5>
                               <h6 className="text-xs font-normal text-darkblue-500       ">
                                 {data.date}

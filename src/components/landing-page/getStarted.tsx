@@ -44,7 +44,7 @@ const GetStarted = () => {
       </div>
       <div className="flex flex-col sm:flex-row sm:gap-5 sm:mx-5 lg:mx-0 md:gap-10 lg:flex-row lg:gap-32 justify-center sm:items-start items-center">
         <Image
-          src="/assets/tired.svg"
+          src="/assets/tired.jpg"
           className="rounded-3xl w-[300px]"
           alt=""
           width={50}

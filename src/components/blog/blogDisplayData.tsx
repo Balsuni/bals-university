@@ -1,7 +1,7 @@
 export const blogDisplayData = [
   {
     id: 1,
-    imageSrc: "/assets/blog-logo.svg",
+    imageSrc: "/assets/blog-logo.jpg",
     avatarSrc: "/assets/post-avatar.svg",
     author: " Lydia Phils",
     date: "20 March, 2023",
@@ -12,7 +12,7 @@ export const blogDisplayData = [
   },
   {
     id: 2,
-    imageSrc: "/assets/blog-logo.svg",
+    imageSrc: "/assets/blog-logo.jpg",
     avatarSrc: "/assets/post-avatar.svg",
     author: "Saheed Phils",
     date: "20 March, 2023",
@@ -23,7 +23,7 @@ export const blogDisplayData = [
   },
   {
     id: 3,
-    imageSrc: "/assets/blog-logo.svg",
+    imageSrc: "/assets/blog-logo.jpg",
     avatarSrc: "/assets/post-avatar.svg",
     author: "Sarah Miles",
     date: "20 March, 2023",
@@ -34,7 +34,7 @@ export const blogDisplayData = [
   },
   {
     id: 4,
-    imageSrc: "/assets/blog-logo.svg",
+    imageSrc: "/assets/blog-logo.jpg",
     avatarSrc: "/assets/post-avatar.svg",
     author: "Terry Awkins",
     date: "20 March, 2023",
@@ -45,7 +45,7 @@ export const blogDisplayData = [
   },
   {
     id: 5,
-    imageSrc: "/assets/blog-logo.svg",
+    imageSrc: "/assets/blog-logo.jpg",
     avatarSrc: "/assets/post-avatar.svg",
     author: "Jessica Lewis",
     date: "20 March, 2023",
@@ -56,7 +56,7 @@ export const blogDisplayData = [
   },
   {
     id: 6,
-    imageSrc: "/assets/blog-logo.svg",
+    imageSrc: "/assets/blog-logo.jpg",
     avatarSrc: "/assets/post-avatar.svg",
     author: " Lydia Phils",
     date: "20 March, 2023",
@@ -67,7 +67,7 @@ export const blogDisplayData = [
   },
   {
     id: 7,
-    imageSrc: "/assets/blog-logo.svg",
+    imageSrc: "/assets/blog-logo.jpg",
     avatarSrc: "/assets/post-avatar.svg",
     author: "Saheed Phils",
     date: "20 March, 2023",
@@ -78,7 +78,7 @@ export const blogDisplayData = [
   },
   {
     id: 8,
-    imageSrc: "/assets/blog-logo.svg",
+    imageSrc: "/assets/blog-logo.jpg",
     avatarSrc: "/assets/post-avatar.svg",
     author: "Sarah Miles",
     date: "20 March, 2023",
@@ -89,7 +89,7 @@ export const blogDisplayData = [
   },
   {
     id: 9,
-    imageSrc: "/assets/blog-logo.svg",
+    imageSrc: "/assets/blog-logo.jpg",
     avatarSrc: "/assets/post-avatar.svg",
     author: "Terry Awkins",
     date: "20 March, 2023",
@@ -100,7 +100,7 @@ export const blogDisplayData = [
   },
   {
     id: 10,
-    imageSrc: "/assets/blog-logo.svg",
+    imageSrc: "/assets/blog-logo.jpg",
     avatarSrc: "/assets/post-avatar.svg",
     author: "Jessica Lewis",
     date: "20 March, 2023",
@@ -111,7 +111,7 @@ export const blogDisplayData = [
   },
   {
     id: 11,
-    imageSrc: "/assets/blog-logo.svg",
+    imageSrc: "/assets/blog-logo.jpg",
     avatarSrc: "/assets/post-avatar.svg",
     author: "Jessica Lewis",
     date: "20 March, 2023",
@@ -122,7 +122,7 @@ export const blogDisplayData = [
   },
   {
     id: 12,
-    imageSrc: "/assets/blog-logo.svg",
+    imageSrc: "/assets/blog-logo.jpg",
     avatarSrc: "/assets/post-avatar.svg",
     author: "Taiwo Phils",
     date: "20 March, 2023",
