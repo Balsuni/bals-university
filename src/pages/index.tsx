@@ -169,7 +169,7 @@ const Home = () => {
       </section>
 
       <section className="px-5 sm:px-10 flex flex-col md:flex-row items-center justify-center gap-5 bg-bodyBackground pb-5 sm:pb-8 ">
-        <div className="flex flex-row">
+        <div className="flex flex-row items-center ">
           <img
             className="relative z-10 w-[100px] h-[100px]"
             src="/assets/student1.svg "

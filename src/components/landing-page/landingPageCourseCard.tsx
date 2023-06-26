@@ -6,7 +6,7 @@ const landingPageCoursesCardData = [
   {
     id: 1,
     category: "Design",
-    imageSrc: "/assets/courses_1.jpg",
+    imageSrc: "/assets/courses_1.svg",
     courseTitle: "Fundamentals of LinkedIn",
     ratings: [
       "/assets/star_enabled.svg",
@@ -34,7 +34,7 @@ const landingPageCoursesCardData = [
   {
     id: 2,
     category: "Design",
-    imageSrc: "/assets/courses_1.jpg",
+    imageSrc: "/assets/courses_1.svg",
     courseTitle: "Introduction to Web Development and Design",
     ratings: [
       "/assets/star_enabled.svg",
@@ -62,7 +62,7 @@ const landingPageCoursesCardData = [
   {
     id: 3,
     category: "Design",
-    imageSrc: "/assets/courses_1.jpg",
+    imageSrc: "/assets/courses_1.svg",
     courseTitle: "Learn Javascript",
     ratings: [
       "/assets/star_enabled.svg",
@@ -90,7 +90,7 @@ const landingPageCoursesCardData = [
   {
     id: 4,
     category: "Design",
-    imageSrc: "/assets/courses_1.jpg",
+    imageSrc: "/assets/courses_1.svg",
     courseTitle: "Fundamentals of Cyber Security",
     ratings: [
       "/assets/star_enabled.svg",
@@ -118,7 +118,7 @@ const landingPageCoursesCardData = [
   {
     id: 5,
     category: "Design",
-    imageSrc: "/assets/courses_1.jpg",
+    imageSrc: "/assets/courses_1.svg",
     courseTitle: "Data Structures",
     ratings: [
       "/assets/star_enabled.svg",
@@ -146,7 +146,7 @@ const landingPageCoursesCardData = [
   {
     id: 6,
     category: "Design",
-    imageSrc: "/assets/courses_1.jpg",
+    imageSrc: "/assets/courses_1.svg",
     courseTitle: "Algorithms",
     ratings: [
       "/assets/star_enabled.svg",
@@ -174,7 +174,7 @@ const landingPageCoursesCardData = [
   {
     id: 7,
     category: "Design",
-    imageSrc: "/assets/courses_1.jpg",
+    imageSrc: "/assets/courses_1.svg",
     courseTitle: "Mobile Development",
     ratings: [
       "/assets/star_enabled.svg",
@@ -202,7 +202,7 @@ const landingPageCoursesCardData = [
   {
     id: 8,
     category: "Design",
-    imageSrc: "/assets/courses_1.jpg",
+    imageSrc: "/assets/courses_1.svg",
     courseTitle: "Game Development",
     ratings: [
       "/assets/star_enabled.svg",
@@ -230,7 +230,7 @@ const landingPageCoursesCardData = [
   {
     id: 9,
     category: "Design",
-    imageSrc: "/assets/courses_1.jpg",
+    imageSrc: "/assets/courses_1.svg",
     courseTitle: "Learn C",
     ratings: [
       "/assets/star_enabled.svg",
@@ -258,7 +258,7 @@ const landingPageCoursesCardData = [
   {
     id: 10,
     category: "Design",
-    imageSrc: "/assets/courses_1.jpg",
+    imageSrc: "/assets/courses_1.svg",
     courseTitle: "Learn C++",
     ratings: [
       "/assets/star_enabled.svg",
@@ -286,7 +286,7 @@ const landingPageCoursesCardData = [
   {
     id: 11,
     category: "Design",
-    imageSrc: "/assets/courses_1.jpg",
+    imageSrc: "/assets/courses_1.svg",
     courseTitle: "Learn Python",
     ratings: [
       "/assets/star_enabled.svg",
