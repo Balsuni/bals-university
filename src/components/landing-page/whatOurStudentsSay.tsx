@@ -139,7 +139,7 @@ const WhatOurStudentsSay = () => {
                         height={50}
                       />
                     </div>
-                    <div className="w-[299px] mt-7 ml-5 sm:ml-20 text-[18px]">
+                    <div className="w-[299px] mt-7 ml-5 sm:ml-20 text-[18px] ">
                       <p>{data.description}</p>
                       <Image
                         src="/assets/quotation_2.svg"
