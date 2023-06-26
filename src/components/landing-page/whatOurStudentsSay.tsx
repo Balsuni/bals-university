@@ -139,7 +139,7 @@ const WhatOurStudentsSay = () => {
                         height={50}
                       />
                     </div>
-                    <div className="w-[299px] mt-7 ml-5 sm:ml-20 text-[18px] ">
+                    <div className="w-[299px] mt-[10vh] ml-5 text-[18px] ">
                       <p>{data.description}</p>
                       <Image
                         src="/assets/quotation_2.svg"
@@ -151,7 +151,7 @@ const WhatOurStudentsSay = () => {
                       />
                     </div>
 
-                    <div className="mt-20 sm:ml-7">
+                    <div className="sm:mt-[10vh] flex flex-col justify-center items-center">
                       <div className="flex justify-center items-center">
                         <Image
                           className="w-[122.98px] h-[122.98px] mr-[9px] mb-0 ml-2 absolute z-10"
