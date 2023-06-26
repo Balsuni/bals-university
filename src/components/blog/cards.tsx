@@ -113,7 +113,7 @@ const BlogCards = () => {
                     as={`blog/${data.id}/${data.blogTitle.toLocaleLowerCase()}`}
                     key={data.id}
                   >
-                    <section className="min-w-[280px] lg:min-w-[363px] xl:min-w-[422px] border-[px] shadow-md bg-gray-100  ">
+                    <section className="w-[280px] lg:w-[363px] xl:w-[422px] border-[px] shadow-md bg-gray-100  ">
                       <img
                         className="rounded-t-3xl "
                         src={data.imageSrc}
