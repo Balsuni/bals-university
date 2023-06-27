@@ -50,6 +50,10 @@ const BlogCards = () => {
 
   const [filterTextValue, updateFilterText] = useState("All");
 
+  function onFilterValueSelected(filterValue: any) {
+    updateFilterText(filterValue);
+  }
+
   let filteredBlogList = blogDisplayData.filter((item) => {
     if (filterTextValue === "Computer") {
       return item.category === "Computer";
@@ -63,10 +67,6 @@ const BlogCards = () => {
       return item;
     }
   });
-
-  function onFilterValueSelected(filterValue: any) {
-    updateFilterText(filterValue);
-  }
 
   return (
     <div className="">

@@ -9,7 +9,7 @@ import Image from "next/image";
 import { CloseSquare } from "iconsax-react";
 import { coursesCardMediumData } from "../../components/courses/cards";
 
-const SearchCourses = () => {
+export const SearchCourses = (props: any) => {
   const [openSearch, setOpenSearch] = useState(false);
 
   const toggleSearchBox = () => {
@@ -50,20 +50,16 @@ const SearchCourses = () => {
       </li>
       <div ref={mainMenuRef}>
         {openSearch && (
-          <main className="absolute z-30 rounded-xl pl-2 py-2 h-[auto] w-[310px] sm:w-[320px] top-[3380px] sm:top-[3385px] md:top-[2700px] lg:top-[2040px] xl:top-[2090px] -ml-[210px] md:-ml-[200px] text-darkblue-500 bg-gray-200">
+          <main className="bg-gray-200 absolute z-30 rounded-xl h-[41px] w-screen text-darkblue-500 left-0">
             <div className="flex flex-row items-center">
-              {/* <img
-                className="w-[15px] absolute ml-1 pointer-events-none"
-                src="/assets/search-icon.svg"
-                alt="search"
-              /> */}
-              <form action="">
+              <form action="submit">
                 <input
                   type="text"
                   name="search"
                   placeholder="Search"
                   autoComplete="off"
-                  className="text-darkblue-500 text-3 h-10 pl-7 bg-gray-200 "
+                  onChange={props.searchValue}
+                  className="text-darkblue-500 w-screen top-0 text-3 h-10 pl-5 bg-gray-200 focus:outline-none"
                 />
               </form>
             </div>
@@ -74,29 +70,10 @@ const SearchCourses = () => {
   );
 };
 
-const FilterCourses = (props: any) => {
-  const [filterTextValue, setFilterTextValue] = useState("All");
-
-  const filteredCoursesList = coursesCardMediumData.filter((item) => {
-    if (filterTextValue === "Linkedin") {
-      return item.category === "linkedin";
-    } else if (filterTextValue === "Web Development") {
-      return item.category === "web";
-    } else if (filterTextValue === "Game Development") {
-      return item.category === "game";
-    } else if (filterTextValue === "Cyber Security") {
-      return item.category === "cyber-security";
-    } else if (filterTextValue === "Programming Languages") {
-      return item.category === "programming";
-    } else {
-      return true;
-    }
-  });
-
-  const onFilterValueSelected = (filterValue: any) => {
-    setFilterTextValue(filterValue);
-   
-  };
+export const FilterCourses = (props: any) => {
+  function onFilterValueChange(e: any) {
+    props.filterValueSelected(e.target.value);
+  }
 
   const [openFilter, setOpenFilter] = useState(false);
 
@@ -140,7 +117,7 @@ const FilterCourses = (props: any) => {
         {openFilter && (
           <main className="absolute z-30 rounded-xl pl-2 py-2 h-[50px] w-[200px] right-0 mr-7 sm:mr-16 md:mr-22 lg:mr-5 text-darkblue-500 bg-gray-200  ">
             <select
-              onChange={onFilterValueSelected}
+              onChange={onFilterValueChange}
               className="w-[160px] h-[30px] pl-3 my-auto"
             >
               <option>All</option>
@@ -296,40 +273,9 @@ const courses = () => {
         </section>
 
         <section className="mt-14">
-          <div className="mb-9 ml-5 mr-10">
-            <div className="flex flex-row items-center justify-between border-b-4 border-darkblue-100">
-              <div className="sm:flex hidden flex-col sm:flex-row gap-5 sm:gap-5 md:gap-5 lg:gap-18 xl:gap-32 ">
-                <h1 className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:lg:text-3xl  font-medium text-gray-900 border-b-4 border-darkblue-100 hover:border-b-4  hover:border-darkblue-500 px-5px md:px-[6px] lg:md:px-[10px] py-[10px] -mb-1 ">
-                  All Courses
-                </h1>
-                <h1 className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:lg:text-3xl  font-medium text-gray-900  border-b-4 border-darkblue-100 hover:border-b-4  hover:border-darkblue-500 px-5px md:px-[6px] lg:md:px-[10px] py-[10px] -mb-1">
-                  Skill Acquisition
-                </h1>
-                <h1 className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:lg:text-3xl  font-medium text-gray-900 border-b-4 border-darkblue-100 hover:border-b-4  hover:border-darkblue-500 px-5px md:px-[6px] lg:md:px-[10px] py-[10px] -mb-1">
-                  Talent Acquisition
-                </h1>
-              </div>
-              <div className="flex sm:hidden w-8/12">
-                <select
-                  id="selection"
-                  className="bg-cyan1-500 border border-cyan1-900 text-gray-50 font-bold text-md rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                >
-                  <option selected>All Courses</option>
-                  <option>Skill Acquisition</option>
-                  <option>Talent Acquisition</option>
-                </select>
-              </div>
-              <div className="flex flex-row gap-[2px] sm:gap-2 ">
-                {/* <img src="/assets/search-icon.svg" alt="search" /> */}
-                <SearchCourses />
-                {/* <img src="/assets/sort-by-icon.svg" alt="sort" /> */}
-                <FilterCourses  />
-              </div>
-            </div>
-          </div>
-
           <div className="items-center ml-5 lg:ml-20 mr-3">
-            <CourseGallery  />
+            <CourseGallery />
+
             <div className="flex gap-3">
               <p className="text-darkblue-500 text-lg font-semibold tracking-wider">
                 See More
