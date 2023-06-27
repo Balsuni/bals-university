@@ -115,14 +115,14 @@ export const FilterCourses = (props: any) => {
       </li>
       <div ref={mainMenuRef}>
         {openFilter && (
-          <main className="absolute z-30 rounded-xl pl-2 py-2 h-[50px] w-[200px] right-0 mr-7 sm:mr-16 md:mr-22 lg:mr-5 text-darkblue-500 bg-gray-200  ">
+          <main className="absolute z-30 rounded-xl pl-2 py-2 h-[50px] w-[200px] left-0 sm:right-0 sm:left-auto mr-7 ml-5 sm:mr-16 md:mr-22 lg:mr-20 text-darkblue-500 bg-gray-200">
             <select
               onChange={onFilterValueChange}
               className="w-[160px] h-[30px] pl-3 my-auto"
             >
               <option>All</option>
               <option>Linkedin</option>
-              <option>Web Develoment</option>
+              <option>Web Development</option>
               <option>Game Development</option>
               <option>Cyber Security</option>
               <option>Mobile Development</option>
