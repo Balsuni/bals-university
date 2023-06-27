@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 
 const coursesCard = [
@@ -248,10 +248,10 @@ const coursesCardSmallData = [
   },
 ];
 
-const coursesCardMediumData = [
+export const coursesCardMediumData = [
   {
     id: 1,
-    category: "Design",
+    category: "linkedin",
     imageSrc: "/assets/courses_1.jpg",
     courseTitle: "Fundamentals of LinkedIn",
     ratings: [
@@ -278,7 +278,7 @@ const coursesCardMediumData = [
   },
   {
     id: 2,
-    category: "Design",
+    category: "web",
     imageSrc: "/assets/courses_1.jpg",
     courseTitle: "Introduction to Web Development",
     ratings: [
@@ -305,7 +305,7 @@ const coursesCardMediumData = [
   },
   {
     id: 3,
-    category: "Design",
+    category: "web",
     imageSrc: "/assets/courses_1.jpg",
     courseTitle: "Learn Javascript",
     ratings: [
@@ -332,7 +332,7 @@ const coursesCardMediumData = [
   },
   {
     id: 4,
-    category: "Design",
+    category: "cyber-security",
     imageSrc: "/assets/courses_1.jpg",
     courseTitle: "Fundamentals of Cyber Security",
     ratings: [
@@ -359,7 +359,7 @@ const coursesCardMediumData = [
   },
   {
     id: 5,
-    category: "Design",
+    category: "web",
     imageSrc: "/assets/courses_1.jpg",
     courseTitle: "Data Structures",
     ratings: [
@@ -386,7 +386,7 @@ const coursesCardMediumData = [
   },
   {
     id: 6,
-    category: "Design",
+    category: "web",
     imageSrc: "/assets/courses_1.jpg",
     courseTitle: "Algorithms",
     ratings: [
@@ -413,7 +413,7 @@ const coursesCardMediumData = [
   },
   {
     id: 7,
-    category: "Design",
+    category: "mobile",
     imageSrc: "/assets/courses_1.jpg",
     courseTitle: "Mobile Development",
     ratings: [
@@ -440,7 +440,7 @@ const coursesCardMediumData = [
   },
   {
     id: 8,
-    category: "Design",
+    category: "game",
     imageSrc: "/assets/courses_1.jpg",
     courseTitle: "Game Development",
     ratings: [
@@ -467,7 +467,7 @@ const coursesCardMediumData = [
   },
   {
     id: 9,
-    category: "Design",
+    category: "programming",
     imageSrc: "/assets/courses_1.jpg",
     courseTitle: "Learn C",
     ratings: [
@@ -494,7 +494,7 @@ const coursesCardMediumData = [
   },
   {
     id: 10,
-    category: "Design",
+    category: "programming",
     imageSrc: "/assets/courses_1.jpg",
     courseTitle: "Learn C++",
     ratings: [
@@ -521,7 +521,7 @@ const coursesCardMediumData = [
   },
   {
     id: 11,
-    category: "Design",
+    category: "programming",
     imageSrc: "/assets/courses_1.jpg",
     courseTitle: "Learn Python",
     ratings: [
@@ -548,10 +548,32 @@ const coursesCardMediumData = [
   },
 ];
 
-export const CoursesCardMedium = () => {
+export const CoursesCardMedium = (props: any) => {
+  const [filterTextValue, setFilterTextValue] = useState("All");
+
+  const filteredCoursesList = coursesCardMediumData.filter((item) => {
+    if (filterTextValue === "Linkedin") {
+      return item.category === "linkedin";
+    } else if (filterTextValue === "Web Development") {
+      return item.category === "web";
+    } else if (filterTextValue === "Game Development") {
+      return item.category === "game";
+    } else if (filterTextValue === "Cyber Security") {
+      return item.category === "cyber-security";
+    } else if (filterTextValue === "Programming Languages") {
+      return item.category === "programming";
+    } else {
+      return true;
+    }
+  });
+
+  const onFilterValueSelected = (filterValue: any) => {
+    setFilterTextValue(filterValue);
+  };
+
   return (
     <div className="flex flex-row gap-[22px] sm:gap-[40px]">
-      {coursesCardMediumData.map((data) => {
+      {filteredCoursesList.map((data) => {
         return (
           <Link
             href={{
@@ -584,7 +606,7 @@ export const CoursesCardMedium = () => {
                   alt=""
                 />
               </div>
-              <h1 className="py-1 px-5 ml-5 mt-5 text-lg font-normal text-cyan1-800 border-[2px]  border-cyan1-800 w-[95px] ">
+              <h1 className="py-1 px-5 ml-5 mt-5 text-lg font-normal text-cyan1-800 border-[2px]  border-cyan1-800 w-fit ">
                 {data.category}
               </h1>
               <h1 className="text-darkblue-500 ml-5 text-[19px] font-bold tracking-wider h-[60px]  mt-5">

@@ -175,18 +175,6 @@ export const FilterBlog = (props: any) => {
         {openFilter && (
           <main className="absolute z-30 rounded-xl pl-2 py-2 h-[50px] w-[200px] right-0 mr-7 sm:mr-16 md:mr-22 lg:mr-20 text-darkblue-500 bg-gray-200  ">
             <section className="flex flex-col items-start gap-7">
-              {/* <h2 className="text-sm sm:text-base ">
-                Social Media Management (SMM)
-              </h2>
-              <h2 className="text-sm sm:text-base ">
-                Social Media Management (SMM)
-              </h2>
-              <h2 className="text-sm sm:text-base ">
-                Social Media Management (SMM)
-              </h2>
-              <h2 className="text-sm sm:text-base ">
-                Social Media Management (SMM)
-              </h2> */}
               <select
                 onChange={onFilterValueChange}
                 className="w-[160px] h-[30px] pl-3"
