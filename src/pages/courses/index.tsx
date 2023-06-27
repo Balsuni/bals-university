@@ -7,6 +7,7 @@ import FreeCoursesGallery from "@/components/courses/freeCoursesGallery";
 import Faq from "@/components/ui/faq";
 import Image from "next/image";
 import { CloseSquare } from "iconsax-react";
+import { coursesCardMediumData } from "../../components/courses/cards";
 
 const SearchCourses = () => {
   const [openSearch, setOpenSearch] = useState(false);
@@ -49,7 +50,7 @@ const SearchCourses = () => {
       </li>
       <div ref={mainMenuRef}>
         {openSearch && (
-          <main className="absolute z-30 rounded-xl pl-3 py-3 h-[230px] w-[310px] sm:w-[320px] top-[680px] sm:top-[630px] md:top-[550px] lg:top-[650px]  -ml-[215px] md:-ml-[250px] text-darkblue-500 bg-gray-200  ">
+          <main className="absolute z-30 rounded-xl pl-2 py-2 h-[auto] w-[310px] sm:w-[320px] top-[3380px] sm:top-[3385px] md:top-[2700px] lg:top-[2040px] xl:top-[2090px] -ml-[210px] md:-ml-[200px] text-darkblue-500 bg-gray-200">
             <div className="flex flex-row items-center">
               {/* <img
                 className="w-[15px] absolute ml-1 pointer-events-none"
@@ -73,7 +74,30 @@ const SearchCourses = () => {
   );
 };
 
-const FilterCourses = () => {
+const FilterCourses = (props: any) => {
+  const [filterTextValue, setFilterTextValue] = useState("All");
+
+  const filteredCoursesList = coursesCardMediumData.filter((item) => {
+    if (filterTextValue === "Linkedin") {
+      return item.category === "linkedin";
+    } else if (filterTextValue === "Web Development") {
+      return item.category === "web";
+    } else if (filterTextValue === "Game Development") {
+      return item.category === "game";
+    } else if (filterTextValue === "Cyber Security") {
+      return item.category === "cyber-security";
+    } else if (filterTextValue === "Programming Languages") {
+      return item.category === "programming";
+    } else {
+      return true;
+    }
+  });
+
+  const onFilterValueSelected = (filterValue: any) => {
+    setFilterTextValue(filterValue);
+   
+  };
+
   const [openFilter, setOpenFilter] = useState(false);
 
   const toggleFilter = () => {
@@ -114,13 +138,19 @@ const FilterCourses = () => {
       </li>
       <div ref={mainMenuRef}>
         {openFilter && (
-          <main className="absolute z-30 rounded-xl pl-5 py-5 h-[auto] w-[310px] sm:w-[320px] top-[2090px] sm:top-[2090px] md:top-[2090px] lg:top-[2090px] -ml-[260px] md:-ml-[250px] text-darkblue-500 bg-gray-200  ">
-            <div className="flex flex-col items-start gap-8">
-              <h2>Search Engine Optimization (SEO)</h2>
-              <h2>Social Media Management (SMM)</h2>
-              <h2>Search Engine Optimization (SEO)</h2>
-              <h2>Social Media Management (SMM)</h2>
-            </div>
+          <main className="absolute z-30 rounded-xl pl-2 py-2 h-[50px] w-[200px] right-0 mr-7 sm:mr-16 md:mr-22 lg:mr-5 text-darkblue-500 bg-gray-200  ">
+            <select
+              onChange={onFilterValueSelected}
+              className="w-[160px] h-[30px] pl-3 my-auto"
+            >
+              <option>All</option>
+              <option>Linkedin</option>
+              <option>Web Develoment</option>
+              <option>Game Development</option>
+              <option>Cyber Security</option>
+              <option>Mobile Development</option>
+              <option>Programming Languages</option>
+            </select>
           </main>
         )}
       </div>
@@ -293,13 +323,13 @@ const courses = () => {
                 {/* <img src="/assets/search-icon.svg" alt="search" /> */}
                 <SearchCourses />
                 {/* <img src="/assets/sort-by-icon.svg" alt="sort" /> */}
-                <FilterCourses />
+                <FilterCourses  />
               </div>
             </div>
           </div>
 
           <div className="items-center ml-5 lg:ml-20 mr-3">
-            <CourseGallery />
+            <CourseGallery  />
             <div className="flex gap-3">
               <p className="text-darkblue-500 text-lg font-semibold tracking-wider">
                 See More
